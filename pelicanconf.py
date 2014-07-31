@@ -4,12 +4,13 @@ from __future__ import unicode_literals
 from os.path import join as pjoin
 
 AUTHOR = u'Jan Ivar Beddari'
+AUTHOR_EMAIL = u'jib2014@beddari.net'
 SITENAME = u'norcams'
 SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Oslo'
 
 DEFAULT_LANG = u'en'
 
@@ -31,6 +32,9 @@ SOCIAL = (
          )
 
 DEFAULT_PAGINATION = False
+
+PLUGIN_PATH = 'pelican-plugins'
+PLUGINS = [ 'gravatar' ]
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
