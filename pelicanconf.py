@@ -36,9 +36,10 @@ DEFAULT_PAGINATION = False
 PLUGIN_PATHS = [ 'pelican-plugins' ]
 PLUGINS = [ 'gravatar' ]
 
-STATIC_PATHS = ['images', 'extra/CNAME']
+STATIC_PATHS = ['images', 'extra/CNAME', 'extra/hand.png']
 EXTRA_PATH_METADATA = { 
     'extra/CNAME' : {'path' : 'CNAME'},
+    'extra/hand.png' : { 'path' : 'favicon.ico' },
 }
 
 # Uncomment following line if you want document-relative URLs when developing
