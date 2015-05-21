@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 from os.path import join as pjoin
 
-AUTHOR = u'Jan Ivar Beddari'
-AUTHOR_EMAIL = u'jib2014@beddari.net'
+#AUTHOR = u'First Last'
+#AUTHOR_EMAIL = u'email@example.net'
 SITENAME = u'norcams'
 SITEURL = ''
 
