@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/github-ofs-openstack-uib.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2014-08-19T08:57:00+02:00</updated><entry><title>Dag 2: OpenStack from scratch</title><link href="http://blog.norcams.org/dag-2-openstack-from-scratch.html" rel="alternate"></link><updated>2014-08-19T08:57:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-08-19:dag-2-openstack-from-scratch.html</id><summary type="html">&lt;p&gt;7. august gikk med til å utføre en OpenStack installasjon fra scratch.
+Denne installasjonen gir et godt inntrykk av hva komponenter OpenStack
+består av og hvordan disse skal fungere sammen i en komplett
+installasjon.&lt;/p&gt;
+&lt;p&gt;Vi støtte på litt problemer etter installasjonen av OpenStack from
+scratch. Noe&amp;nbsp;av hovedfunksjonaliteten i&amp;nbsp;systemet er å kunne lage og
+bygge instanser av maskiner som skal kjøre i et driftsmiljø. Denne biten
+feilet og vi har startet feilsøking av hva som kan ha gått galt. Dette
+er noe vi kommer til å fortsette med i morgen.&lt;/p&gt;
+&lt;p&gt;OpenStack from scratch er et github prosjekt&amp;nbsp;som er blitt laget i
+forbindelse med prosjektet jeg er med i på UIB. &amp;nbsp;Hele&amp;nbsp;prosjektet ligger
+åpent på github -&amp;gt;&amp;nbsp;&lt;a class="reference external" href="https://github.com/norcams/ofs"&gt;https://github.com/norcams/ofs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Før jeg begynner å gå inn i detaljer om OpenStack, vil det være greit
+for leserne å vite litt om bakgrunnen til programvaren og hva den brukes
+til. Velger i denne sammenhengen å vise til
+&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Openstack"&gt;Wikipedia&lt;/a&gt;artikkelen som
+jeg syns har oppsummert dette ganske bra, samt at den forklarer bruken
+til hver av komponentene.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="OpenStack" src="http://openstack.b.uib.no/files/2014/08/OpenStack.png" /&gt;&lt;/p&gt;
+</summary><category term="github"></category><category term="ofs"></category></entry></feed>

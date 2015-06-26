@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/ceph-openstack-storage-winch.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2014-11-06T09:41:00+01:00</updated><entry><title>Dag 25 &amp; 26: Samstemt provisjonering av ceph maskiner</title><link href="http://blog.norcams.org/dag-25-26.html" rel="alternate"></link><updated>2014-11-06T09:41:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-11-06:dag-25-26.html</id><summary type="html">&lt;p&gt;Fra forrige gang fant jeg ut at et Ceph kluster ikke kan provisjoneres
+node for node. Dette ble også bekreftet av en av utviklerne fra
+Stackforge. På bakgrunn av dette laget jeg et script som tar opp alle
+nodene samtidig. I tillegg ble det lagt inn en 10 sekunders forsinkelse
+mellom hver av maskinene slik at vi får korrekt IP adresse på dem.
+Scriptet er et veldig enkelt script som kan sees i sin helhet på
+&lt;a class="reference external" href="https://github.com/norcams/winch/blob/ceph/spawn-cephnodes.sh"&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Nå vil ikke timeout feilen fra forrige innlegg skje. Når den kommer til
+punktet der nøklene skal sendes over til de andre maskinene i ceph
+klusteret vil de andre nodene også ha kommet til dette steget. På denne
+måten klarer nøklene å spres over til de andre maskinene og
+provisjoneringen med puppet går gjennom uten feil.&lt;/p&gt;
+&lt;p&gt;Videre arbeid blir nå å integrere ceph med resten av OpenStack slik at
+instansene vi oppretter&amp;nbsp;bruker ceph som lagringsområde. I tillegg skal
+jeg skrive en del dokumentasjon om winch og hvordan man tar det bedre i
+bruk. Foreløpig dokumentasjon kan sees
+på&amp;nbsp;&lt;a class="reference external" href="http://winch.readthedocs.org/en/latest/"&gt;http://winch.readthedocs.org/en/latest/&lt;/a&gt;&lt;/p&gt;
+</summary><category term="ceph"></category><category term="openstack"></category><category term="storage"></category><category term="winch"></category></entry></feed>

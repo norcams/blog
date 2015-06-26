@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="norcams, culture automation measurement sharing">
+
+        <link rel="alternate"  href="http://blog.norcams.org/feeds/all.atom.xml" type="application/atom+xml" title="norcams Full Atom Feed"/>
+
+        <title>Dag 17: Installasjon av compute og controller node ved hjelp av Foreman // norcams // culture automation measurement sharing</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+                </a>
+                <h2 class="article-info">ksk037</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Thu 02 October 2014</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Dag 17: Installasjon av compute og controller node ved hjelp av Foreman</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.norcams.org/tag/foreman.html">foreman</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/puppet.html">puppet</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/winch.html">winch</a>
+                        </p>
+                </header>
+            </section>
+            <p>Vi fortsatte med feilsøkingen fra fredag om hvorfor puppet modulene fra
+&quot;winch&quot; ikke ville fungere når vi provisjonerte med Foreman. De hadde
+virket før og det ga lite mening at de ikke skulle virke nå som Foreman
+var med i bildet.</p>
+<p>Det viste seg at feilen lå spredt i flere konfigurasjonsfiler, og dette
+gjorde at puppet modulene feilet på maskinene som Foreman installerte.
+Nå har det blitt gjort endringer i kickstart filene til Foreman for å
+gjøre at dette problemet ikke vil oppstå igjen. Nå var det mulig å
+installere både controller og compute noder ved hjelp av Foreman der
+alle puppet modulene blir installert.</p>
+<p>Til nå har vi brukt vagrant og virtualbox for å lage og provisjonere
+maskiner. Vagrant legger opp et eth0 interface med en NAT adresse, men
+dette kludrer mye til det nettverksoppsettet vi ønsker. Derfor er neste
+steg nå å lage install script som kan lage og sette opp virtualbox
+maskiner for å unngå at eth0 inferfacet blir bundet opp til denne NAT
+adressen. Mer om dette på fredag.</p>
+
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "norcams"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; norcams &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="norcams, culture automation measurement sharing">
+
+        <link rel="alternate"  href="http://blog.norcams.org/feeds/all.atom.xml" type="application/atom+xml" title="norcams Full Atom Feed"/>
+
+        <title>Dag 4: Installasjon av OpenStack packstack // norcams // culture automation measurement sharing</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+                </a>
+                <h2 class="article-info">ksk037</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Thu 21 August 2014</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Dag 4: Installasjon av OpenStack packstack</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.norcams.org/tag/centos.html">centos</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/fedora.html">fedora</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/openstack.html">openstack</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/packstack.html">packstack</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/rdo.html">rdo</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/rhel.html">rhel</a>
+                        </p>
+                </header>
+            </section>
+            <p>11. august var satt av til å installere OpenStack fra RDO.&nbsp;RDO er under
+utvikling av Red Hat og er en egen utgivelse av OpenStack laget
+spesifikt for å kjøre
+på&nbsp;<a class="reference external" href="http://en.wikipedia.org/wiki/Red_Hat_Enterprise_Linux">RHEL</a>,
+<a class="reference external" href="http://en.wikipedia.org/wiki/CentOS">CentOS</a>,&nbsp;<a class="reference external" href="http://en.wikipedia.org/wiki/Fedora_(operating_system)">Fedora</a>&nbsp;og
+andre Red Hat baserte systemer. &nbsp;For mer info om RDO vennligst se
+<a class="reference external" href="http://openstack.redhat.com/FAQ">her</a>.</p>
+<p>Installasjon av RDO foregår ved hjelp av packstack. Packstack er et
+installasjonsverktøy som bruker Puppet moduler for å&nbsp;installere
+OpenStack på&nbsp;kompatible maskiner nevnt ovenfor. Har i denne posten valgt
+å ta med steg-for-steg installasjonen av RDO for å vise hvordan dette
+gjøres, se nedenfor for mer detaljer.</p>
+<p>Vanligvis består OpenStack av tre hovedkomponenter; network, storage og
+compute, som hver kjører på sin egen maskin.&nbsp;Når man installerer
+packstack kan man velge at disse tre hovedkomponentene skal installeres
+på en og samme maskin. Dette kan være praktisk av flere grunner, i vårt
+tilfelle er det greit for å se hvordan det fungerer for testformål. Vi
+kan senere også velge å separere hovedkomponentene slik vi ønsker.</p>
+<p>RDO installeres med <strong>3</strong> steg. Hentet
+fra&nbsp;<a class="reference external" href="http://openstack.redhat.com/Quickstart">http://openstack.redhat.com/Quickstart</a></p>
+<p><strong>Steg 1: Programvare&nbsp;repository:</strong></p>
+<p>Oppdater nåværende pakker på systemet:</p>
+<blockquote>
+<pre class="literal-block">
+sudo yum update -y
+</pre>
+</blockquote>
+<p>Sett opp RDO repositoriet:</p>
+<blockquote>
+<pre class="literal-block">
+sudo yum install -y http://rdo.fedorapeople.org/rdo-release.rpm
+</pre>
+</blockquote>
+<p><strong>Steg 2: Installer packstack</strong></p>
+<blockquote>
+<pre class="literal-block">
+sudo yum install -y openstack-packstack
+</pre>
+</blockquote>
+<p>Steg 3: Kjør packstack for å installere OpenStack</p>
+<p>Packstack installerer automatisk OpenStack slik at man slipper å
+gjøre&nbsp;denne jobben manuelt. For å kjøre OpenStack på en enkelt node kan
+vi som tidligere nevnt kjøre denne kommandoen:</p>
+<blockquote>
+<pre class="literal-block">
+packstack --allinone
+</pre>
+</blockquote>
+<p>Etter installering vil packstack også generere en packstack-answer fil
+med passord og innstillinger som den bruker under installasjon. Denne
+kan så brukes om igjen til nye installasjoner eller til å lage nye noder
+med samme innstillinger. Om man installerer på andre maskiner vil man
+bli bedt om root passordet til maskinen før installasjonen starter.</p>
+<p>Etter installasjon vil man kunne logge inn på panelet
+<a class="reference external" href="https://wiki.openstack.org/wiki/Horizon">Horizon</a>for å starte og
+administrere de instanser man måtte ønske. Mer om dette videre.</p>
+
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "norcams"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; norcams &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

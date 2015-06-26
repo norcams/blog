@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/github-vagrant-winch.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2014-10-13T06:41:00+02:00</updated><entry><title>Dag 19: Persistent montering av /vagrant/ mappe og netforward</title><link href="http://blog.norcams.org/dag-19-persistent-montering-av-vagrant-mappe-og-netforward.html" rel="alternate"></link><updated>2014-10-13T06:41:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-10-13:dag-19-persistent-montering-av-vagrant-mappe-og-netforward.html</id><summary type="html">&lt;p&gt;Som tidligere nevnt har det vært problemer ved bruk av vagrant at vi
+mister /vagrant mappen på manager maskinen. I denne mappen ligger det en
+del script for å installere og konfigurere Foreman og puppet. Da er det
+veldig viktig at montering av denne mappen fungerer i alle tilfeller der
+vi trenger den.&lt;/p&gt;
+&lt;p&gt;Ved bruk av vagrant har dette vist seg å være vanskelig. Etter en
+oppdatering av maskinen eller en restart utenfor vagrant miljøet blir
+man tvunget til å kjøre kompilering av virtualbox addons og
+kjernemoduler for å få monteringen opp igjen. Dette krever mye manuelt
+arbeid og det ville vært lettere å automatisert prosessen. Derfor har
+jeg laget et script som ordner dette. I tillegg til å montere mappen
+kjører den også netforward på manager maskinen. Denne har tidligere falt
+ut når manager har blitt startet om utenfor vagrant og er kritisk for at
+Foreman fungerer slik vi vil.&lt;/p&gt;
+&lt;p&gt;Scriptet kan sees i sin helhet på
+&lt;a class="reference external" href="https://github.com/norcams/winch/blob/master/vagrant/manager-persistent-config.sh"&gt;github&lt;/a&gt;.&lt;/p&gt;
+</summary><category term="github"></category><category term="openstack"></category><category term="vagrant"></category></entry></feed>

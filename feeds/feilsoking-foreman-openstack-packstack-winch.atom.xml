@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/feilsoking-foreman-openstack-packstack-winch.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2014-09-05T10:40:00+02:00</updated><entry><title>Dag 10: Feilsøking av instansnettverk &amp; installasjon av "winch"</title><link href="http://blog.norcams.org/dag-10-feilsoking-av-instansnettverk-installasjon-av-winch.html" rel="alternate"></link><updated>2014-09-05T10:40:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-09-05:dag-10-feilsoking-av-instansnettverk-installasjon-av-winch.html</id><summary type="html">&lt;p&gt;Første del av dagen ble brukt til videre feilsøking av hvorfor
+instansene våre ikke kunne snakke ut mot verden. Dette ble løst med å
+spesifisere hvilket interface vi skulle kjøre maskering ifra. Iptables
+regelen fra &lt;a class="reference external" href="https://openstack.redhat.com/Networking_in_too_much_detail"&gt;OpenStack networking in too
+much&lt;/a&gt;
+detail ble modifisert til å se slik ut:&lt;/p&gt;
+&lt;blockquote&gt;
+iptables -t nat -I POSTROUTING 1 -s 172.24.4.224/28 -o eth0 -j
+MASQUERADE&lt;/blockquote&gt;
+&lt;p&gt;Etter en iptables reload kunne instansene våre snakke ut mot verden.
+Innenfor sine begrensede parametere kunne vi nå si at vi hadde en
+fullverdig OpenStack installasjon.&lt;/p&gt;
+&lt;p&gt;Resten av dagen ble benyttet til å se på
+&lt;a class="reference external" href="https://github.com/norcams/winch"&gt;&amp;quot;winch&amp;quot;&lt;/a&gt; prosjektet fra GitHub.
+Dette er et prosjekt på lik linje med OpenStack fra scratch. Formålet
+med winch er å lære oss å deployere OpenStack ved hjelp av puppet
+moduler og &lt;a class="reference external" href="http://theforeman.org/learn_more.html"&gt;The Forman&lt;/a&gt;. Kort
+forklart er Forman en effektiv måte å installere all infrastruktur til
+OpenStack installasjonen, eksempelvis compute, storage og network.
+Foreman gir mye spennende funksjonalitet, så anbefaler videre lesning i
+linken over. Når &amp;quot;winch&amp;quot; ble laget var OpenStack kommet til havana
+versjonen. I disse dager bruker vi icehouse, som er samme versjon som
+ble installert ved hjelp av packstack. For å kunne jobbe videre med
+&amp;quot;winch&amp;quot; er vi først nødt til å oppdatere denne til å støtte icehouse.
+Dette vil være klart til neste gang.&lt;/p&gt;
+</summary><category term="foreman"></category><category term="iptables"></category><category term="winch"></category></entry></feed>

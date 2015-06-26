@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/ceph-github-vagrant-winch.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2014-10-30T13:15:00+01:00</updated><entry><title>Dag 23: Installering av Ceph kluster med hjelp av puppet-moduler</title><link href="http://blog.norcams.org/dag-23-installering-av-ceph-kluster-med-hjelp-av-puppet-moduler.html" rel="alternate"></link><updated>2014-10-30T13:15:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-10-30:dag-23-installering-av-ceph-kluster-med-hjelp-av-puppet-moduler.html</id><summary type="html">&lt;p&gt;Det manuelle oppsettet av ceph-klusteret som ble installert forrige gang
+fungerte bra. Planen for i dag var å lage et lignende kluster ved hjelp
+av puppet moduler.&lt;/p&gt;
+&lt;p&gt;Som vi husker fra tegningen jeg publiserte i forrige innlegg, fantes det
+en egen monitoreringsnode og x antall osd noder. Ceph klusteret blir
+spredt over alle osd nodene. Mens det er en monitoreringsnode som holder
+styr på &lt;a class="reference external" href="http://ceph.com/docs/master/architecture/"&gt;klusteret&lt;/a&gt; og
+hvor mange noder som er med osv.&amp;nbsp; For å hindre
+&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Single_point_of_failure"&gt;SPOF&lt;/a&gt; har vi i
+et produksjonsmiljø lyst å kjøre flere monitoreringsnoder samtidig. I
+tillegg ønsker vi å kjøre monitoreringsnoder og osd noder på samme
+maskin. Dette for å minske behovet for ekstra maskiner.&lt;/p&gt;
+&lt;p&gt;I node definisjonen i vagrant har vi lagt til 3 ceph noder; ceph01,
+ceph02 og ceph03. Innstillinger for de 3 maskinene har blitt satt i
+&lt;a class="reference external" href="https://github.com/norcams/winch/blob/ceph/puppet/hieradata/common.yaml"&gt;common.yaml&lt;/a&gt;
+filen slik at vi kan provisjonere med puppet. Innstillingene til ceph
+inneholder alt fra passord, medlemmer&amp;nbsp; på klusteret, størrelsen til
+klusteret og hvor klusteret skal være på de medlemmene som er definert.
+Dette vil nå bli satt opp automatisk for oss når vi installerer ceph
+nodene.&lt;/p&gt;
+&lt;p&gt;Etter dette kunne vi starte opp maskinene på samme måte som vi har gjort
+tidligere. Klusteret innstalleres når maskinen kommer opp for første
+gang. Mer om ceph neste gang.&lt;/p&gt;
+</summary></entry></feed>

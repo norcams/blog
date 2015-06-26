@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="norcams, culture automation measurement sharing">
+
+        <link rel="alternate"  href="http://blog.norcams.org/feeds/all.atom.xml" type="application/atom+xml" title="norcams Full Atom Feed"/>
+
+        <title>Day 14: Summary: Collecting OpenStack logs with Logstash // norcams // culture automation measurement sharing</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+                </a>
+                <h2 class="article-info">ksk037</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Mon 20 April 2015</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Day 14: Summary: Collecting OpenStack logs with Logstash</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.norcams.org/tag/elasticsearch.html">elasticsearch</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/logstash.html">logstash</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/monitoring.html">monitoring</a>
+                        </p>
+                </header>
+            </section>
+            <p>This blog post is a summary of the first 14 days of work on my bachelor
+degree.&nbsp; It is written in English to satisfy some of our Brazilian
+readers at the University in São Paulo.</p>
+<p><a class="reference external" href="http://www.openstack.org/">Openstack</a> consists of many different
+services and components, and&nbsp; all of these services are logging
+information to their own log files respectively.&nbsp; However, it would be
+an impossible job for a system administrator to monitor all of these log
+files by simply tailing them through the terminal. This is where
+Logstash is useful. Logstash is an open-source tool for managing events
+and logs. It is primarily used for collecting logs, parsing them and
+save them for later use. The tool also comes with an interface for
+searching in the logs you've collected.</p>
+<p>Based on the <a class="reference external" href="https://github.com/norcams/winch">winch</a> project on
+GitHub I have created a Logstash node where all logs coming from
+OpenStack have been centralized. On this node all logs are parsed,
+information extracted and saved in Elasticsearch. Seconds after, the
+extracted information is visible on the Kibana dashboard (a front-end to
+Elasticsearch) ready for searching, filtering and visualization.
+Extracting the information from the log files is a bit more complex than
+it sounds. However, Logstash is very easy to get started with and once
+the basics are covered you're ready to write complex filters yourself.
+Having the <a class="reference external" href="http://grokdebug.herokuapp.com/">grok debugger</a> in hand
+and a quick
+<a class="reference external" href="http://www.google.no/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CB4QtwIwAA&amp;url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DYIKm6WUgFTY&amp;ei=coQyVeHILYOtsAGbnoGADQ&amp;usg=AFQjCNHNCs05hUDcTnuyPAcKuiPltMC--A&amp;sig2=62L8IW-f5ply9FM_TA7eUg&amp;bvm=bv.91071109,d.bGg">tutorial</a>
+in the other also helps :)</p>
+<p>In my configuration I'm pretty much finished with the filters that
+covers all the lines of log that the nova services in OpenStack are
+generating. Launching, rebooting, deleting instances and error messages
+related to instances is now hit by a filter in Logstash and saved for
+later searches. Additionally I've made a filter that caches everything
+that is not matched by any previous filter in the configuration. This is
+in case some special event should occur or if the system goes haywire
+(not that I expect that to happen). The 'all-matching' filter is tagged
+with &quot;unmatched_event&quot; , and from here we can go back and change the
+original filter to take &quot;these&quot; special events into account. By doing
+this we will at all times have an overview if something should go wrong.
+Also we won't miss any data that somewhat could be important for us to
+know. The Logstash configuration can be found
+<a class="reference external" href="https://github.com/norcams/winch/blob/stable/icehouse-centos6-monitoring/conf/logstash.conf">here.</a></p>
+<p>Further on I've also created some metrics which can been seen in the
+configuration file. Winch monitoring also consist of a Graphite node
+where these metrics are sent and visualized. I believe that some data
+are best when they are graphed in some way or the other providing an
+overview on a day-to-day basis (or even minute-to-minute basis)&nbsp; on how
+the system is performing. Graphs also helps seeing systems in context
+which is very useful.</p>
+<p>During the next couple of weeks I will continue to make filters, extract
+data from logs until all OpenStack services are covered, visualize data
+and put data in context by making graphs and much more. Stay tuned!</p>
+
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "norcams"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; norcams &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

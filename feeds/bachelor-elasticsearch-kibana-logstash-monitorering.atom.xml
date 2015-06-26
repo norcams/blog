@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/bachelor-elasticsearch-kibana-logstash-monitorering.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2015-05-28T09:21:00+02:00</updated><entry><title>Dag 35-39: Skriveuke</title><link href="http://blog.norcams.org/dag-35-39-skriveuke.html" rel="alternate"></link><updated>2015-05-28T09:21:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-05-28:dag-35-39-skriveuke.html</id><summary type="html">&lt;p&gt;Gjennom hele uken har tiden gått med til å skrive ferdig utkast til
+prosjektrapporen. Denne ble levert inn 26. mai og endelig
+innleveringsfrist er 9. juni. Arbeidet som gjenstår er å skrive
+dokumentasjon om det endelige monitoreringsoppsettet slik at dette
+enkelt kan tas i bruk. Dette forventes å være ferdig i neste uke.&lt;/p&gt;
+&lt;p&gt;Oppsummert har det i under uttestingen av Logstash blitt prosessert
+8,943,279 millioner hendelser som har blitt lagret i Elasticsearch og
+visualisert gjennom Kibana og Graphite.&lt;/p&gt;
+&lt;p&gt;Endelig innleveringsdato for prosjektrapporten er 9. juni..&lt;/p&gt;
+</summary><category term="elasticsearch"></category><category term="kibana"></category><category term="logstash"></category></entry><entry><title>Dag 1: Installasjon og oppsett av logstash, elasticsearch &amp; kibana</title><link href="http://blog.norcams.org/dag-1-installasjon-og-oppsett-av-logstash-elasticsearch-kibana.html" rel="alternate"></link><updated>2015-03-07T16:34:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-07:dag-1-installasjon-og-oppsett-av-logstash-elasticsearch-kibana.html</id><summary type="html">&lt;p&gt;Etter tips fra prosjektleder i UH-sky prosjektet er et av
+monitoreringsverktøyene jeg har valgt å se på
+&lt;a class="reference external" href="http://logstash.net/"&gt;logstash&lt;/a&gt;. Et&amp;nbsp; kraftig&amp;nbsp; verktøy som brukes til
+å håndtere hendelser og logger.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="logstash" src="http://logstash.net/images/logstash.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Logstash samler inn logger fra ulike kilder, parser loggene og lagrer de
+til senere bruk.&amp;nbsp; Når man installerer logstash kommer det også med et
+webinterface der man kan søke etter hendelsene i loggfilene og
+visualisere dette slik man ønsker. Dette for å kunne kartlegge feil, se
+endringer i systemer over tid, sette sammen data som har påvirkning på
+herandre osv. Logstash er et åpent kildekodeverktøy og er lisensiert
+under Apache 2.0.&lt;/p&gt;
+&lt;p&gt;OpenStack er et komplekst rammeverk som består av mange tjenester. Hver
+tjeneste har sitt eget bruksområde og sitt eget API. Det er mye
+informasjon som til daglig vil være spredt rundt om i&amp;nbsp; systemet. Dette
+gjør det viktig å samle all loggdata på et samlet sted slik at det blir
+enklere å hente ut den informasjonen vi trenger for å sørge for at
+rammeverket til enhver tid fungerer som det skal. Logstash er veldig
+egnet til dette formålet. I logstash.conf kan vi tagge innkommende
+logger og videre kan det så kjøres filter basert på disse taggene for å
+hente ut den spesifikke informasjonen vi vil ha tak i. For eksempel
+tjenestenavn, diskbruk, antall påloggingsforsøk, brukere, IP adresser,
+nettleser osv. Alt av informasjon som finnes i en loggfil kan
+ekstraheres, lagres og videresendes til en eller annen form for
+visualisering.&lt;/p&gt;
+&lt;p&gt;Jeg har til nå arbeidet med en kodebase som jeg forket på github som
+installerer disse tre verktøyene som nevnt i overskriften. Videre har
+jeg tenkt å integrere denne mot winch slik at den passer øvrig
+prosjektstruktur. Under følger et bilde av hvordan visualiseringen av
+loggdataene ser ut.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/kibana4-visualisering.png"&gt;&lt;img alt="kibana4-visualisering" src="http://openstack.b.uib.no/files/2015/03/kibana4-visualisering-300x171.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+</summary><category term="elasticsearch"></category><category term="github"></category><category term="kibana4"></category><category term="logstash"></category></entry></feed>

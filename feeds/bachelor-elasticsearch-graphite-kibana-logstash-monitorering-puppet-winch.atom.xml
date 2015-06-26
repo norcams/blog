@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/bachelor-elasticsearch-graphite-kibana-logstash-monitorering-puppet-winch.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2015-03-07T16:56:00+01:00</updated><entry><title>Dag 2: Integrering av logstash i "winch"</title><link href="http://blog.norcams.org/dag-2-integrering-av-logstash-i-winch.html" rel="alternate"></link><updated>2015-03-07T16:56:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-07:dag-2-integrering-av-logstash-i-winch.html</id><summary type="html">&lt;p&gt;Under utplasseringen var jeg med på å lage et automatisk oppsett som
+installerte OpenStack og tilhørende komponenter. Dette ble gjort ufifra
+et prosjekt på github som het
+&lt;a class="reference external" href="https://github.com/norcams/winch"&gt;winch&lt;/a&gt;. Som jeg tok opp i min
+forrige bloggpost ønsker jeg å samle alle OpenStack loggene på en og
+samme maskin. Derfor her jeg laget en ny branch i winch som inkluderer
+en monitoreringsnode. Denne noden vil være ansvarlig for alt som skjer
+med tanke på logginnsamling, parsing og visualisering av informasjon. Da
+er det viktig at verktøyene som skal gjøre dette blir installert på
+samme måte som tidligere, ved hjelp av puppetmoduler.&amp;nbsp; Da kan vi sette
+en ønsket tilstand og si at den nye noden skal være en
+monitoreringsnode.&lt;/p&gt;
+&lt;p&gt;Arbeidet med å puppetifisere alle verktøyene er kommet godt i gang. Har
+laget en manifest fil for logstash som kan sees
+&lt;a class="reference external" href="https://github.com/norcams/winch/blob/stable/icehouse-centos6-monitoring/puppet/manifests/logstash.pp"&gt;her&lt;/a&gt;.
+Denne vil benytte seg av puppet modulene lokalisert i puppet/modules og
+installere verktøyene med konfigurasjonsfiler spesifisert i manifestet.
+Det som gjenstår for at integreringen skal være komplett er å legge til
+de puppetmodulene jeg trenger. Disse er submoduler og blir derfor lagt
+til annerledes. Mer om dette i neste bloggpost.&lt;/p&gt;
+</summary><category term="github"></category><category term="logstash"></category><category term="puppet"></category><category term="winch"></category></entry></feed>

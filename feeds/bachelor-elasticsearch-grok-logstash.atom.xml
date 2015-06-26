@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/bachelor-elasticsearch-grok-logstash.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2015-03-31T14:58:00+02:00</updated><entry><title>Dag 6: Grok-filtre i Logstash</title><link href="http://blog.norcams.org/dag-6-grok-filtre-i-logstash.html" rel="alternate"></link><updated>2015-03-31T14:58:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-31:dag-6-grok-filtre-i-logstash.html</id><summary type="html">&lt;p&gt;For å kunne hente ut informasjon fra data som kommer inn i Logstash kan
+man benytte seg av grok-filtre. Grok-filtre er bygget på toppen av
+regulære uttrykk og på bakgrunn av dette kan man hente ut den
+informasjonen man ønsker, eksempelvis fra loggdata. For å hente ut
+relevante data er man avhengig av å vite noe om dataene på forhånd. For
+eksempel sier følgende logglinje hvilken dato hendelsen skjer på,
+hvilket loglevel informasjonen er i, hvilken tjeneste som genererer
+meldingen og hvilken instans i OpenStack meldingen omhandler. At en
+instans starter kan være nyttig informasjon dersom den ikke skulle komme
+opp som forventet.&lt;/p&gt;
+&lt;p&gt;2015-03-20T08:38:51+00:00 compute 2015-03-20 08:38:51.292 11139 AUDIT
+nova.compute.manager [req-414b1736-9bf6-4457-a848-1295ebb12d7c
+b251c86204eb44b6822a998da0d28ad4 1a49bb7c49914d96b95ade9b1345eac2]
+[instance: 4e86c611-0914-4da2-9ed4-4c2ca5529ffb] Rebooting instance&lt;/p&gt;
+&lt;p&gt;Ved hjelp av &lt;a class="reference external" href="http://grokdebug.herokuapp.com/"&gt;grok debugger&lt;/a&gt;har
+jeg laget et &lt;a class="reference external" href="http://paste.debian.net/164129/"&gt;filter&lt;/a&gt; som henter ut
+informasjonen og gjør den svært oversiktlig og enkel å organisere. Etter
+at informasjonen er kommet gjennom filteret ser den slik ut:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+{
+  &amp;quot;openstack_hostname&amp;quot;: [
+    &amp;quot;compute&amp;quot;
+  ],
+  &amp;quot;timestamp&amp;quot;: [
+    &amp;quot;2015-03-20 08:38:51.292&amp;quot;
+  ],
+  &amp;quot;openstack_pid&amp;quot;: [
+    &amp;quot; 11139&amp;quot;
+  ],
+  &amp;quot;openstack_loglevel&amp;quot;: [
+    &amp;quot;AUDIT&amp;quot;
+  ],
+  &amp;quot;openstack_program&amp;quot;: [
+    &amp;quot;nova.compute.manager &amp;quot;
+  ],
+  &amp;quot;request_id_list&amp;quot;: [
+    &amp;quot;414b1736-9bf6-4457-a848-1295ebb12d7c&amp;quot;,
+    &amp;quot;1a49bb7c49914d96b95ade9b1345eac2&amp;quot;
+  ],
+  &amp;quot;openstack_instance_id&amp;quot;: [
+    &amp;quot;4e86c611-0914-4da2-9ed4-4c2ca5529ffb&amp;quot;
+  ],
+  &amp;quot;openstack_instance_action&amp;quot;: [
+    &amp;quot;Rebooting instance&amp;quot;
+  ]
+}
+&lt;/pre&gt;
+&lt;p&gt;Dette sendes så videre fra Logstash til Elasticsearch der man kan søke
+opp spesifikke data og visualisere dette på mange ulike måter.
+Visualisering vil bli et eget tema på bloggen senere.&lt;/p&gt;
+</summary><category term="elasticsearch"></category><category term="grok"></category><category term="informasjon"></category><category term="logstash"></category></entry></feed>

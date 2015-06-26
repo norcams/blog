@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/ceph-redhat-storage.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2014-10-24T06:58:00+02:00</updated><entry><title>Dag 22: Installering av Ceph kluster</title><link href="http://blog.norcams.org/dag-22-installering-av-ceph-kluster.html" rel="alternate"></link><updated>2014-10-24T06:58:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-10-24:dag-22-installering-av-ceph-kluster.html</id><summary type="html">&lt;p&gt;Agenda i dag var å få lest litt mer om filsystemet Ceph.
+&lt;a class="reference external" href="http://ceph.com/"&gt;Ceph&lt;/a&gt; er et objekt basert filsystem som replikerer
+sine data over et lagringskluster. Det tar vekk behovet for et
+tradisjonelt SAN. Filsystemet ble utviklet i 2007, og ble i Mai i år
+kjøpt opp av
+&lt;a class="reference external" href="http://ceph.com/community/red-hat-to-acquire-inktank/"&gt;RedHat.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I prosjektet har vi lyst å deployere Ceph ved bruk av Puppet moduler.
+For å få en så knirkefri installasjon som overhodet mulig kommer vi til
+å bruke samme utviklere som laget OpenStack puppet modulene vi benyttet
+tidligere. Stackforge utviklerne har mye spennende GitHub prosjekter
+innenfor OpenStack og dens komponenter. For de som er interessert i å
+sjekke ut Ceph repositoriet kan ta en kikk
+&lt;a class="reference external" href="https://github.com/stackforge/puppet-ceph/"&gt;her&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I første omgang har vi deployert et Ceph kluster manuelt for å få et
+innblikk i hvordan dette fungerer bit for bit før vi begynner å bruke
+puppet modulene. Det er mye god dokumentasjon som ligger ute på
+hjemmesidene til Ceph, vi begynte med følgende
+&lt;a class="reference external" href="http://docs.ceph.com/docs/master/start/quick-start-preflight/"&gt;&amp;quot;quick-start-preflight&amp;quot;&lt;/a&gt;.
+Deretter ble klusteret installert ved å følge
+&lt;a class="reference external" href="http://docs.ceph.com/docs/master/start/quick-ceph-deploy/"&gt;&amp;quot;quick-start-deploy&amp;quot;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Et kjørende kluster can for eksempel se slik ut:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/10/ceph-cluster.png"&gt;&lt;img alt="ceph-cluster" src="http://openstack.b.uib.no/files/2014/10/ceph-cluster.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+</summary><category term="ceph"></category><category term="RedHat"></category><category term="Stackforge"></category><category term="storage"></category></entry></feed>

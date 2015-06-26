@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/bachelor-blade-server-monitorering-openstack-overvakning-prosjekt.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2015-03-06T07:41:00+01:00</updated><entry><title>Dag 0: Oppsummering</title><link href="http://blog.norcams.org/dag-0-oppsummering.html" rel="alternate"></link><updated>2015-03-06T07:41:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-06:dag-0-oppsummering.html</id><summary type="html">&lt;p&gt;Denne bloggposten er en oppsummering av arbeidet som har blitt gjort før
+forprosjektet i bacheloroppgaven har kommet i gang.&lt;/p&gt;
+&lt;p&gt;I henhold til problemstillingen skal jeg kartlegge forskjellige
+monitoreringsverktøy og teste bruken av disse. Dette er arbeid som jeg
+har kommet godt i gang og jeg har fått tilegnet med rimelig god oversikt
+over forskjellige
+&lt;a class="reference external" href="https://wiki.openstack.org/wiki/Operations/Tools"&gt;verktøy&lt;/a&gt; som
+eksisterer for bruk i OpenStack per i dag. Videre skal jeg også belyse
+fordeler og ulemper med forskjellige overvåkningsverktøy. Hva passer
+best til vårt bruk? Er noen verktøy bedre for sky enn for tradisjonell
+bruk?
+Så langt kan jeg se klare fordeler med enkelte verktøy som jeg linket
+til tidligere. Verktøene er godt vedlikeholdte, populære og de er alle
+av åpen kildekode. Sistnevnte punkt tillater meg i aller største grad å
+spesialtilpasse verktøyene til mitt formål. Jeg har muligheten til å få
+ut den informasjonen som er av relevans for å kunne identifisere og løse
+problemer som oppstår. I tillegg til at jeg veldig enkelt kan tagge
+informasjon som ikke er av relevans som unødvendig slik at dette ikke
+overskygger faktiske problemer som eventuelt kan forekomme.&lt;/p&gt;
+&lt;p&gt;Dette har gjort jobben med å finne et verktøy som passer
+problembeskrivelsen noe enklere. Det er ikke alle verktøy en vil ha
+mulighet til å spesialtilpasse i så stor grad, og disse verktøyene vil
+naturligvis bli valgt bort.&lt;/p&gt;
+&lt;p&gt;Jeg også fått tildelt en egen blade server der uttestingen av
+forskjellige monitoreringsverktøy skal foregå. Blade serveren har
+betydelige ressurser som er i stand til å simulere et OpenStack miljø i
+mye større grad enn det arbeidsstasjonen min til nå har hatt mulighet
+for. Dette gjør testingen av potensielle verktøy enklere i tillegg til
+at dataene jeg kommer til å teste med blir mest mulig reelle.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.52.jpg"&gt;&lt;img alt="2015-02-24 13.13.52" src="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.52-300x169.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.37.jpg"&gt;&lt;img alt="2015-02-24 13.13.37" src="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.37-300x169.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+</summary><category term="bachelor"></category><category term="blade server"></category><category term="prosjekt"></category><category term="testing"></category></entry></feed>

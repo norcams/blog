@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="norcams, culture automation measurement sharing">
+
+        <link rel="alternate"  href="http://blog.norcams.org/feeds/all.atom.xml" type="application/atom+xml" title="norcams Full Atom Feed"/>
+
+        <title>Dag 5: Prøving og feiling med packstack --allinone // norcams // culture automation measurement sharing</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+                </a>
+                <h2 class="article-info">ksk037</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Thu 21 August 2014</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Dag 5: Prøving og feiling med packstack --allinone</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.norcams.org/tag/centos.html">centos</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/openstack.html">openstack</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/packstack.html">packstack</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/rdo.html">rdo</a>
+                        </p>
+                </header>
+            </section>
+            <p>15 august. De tre hovedkomponentene til OpenStack hadde nå blitt
+installert med packstack til å kjøre på en og samme node. &nbsp;Dette burde
+ikke by på store problemer da RDO pakken fra Red Hat er godt testet og
+fungerer i mange installasjoner av OpenStack der ute i dag.</p>
+<p>Alle instanser som kjører innad i OpenStack rammeverket kan
+administreres via et webpanel kalt
+<a class="reference external" href="https://wiki.openstack.org/wiki/Horizon">Horizon</a>. Panelet gir en
+god oversikt over antall instanser, deres ressursbruk, last, og annen
+info. På sikt skal både administratorer og vanlige brukere kunne logge
+seg inn her og administrere sine egne maskiner til forskjellige&nbsp;formål.
+Et lite utdrag fra Horizon:</p>
+<p><a class="reference external" href="http://openstack.b.uib.no/files/2014/08/Horizon-overview.png"><img alt="Horizon-overview" src="http://openstack.b.uib.no/files/2014/08/Horizon-overview-300x132.png" /></a></p>
+<p>Vi fikk fortsatt problemer med å lage og starte instanser med å kjøre de
+tre hovedkomponentene på en og samme node. Mistenker at dette kan ha med
+lite tilgjengelige ressurser siden vi kjører på en virtuell maskin
+gjennom VirtualBox. For å løse denne problematikken ble svaret å lage en
+ekstra compute node&nbsp;på en fysisk maskin. Med dette ville vi unngå
+problematikken vi hadde hatt til nå, i tillegg til at vi kan lage flere
+maskiner siden vi har mer ressurser tilgjengelig.</p>
+<p>For å installere en egen compute node trenger man, (i vårt tilfelle) en
+nyinstallert <a class="reference external" href="http://en.wikipedia.org/wiki/CentOS">CentOS</a>&nbsp;samt
+packstack-answer filen vi brukte når vi installerte hoved noden. Da vil
+packstack bruke de samme passordene til de ulike komponentene og compute
+noden vil peke tilbake til controller noden slik at disse vil snakke
+sammen.</p>
+<p>Mye av installasjon av compute noden er lik som forrige gang. Når alt i
+konfigurasjonsfilen er klart blir det kjørt på samme måte som tidligere
+med en liten endring. Istedenfor:</p>
+<pre class="literal-block">
+packstack --allinone
+</pre>
+<p>Blir det nå spesifisert en svarfil som brukes i installasjonen:</p>
+<blockquote>
+<pre class="literal-block">
+packstack --answer-file=$youranswerfile
+</pre>
+</blockquote>
+
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "norcams"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; norcams &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

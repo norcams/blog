@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="norcams, culture automation measurement sharing">
+
+        <link rel="alternate"  href="http://blog.norcams.org/feeds/all.atom.xml" type="application/atom+xml" title="norcams Full Atom Feed"/>
+
+        <title>Dag 6: Grok-filtre i Logstash // norcams // culture automation measurement sharing</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+                </a>
+                <h2 class="article-info">ksk037</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Tue 31 March 2015</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Dag 6: Grok-filtre i Logstash</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.norcams.org/tag/elasticsearch.html">elasticsearch</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/grok.html">grok</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/informasjon.html">informasjon</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/logstash.html">logstash</a>
+                        </p>
+                </header>
+            </section>
+            <p>For å kunne hente ut informasjon fra data som kommer inn i Logstash kan
+man benytte seg av grok-filtre. Grok-filtre er bygget på toppen av
+regulære uttrykk og på bakgrunn av dette kan man hente ut den
+informasjonen man ønsker, eksempelvis fra loggdata. For å hente ut
+relevante data er man avhengig av å vite noe om dataene på forhånd. For
+eksempel sier følgende logglinje hvilken dato hendelsen skjer på,
+hvilket loglevel informasjonen er i, hvilken tjeneste som genererer
+meldingen og hvilken instans i OpenStack meldingen omhandler. At en
+instans starter kan være nyttig informasjon dersom den ikke skulle komme
+opp som forventet.</p>
+<p>2015-03-20T08:38:51+00:00 compute 2015-03-20 08:38:51.292 11139 AUDIT
+nova.compute.manager [req-414b1736-9bf6-4457-a848-1295ebb12d7c
+b251c86204eb44b6822a998da0d28ad4 1a49bb7c49914d96b95ade9b1345eac2]
+[instance: 4e86c611-0914-4da2-9ed4-4c2ca5529ffb] Rebooting instance</p>
+<p>Ved hjelp av <a class="reference external" href="http://grokdebug.herokuapp.com/">grok debugger</a>har
+jeg laget et <a class="reference external" href="http://paste.debian.net/164129/">filter</a> som henter ut
+informasjonen og gjør den svært oversiktlig og enkel å organisere. Etter
+at informasjonen er kommet gjennom filteret ser den slik ut:</p>
+<pre class="literal-block">
+{
+  &quot;openstack_hostname&quot;: [
+    &quot;compute&quot;
+  ],
+  &quot;timestamp&quot;: [
+    &quot;2015-03-20 08:38:51.292&quot;
+  ],
+  &quot;openstack_pid&quot;: [
+    &quot; 11139&quot;
+  ],
+  &quot;openstack_loglevel&quot;: [
+    &quot;AUDIT&quot;
+  ],
+  &quot;openstack_program&quot;: [
+    &quot;nova.compute.manager &quot;
+  ],
+  &quot;request_id_list&quot;: [
+    &quot;414b1736-9bf6-4457-a848-1295ebb12d7c&quot;,
+    &quot;1a49bb7c49914d96b95ade9b1345eac2&quot;
+  ],
+  &quot;openstack_instance_id&quot;: [
+    &quot;4e86c611-0914-4da2-9ed4-4c2ca5529ffb&quot;
+  ],
+  &quot;openstack_instance_action&quot;: [
+    &quot;Rebooting instance&quot;
+  ]
+}
+</pre>
+<p>Dette sendes så videre fra Logstash til Elasticsearch der man kan søke
+opp spesifikke data og visualisere dette på mange ulike måter.
+Visualisering vil bli et eget tema på bloggen senere.</p>
+
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "norcams"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; norcams &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="norcams, culture automation measurement sharing">
+
+        <link rel="alternate"  href="http://blog.norcams.org/feeds/all.atom.xml" type="application/atom+xml" title="norcams Full Atom Feed"/>
+
+        <title>puppet tag // norcams // culture automation measurement sharing</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+<div class="sidebar pure-u">
+    <div class="cover-img" style="background-image: url('http://i.imgur.com/sjoyqiP.jpg')">
+        <div class="cover-body">
+            <header class="header">
+                <hgroup>
+                    <h1 class="brand-main"><a href="/">norcams</a></h1>
+                    <p class="tagline">culture automation measurement sharing</p>
+                    <p class="social">
+                        <a href="http://plus.norcams.org">
+                            <i class="fa fa-google-plus fa-3x"></i>
+                        </a>
+                        <a href="https://github.com/norcams/">
+                            <i class="fa fa-github fa-3x"></i>
+                        </a>
+                        <a href="https://twitter.com/norcams">
+                            <i class="fa fa-twitter-square fa-3x"></i>
+                        </a>
+                        <a href="/feeds/all.atom.xml">
+                            <i class="fa fa-rss fa-3x"></i>
+                        </a>
+                    <p>
+                </hgroup>
+            </header>
+        </div>
+    </div>
+</div>    <div class="pure-u-1">
+        <div class="content">
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">
+Posts tagged 'puppet'                </h1>
+<section class="post">
+    <header class="post-header">
+        <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+        </a>
+        <h3><a class="post-title" href="http://blog.norcams.org/dag-10-oppsett-av-graphite-og-grafana.html">Dag 10: Oppsett av Graphite og Grafana</a></h3>
+            <p class="post-meta"><p>Logstash, Kibana og Elasticsearch kjører per i dag på en egen node i
+winch. For at lasten ikke skal bli for stor på denne virtuelle noden
+hadde jeg i første omgang tenkt å lage en ny node for
+grafvirtualisering. Grafnoden skal kjøre verktøyet Graphite, som støtter
+metrics som kommer fra ...</p></p>
+            <p class="post-meta">
+                in <a href="http://blog.norcams.org/category/bachelor-elasticsearch-grafana-graphite-kibana-logstash-monitorering.html">bachelor, elasticsearch, grafana, graphite, kibana, logstash, monitorering</a> &middot; Tue 14 April 2015
+            </p>
+    </header>
+</section><section class="post">
+    <header class="post-header">
+        <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+        </a>
+        <h3><a class="post-title" href="http://blog.norcams.org/dag-3-submoduler-i-git-og-installasjon-pa-blade-server.html">Dag 3: Submoduler i git og installasjon på blade server</a></h3>
+            <p class="post-meta"><p>I forrige uke fikk jeg problemer med å legge til enkelte puppetmoduler
+til monitoreringsbranchen på github. Etter en del feilsøking endte jeg
+opp med å legge disse til som submoduler. Fordelen med submoduler er at
+man slipper å måtte oppdatere modulene i sitt eget repository. Ved å
+kjøre kommandoen nedenfor ...</p></p>
+            <p class="post-meta">
+                in <a href="http://blog.norcams.org/category/bachelor-blade-server-github-logstash-monitorering-winch.html">bachelor, blade server, github, logstash, monitorering, winch</a> &middot; Sat 14 March 2015
+            </p>
+    </header>
+</section><section class="post">
+    <header class="post-header">
+        <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+        </a>
+        <h3><a class="post-title" href="http://blog.norcams.org/dag-2-integrering-av-logstash-i-winch.html">Dag 2: Integrering av logstash i &quot;winch&quot;</a></h3>
+            <p class="post-meta"><p>Under utplasseringen var jeg med på å lage et automatisk oppsett som
+installerte OpenStack og tilhørende komponenter. Dette ble gjort ufifra
+et prosjekt på github som het
+<a class="reference external" href="https://github.com/norcams/winch">winch</a>. Som jeg tok opp i min
+forrige bloggpost ønsker jeg å samle alle OpenStack loggene på en og
+samme maskin. Derfor her ...</p></p>
+            <p class="post-meta">
+                in <a href="http://blog.norcams.org/category/bachelor-elasticsearch-graphite-kibana-logstash-monitorering-puppet-winch.html">bachelor, elasticsearch, graphite, kibana, logstash, monitorering, puppet, winch</a> &middot; Sat 07 March 2015
+            </p>
+    </header>
+</section><section class="post">
+    <header class="post-header">
+        <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+        </a>
+        <h3><a class="post-title" href="http://blog.norcams.org/dag-17-installasjon-av-compute-og-controller-node-ved-hjelp-av-foreman.html">Dag 17: Installasjon av compute og controller node ved hjelp av Foreman</a></h3>
+            <p class="post-meta"><p>Vi fortsatte med feilsøkingen fra fredag om hvorfor puppet modulene fra
+&quot;winch&quot; ikke ville fungere når vi provisjonerte med Foreman. De hadde
+virket før og det ga lite mening at de ikke skulle virke nå som Foreman
+var med i bildet.</p>
+<p>Det viste seg at feilen lå spredt i flere ...</p></p>
+            <p class="post-meta">
+                in <a href="http://blog.norcams.org/category/feilsoking-foreman-openstack-puppet-winch.html">feilsøking, foreman, openstack, puppet, winch</a> &middot; Thu 02 October 2014
+            </p>
+    </header>
+</section><section class="post">
+    <header class="post-header">
+        <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+        </a>
+        <h3><a class="post-title" href="http://blog.norcams.org/dag-11-videre-oppdatering-av-winch-repository.html">Dag 11: Videre oppdatering av &quot;winch&quot; repository</a></h3>
+            <p class="post-meta"><p>Siden &quot;winch&quot; ble laget for å støtte en eldre versjon av OpenStack ble
+det nødvendig å oppdatere flere av puppet modulene til å nyeste versjon.
+Uten dette feilet installasjonen momentant og det var ikke mulig å
+provisjonere opp maskiner med puppet når modulene var utdaterte. Etter
+at disse ble oppdatert ...</p></p>
+            <p class="post-meta">
+                in <a href="http://blog.norcams.org/category/compute-node-nettverk-openstack-winch.html">compute node, nettverk, openstack, winch</a> &middot; Mon 08 September 2014
+            </p>
+    </header>
+</section><div class="pagination-wrapper content-subhead">
+</div><footer class="footer">
+    <p>&copy; norcams &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

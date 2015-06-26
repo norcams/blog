@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/bachelor-blade-server-logstash-monitorering-winch.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2015-03-14T23:13:00+01:00</updated><entry><title>Dag 4: Videre konfigurasjon av winch</title><link href="http://blog.norcams.org/dag-4-videre-konfigurasjon-av-winch.html" rel="alternate"></link><updated>2015-03-14T23:13:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-14:dag-4-videre-konfigurasjon-av-winch.html</id><summary type="html">&lt;p&gt;Dagen ble benyttet til å teste at provisjoneringen av controller og
+compute fungerer sammen med logstash. Det er mye av konfigurasjonen som
+utføres manuelt for øyeblikket. Blant annet må alle OpenStack tjenestene
+manuelt endres for at de skal logge til syslog og sende til logstash
+noden som tar imot og parser loggende.&lt;/p&gt;
+&lt;p&gt;Førsteprioritet er uansett å få opp et fysisk testmiljø der jeg har
+muligheten til å starte flere instanser og sjekke at all informasjon som
+blir generert i loggfilene blir samlet og håndtert. Videre må
+nøkkelfunksjonalitet i systemet testes på en slik måte at loggdataene
+som blir generert kan si noe om hvilken tilstand systemet er i. Om
+tjenester er oppe og går, om det har forekommet feil den siste tiden
+osv.&lt;/p&gt;
+</summary><category term="blade server"></category><category term="winch"></category></entry></feed>

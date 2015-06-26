@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/bachelor-grok-logstash-monitorering.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2015-03-31T20:08:00+02:00</updated><entry><title>Dag 8: Filtrering av unyttig informasjon</title><link href="http://blog.norcams.org/dag-8-filtrering-av-unyttig-informasjon.html" rel="alternate"></link><updated>2015-03-31T20:08:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-31:dag-8-filtrering-av-unyttig-informasjon.html</id><summary type="html">&lt;p&gt;Ikke alle data som kommer inn gjennom Logstash er nyttige data. Data som
+ikke gir noen nyttig informasjon eller rett og slett bare er støy er
+nødt til å skjules eller filtreres bort. I Logstash kan alle datafelter
+som blir opprettet når man lager filter søkes i. På bakgrunn av dette
+kan man ved hjelp av regulære uttrykk søke etter informasjon man vil
+filtrere bort slik at dette ikke kommer med. Hvis man for eksempel ikke
+skulle ønske å se alle infomeldinger som et system genererer kan dette
+filtreres bort på denne måten.&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="100%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p class="first"&gt;if &amp;quot;INFO&amp;quot; in [openstack_loglevel] {drop {}&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;p class="last"&gt;}&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Videre vil jeg ta en fullstendig gjennomgang av hva informasjon som skal
+filtreres bort slik at dette ikke overskygger viktige data i henhold til
+problemstillingen.&lt;/p&gt;
+</summary><category term="grok"></category><category term="logstash"></category><category term="regulære uttrykk"></category></entry></feed>

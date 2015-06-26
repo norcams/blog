@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/bachelor-elasticsearch-elasticsearch-grok-kibana-logstash-logstash-monitorering.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2015-03-31T19:49:00+02:00</updated><entry><title>Dag 7: Filtrering av instanshendelser</title><link href="http://blog.norcams.org/dag-7-filtrering-av-instanshendelser.html" rel="alternate"></link><updated>2015-03-31T19:49:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-31:dag-7-filtrering-av-instanshendelser.html</id><summary type="html">&lt;p&gt;Dagen ble benyttet til å lage grok-filtre som henter ut informasjon fra
+OpenStack-instanser. Om en instans blir opprettet, slettet, rebootet,
+re-initialisert, utvidet eller skulle få en feil vil dette bli truffet
+av filteret og vi vil kunne se denne hendelsen og all informasjon i
+webpanelet Kibana.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/logstash-output.png"&gt;&lt;img alt="logstash-output" src="http://openstack.b.uib.no/files/2015/03/logstash-output-300x129.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Her ser vi at all informasjon som jeg publisert i forrige bloggpost har
+kommet inn som egne felter. Disse kan nå søkes opp i og en kan
+visualisere dette på forskjellige måter. Neste steg blir å se på andre
+data i OpenStack og hvordan vi kan hente ut informasjon om opprettelser
+av eksempelvis nettverk og rutere.&lt;/p&gt;
+</summary><category term="elasticsearch"></category><category term="logstash"></category><category term="neutron"></category></entry></feed>

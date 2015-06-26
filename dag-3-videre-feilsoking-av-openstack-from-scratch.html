@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="norcams, culture automation measurement sharing">
+
+        <link rel="alternate"  href="http://blog.norcams.org/feeds/all.atom.xml" type="application/atom+xml" title="norcams Full Atom Feed"/>
+
+        <title>Dag 3: Videre feilsøking av OpenStack from scratch // norcams // culture automation measurement sharing</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+                </a>
+                <h2 class="article-info">ksk037</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Wed 20 August 2014</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Dag 3: Videre feilsøking av OpenStack from scratch</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.norcams.org/tag/feilsoking.html">feilsøking</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/glance.html">glance</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/nova.html">nova</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/ofs.html">ofs</a>
+                        </p>
+                </header>
+            </section>
+            <p>8. august gikk mye av tiden til å feilsøke på hvorfor installasjonen fra
+gårsdagen ikke ville lage instanser. &nbsp;OpenStack from scratch har en
+rekke tester en kan kjøre når&nbsp;installasjonen er ferdig. Testene ligger
+her:&nbsp;<a class="reference external" href="https://github.com/norcams/ofs/tree/master/tests">https://github.com/norcams/ofs/tree/master/tests</a></p>
+<p>For eksempel vil
+<a class="reference external" href="https://github.com/norcams/ofs/blob/master/tests/01-import_image.sh">import_image.sh</a>&nbsp;importere
+et image som den virtuelle maskinen i instansen vil starte fra. Dette
+for å verifisere at glance image service fra OpenStack fungerer som det
+skal. I vårt tilfelle feilet
+<a class="reference external" href="https://github.com/norcams/ofs/blob/master/tests/04-boot.sh">04-boot.sh</a>&nbsp;som
+bruker komponenten nova til å starte den virtuelle maskinen.&nbsp;Det ble
+etterhvert mye lesing i nova loggene for å finne ut av feilen. Jeg hadde
+funnet frem til flere alternative løsninger fra nettet for å gjøre ting
+i en annen rekkefølge. Samt at jeg reinstallerte de tre
+&nbsp;hovedkomponentene network storage og compute for å teste ut noen av
+løsningene.&nbsp;Dette ga ikke noen resultater.</p>
+<p>Det har uansett vært interessant å ha installert dette fra bunnen av,
+selv om vi visste på forhånd at det ville være noen feil med
+installasjonen. Jeg har blitt fortrolig med flere av kommandoene på de
+verktøyene som er i bruk samtidig som jeg har fått et greit overblikk på
+hvordan komponentene fungerer sammen.&nbsp;I neste uke har vi tenkt å gå
+videre med en annen installasjon av OpenStack
+nemlig&nbsp;<a class="reference external" href="http://openstack.redhat.com/Frequently_Asked_Questions#What_is_RDO.3F">RDO</a>.</p>
+
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "norcams"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; norcams &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

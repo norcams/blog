@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="norcams, culture automation measurement sharing">
+
+        <link rel="alternate"  href="http://blog.norcams.org/feeds/all.atom.xml" type="application/atom+xml" title="norcams Full Atom Feed"/>
+
+        <title>Dag 18: Oppretting av virtualbox maskiner uten vagrant // norcams // culture automation measurement sharing</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+                </a>
+                <h2 class="article-info">ksk037</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Wed 08 October 2014</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Dag 18: Oppretting av virtualbox maskiner uten vagrant</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.norcams.org/tag/compute.html">compute</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/controller.html">controller</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/foreman.html">foreman</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/vagrant.html">vagrant</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/winch.html">winch</a>
+                        </p>
+                </header>
+            </section>
+            <p>Onsdag 1. oktober var offisiel kickoff for UH-Sky prosjektet som jeg er
+en del av. Fremover vil det være mye større aktivitet på github i form
+av endringer enn tidligere. Til nå har arbeidet med &quot;winch&quot; vært preget
+av mye feilsøking og manuell konfigurasjon. Det vi ønsker å oppnå er å
+lage et helautomatisk oppsett for å deployere OpenStack i et testmiljø.</p>
+<p>For å unngå en del problemer vi har opplevd tidligere har vi besluttet å
+lage et script som oppretter virtualbox maskiner uten innblanding fra
+vagrant. Vagrant låser blant annet eth0 interfacet og setter dette til
+et NAT'et interface. Dette har ført til at maskiner ikke får TFTP bootet
+når skal provisjonere disse med Foreman. I tillegg har vi fått en del
+linux bro problematikk og det har krevd mye feilsøking for å få ting til
+å fungere som de skal. For nå har jeg laget et script som vil opprette
+de to komponentene
+<a class="reference external" href="https://github.com/norcams/winch/blob/master/vagrant/create-vbox-compute.sh">compute</a>og
+<a class="reference external" href="https://github.com/norcams/winch/blob/master/vagrant/create-vbox-controller.sh">controller</a>.
+Senere vil vi nok også utvide scriptet til å gjelde for storage og
+network også.</p>
+
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "norcams"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; norcams &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

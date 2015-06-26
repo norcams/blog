@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="norcams, culture automation measurement sharing">
+
+        <link rel="alternate"  href="http://blog.norcams.org/feeds/all.atom.xml" type="application/atom+xml" title="norcams Full Atom Feed"/>
+
+        <title>Dag 24: Feil med opprettelse av første monitoreringsnode // norcams // culture automation measurement sharing</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+                </a>
+                <h2 class="article-info">ksk037</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Wed 05 November 2014</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Dag 24: Feil med opprettelse av første monitoreringsnode</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.norcams.org/tag/ceph.html">ceph</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/storage.html">storage</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/winch.html">winch</a>
+                        </p>
+                </header>
+            </section>
+            <p>Ved opprettelse av første monitoreringsnode, ceph01 feiler kjøringen av
+puppet modulene. Fra det manuelle oppsettet lærte vi at den første noden
+setter inn nøkler og passord på de andre nodene i klusteret.</p>
+<p><em>Error:
+/Stage[main]/Ceph::Profile::Mon/Ceph::Key[client.bootstrap-osd]/Exec[ceph-injectkey-client.bootstrap-osd]/</em></p>
+<p>Når de to andre nodene ceph02 og ceph03 blir provisjonert så skjer ikke
+denne feilen. Ting kan tyde på at nodene er svært avhenige av hverandre
+når de skal provisjoneres. Ceph01 kan deretter provisjoneres på nytt
+etter at andre og tredje node er kommet på. Da fungerer det uten
+problemer og vi kan se utifra ceph -status at vi har et aktivt og
+kjørende kluster.</p>
+<blockquote>
+cluster 4b5c8c0a-ff60-454b-a1b4-9747aa737d19
+health HEALTH_WARN clock skew detected on mon.ceph02, mon.ceph03
+monmap e2: 3 mons at
+{ceph01=172.16.33.13:6789/0,ceph02=172.16.33.14:6789/0,ceph03=172.16.33.15:6789/0},
+election epoch 6, quorum 0,1,2 ceph01,ceph02,ceph03
+osdmap e17: 6 osds: 6 up, 6 in
+pgmap v24: 192 pgs, 3 pools, 0 bytes data, 0 objects
+68720 MB used, 149 GB / 227 GB avail
+192 active+clean</blockquote>
+
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "norcams"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; norcams &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

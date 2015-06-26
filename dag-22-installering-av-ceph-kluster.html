@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="norcams, culture automation measurement sharing">
+
+        <link rel="alternate"  href="http://blog.norcams.org/feeds/all.atom.xml" type="application/atom+xml" title="norcams Full Atom Feed"/>
+
+        <title>Dag 22: Installering av Ceph kluster // norcams // culture automation measurement sharing</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+                </a>
+                <h2 class="article-info">ksk037</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Fri 24 October 2014</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Dag 22: Installering av Ceph kluster</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="http://blog.norcams.org/tag/ceph.html">ceph</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/redhat.html">RedHat</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/stackforge.html">Stackforge</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/storage.html">storage</a>
+                        </p>
+                </header>
+            </section>
+            <p>Agenda i dag var å få lest litt mer om filsystemet Ceph.
+<a class="reference external" href="http://ceph.com/">Ceph</a> er et objekt basert filsystem som replikerer
+sine data over et lagringskluster. Det tar vekk behovet for et
+tradisjonelt SAN. Filsystemet ble utviklet i 2007, og ble i Mai i år
+kjøpt opp av
+<a class="reference external" href="http://ceph.com/community/red-hat-to-acquire-inktank/">RedHat.</a></p>
+<p>I prosjektet har vi lyst å deployere Ceph ved bruk av Puppet moduler.
+For å få en så knirkefri installasjon som overhodet mulig kommer vi til
+å bruke samme utviklere som laget OpenStack puppet modulene vi benyttet
+tidligere. Stackforge utviklerne har mye spennende GitHub prosjekter
+innenfor OpenStack og dens komponenter. For de som er interessert i å
+sjekke ut Ceph repositoriet kan ta en kikk
+<a class="reference external" href="https://github.com/stackforge/puppet-ceph/">her</a>.</p>
+<p>I første omgang har vi deployert et Ceph kluster manuelt for å få et
+innblikk i hvordan dette fungerer bit for bit før vi begynner å bruke
+puppet modulene. Det er mye god dokumentasjon som ligger ute på
+hjemmesidene til Ceph, vi begynte med følgende
+<a class="reference external" href="http://docs.ceph.com/docs/master/start/quick-start-preflight/">&quot;quick-start-preflight&quot;</a>.
+Deretter ble klusteret installert ved å følge
+<a class="reference external" href="http://docs.ceph.com/docs/master/start/quick-ceph-deploy/">&quot;quick-start-deploy&quot;.</a></p>
+<p>Et kjørende kluster can for eksempel se slik ut:</p>
+<p><a class="reference external" href="http://openstack.b.uib.no/files/2014/10/ceph-cluster.png"><img alt="ceph-cluster" src="http://openstack.b.uib.no/files/2014/10/ceph-cluster.png" /></a></p>
+
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "norcams"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; norcams &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

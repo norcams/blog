@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/openstack-uib.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2014-08-18T12:28:00+02:00</updated><entry><title>Dag 1: Installasjon av arbeidsplass ved UIB</title><link href="http://blog.norcams.org/dag-1-installasjon-av-arbeidsplass-ved-uib.html" rel="alternate"></link><updated>2014-08-18T12:28:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-08-18:dag-1-installasjon-av-arbeidsplass-ved-uib.html</id><summary type="html">&lt;p&gt;Fredag 4. august var første arbeidsdag på IT-avdelingen ved UIB. Jeg har
+tidligere jobbet her som lærling og ble godt tatt imot av både gamle og
+nye kolleger. Jeg skal jobbe med Iaas (Infrastructure as a service) og
+mine arbeidsoppgaver vil omfatte nettverk, lagring, compute og
+automasjon innenfor OpenStack rammeverket.&lt;/p&gt;
+&lt;p&gt;Som første dager flest gikk mesteparten av tiden til å installere
+arbeidsstasjonen samt å finne to skjermer som ville passe til.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/08/2014-08-01-14.43.38.jpg"&gt;&lt;img alt="2014-08-01 14.43.38" src="http://openstack.b.uib.no/files/2014/08/2014-08-01-14.43.38-300x168.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I mangel på kabinett ble arbeidsstasjonen min seende slik ut:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/08/2014-08-18-14.09.08.jpg"&gt;&lt;img alt="2014-08-18 14.09.08" src="http://openstack.b.uib.no/files/2014/08/2014-08-18-14.09.08-300x168.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+</summary><category term="openstack"></category><category term="pc"></category><category term="uib"></category></entry></feed>

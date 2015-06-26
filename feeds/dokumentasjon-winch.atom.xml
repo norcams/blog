@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/dokumentasjon-winch.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2014-11-14T07:09:00+01:00</updated><entry><title>Dag 27: Oppdatering av "winch" dokumentasjon</title><link href="http://blog.norcams.org/dag-27-oppdatering-av-winch-dokumentasjon.html" rel="alternate"></link><updated>2014-11-14T07:09:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-11-14:dag-27-oppdatering-av-winch-dokumentasjon.html</id><summary type="html">&lt;p&gt;Mesteparten av dagen ble benyttet til å lese over dokumentasjonen til
+&amp;quot;winch&amp;quot;.&amp;nbsp; Jeg har fått i oppgave å oppdatere dokumentasjonen slik at den
+kan brukes til slik som &amp;quot;winch&amp;quot; er nå.&lt;/p&gt;
+&lt;p&gt;I dette arbeidet kommer jeg til å bruke et verktøy som heter ReText.
+Dette er et tekstredigeringsverktøy som gir direkte preview i programmet
+for hvordan teksten du redigerer vil bli seende ut. I motsening til
+andre editorer der en er tvunget av å måtte åpne siden i en nettleser
+for å se hvordan den ser&amp;nbsp; ut.&lt;/p&gt;
+&lt;p&gt;Dokumentasjonen finnes
+på&lt;a class="reference external" href="//winch.readthedocs.org/"&gt;http://winch.readthedocs.org/&lt;/a&gt;, flere
+oppdateringer vil skje de påfølgende ukene.&lt;/p&gt;
+</summary><category term="dokumentasjon"></category><category term="readthedocs"></category><category term="winch"></category></entry></feed>

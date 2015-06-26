@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/feilsoking-nettverk-openstack-winch.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2014-09-12T06:27:00+02:00</updated><entry><title>Dag 12: Feilsøking av "winch" installasjon</title><link href="http://blog.norcams.org/dag-12-feilsoking-av-winch-installasjon.html" rel="alternate"></link><updated>2014-09-12T06:27:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-09-12:dag-12-feilsoking-av-winch-installasjon.html</id><summary type="html">&lt;p&gt;Fra tidligere har vi ofte hatt problemer med å få instanser til å snakke
+med verden på utsiden. Dette har ofte krevd mer konfigurasjon og
+feilsøking enn først antatt. Denne gangen var intet unntak. Det ble mye
+repetering av OpenStack network in too much detail og sjekking av
+brannmurregler for å verifisere at alt var i orden.&lt;/p&gt;
+&lt;p&gt;Etter en god del feilsøking viste det seg til slutt å være at feilen
+oppstod på grunn av
+&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Vagrant_%28software%29"&gt;vagrant&lt;/a&gt;. Vi
+bruker vagrant til å lage virtuelle maskiner og denne hadde da stokket
+om på IP adressene til de forskjellige interfacene maskinene skulle ha.
+Derfor var det mye som ikke ble riktig og etterpå kunne maskinene komme
+på nett. Senere i uken ble også &amp;quot;winch&amp;quot; prosjektet oppdatert. Endringer
+kan sees &lt;a class="reference external" href="https://github.com/norcams/winch/tree/foreman"&gt;her&lt;/a&gt;.&lt;/p&gt;
+</summary><category term="feilsøking"></category><category term="nettverk"></category><category term="openstack"></category><category term="winch"></category></entry></feed>

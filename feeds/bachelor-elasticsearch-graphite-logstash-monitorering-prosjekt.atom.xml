@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/bachelor-elasticsearch-graphite-logstash-monitorering-prosjekt.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2015-03-03T10:03:00+01:00</updated><entry><title>Prosjektbeskrivelse bacheloroppgave</title><link href="http://blog.norcams.org/prosjektbeskrivelse-bacheloroppgave.html" rel="alternate"></link><updated>2015-03-03T10:03:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-03:prosjektbeskrivelse-bacheloroppgave.html</id><summary type="html">&lt;p&gt;Etter høstens utplassering har jeg fått lov til å skrive
+bacheloroppgaven min her på IT-avdelingen. I denne sammenhengen
+publiserer jeg prosjektbeskrivelsen i sin helhet som omhandler
+monitorering av OpenStack ved UiB. Jeg har også laget en ny side på
+bloggen øverst til høyre som alltid linker til prosjektbeskrivelsen.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/02/Prosjektbeskrivelse-bachelor-Kristian-Å.-Skurtveit.pdf"&gt;Prosjektbeskrivelse
+bachelorprosjekt&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Til nå har prosjektet kommet i gang og jeg har såvidt begynt å se på
+forskjellige løsninger i henhold til problemstillingen som kan brukes
+til å monitorere OpenStack. Videre vil jeg følge fremdriftsplanen i
+prosjektbeskrivelsen. Noen verktøy jeg så langt har fått kikket på:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Icinga (basert på Nagios)&lt;/li&gt;
+&lt;li&gt;Logstash&lt;/li&gt;
+&lt;li&gt;Elasticsearch / Kibana&lt;/li&gt;
+&lt;li&gt;Monasca&lt;/li&gt;
+&lt;li&gt;Ceilometer / graphite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Denne bloggen har tidligere vært brukt i utplasseringsfaget DAT156 og
+har hatt en bloggpost for hver dag. Bloggen vil nå bli brukt til
+bachelorprosjektet som varer frem til juni 2015. Og vil følge samme
+oppsett med en bloggpost for hver dag. Neste blogginnlegg vil begynne på
+dag 0 som oppsummerer arbeidet med oppgaven så langt.&lt;/p&gt;
+</summary><category term="bachelor"></category><category term="prosjekt"></category></entry></feed>

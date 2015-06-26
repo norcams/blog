@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/feilsoking-foreman-openstack-puppet-winch.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2014-10-02T10:43:00+02:00</updated><entry><title>Dag 17: Installasjon av compute og controller node ved hjelp av Foreman</title><link href="http://blog.norcams.org/dag-17-installasjon-av-compute-og-controller-node-ved-hjelp-av-foreman.html" rel="alternate"></link><updated>2014-10-02T10:43:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-10-02:dag-17-installasjon-av-compute-og-controller-node-ved-hjelp-av-foreman.html</id><summary type="html">&lt;p&gt;Vi fortsatte med feilsøkingen fra fredag om hvorfor puppet modulene fra
+&amp;quot;winch&amp;quot; ikke ville fungere når vi provisjonerte med Foreman. De hadde
+virket før og det ga lite mening at de ikke skulle virke nå som Foreman
+var med i bildet.&lt;/p&gt;
+&lt;p&gt;Det viste seg at feilen lå spredt i flere konfigurasjonsfiler, og dette
+gjorde at puppet modulene feilet på maskinene som Foreman installerte.
+Nå har det blitt gjort endringer i kickstart filene til Foreman for å
+gjøre at dette problemet ikke vil oppstå igjen. Nå var det mulig å
+installere både controller og compute noder ved hjelp av Foreman der
+alle puppet modulene blir installert.&lt;/p&gt;
+&lt;p&gt;Til nå har vi brukt vagrant og virtualbox for å lage og provisjonere
+maskiner. Vagrant legger opp et eth0 interface med en NAT adresse, men
+dette kludrer mye til det nettverksoppsettet vi ønsker. Derfor er neste
+steg nå å lage install script som kan lage og sette opp virtualbox
+maskiner for å unngå at eth0 inferfacet blir bundet opp til denne NAT
+adressen. Mer om dette på fredag.&lt;/p&gt;
+</summary><category term="foreman"></category><category term="puppet"></category><category term="winch"></category></entry></feed>

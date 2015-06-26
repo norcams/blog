@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="norcams, culture automation measurement sharing">
+
+        <link rel="alternate"  href="http://blog.norcams.org/feeds/all.atom.xml" type="application/atom+xml" title="norcams Full Atom Feed"/>
+
+        <title>Dag 23: Installering av Ceph kluster med hjelp av puppet-moduler // norcams // culture automation measurement sharing</title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pure.css">
+    <link rel="stylesheet" href="http://blog.norcams.org/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <a href="http://blog.norcams.org/author/ksk037.html" title="See posts by ksk037">
+                </a>
+                <h2 class="article-info">ksk037</h2>
+                <small class="about-author"></small>
+                <h5>Published</h5>
+                <p>Thu 30 October 2014</p>
+                <a href="/">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Dag 23: Installering av Ceph kluster med hjelp av puppet-moduler</h1>
+                        <p class="post-meta">
+                            // under                         </p>
+                </header>
+            </section>
+            <p>Det manuelle oppsettet av ceph-klusteret som ble installert forrige gang
+fungerte bra. Planen for i dag var å lage et lignende kluster ved hjelp
+av puppet moduler.</p>
+<p>Som vi husker fra tegningen jeg publiserte i forrige innlegg, fantes det
+en egen monitoreringsnode og x antall osd noder. Ceph klusteret blir
+spredt over alle osd nodene. Mens det er en monitoreringsnode som holder
+styr på <a class="reference external" href="http://ceph.com/docs/master/architecture/">klusteret</a> og
+hvor mange noder som er med osv.&nbsp; For å hindre
+<a class="reference external" href="http://en.wikipedia.org/wiki/Single_point_of_failure">SPOF</a> har vi i
+et produksjonsmiljø lyst å kjøre flere monitoreringsnoder samtidig. I
+tillegg ønsker vi å kjøre monitoreringsnoder og osd noder på samme
+maskin. Dette for å minske behovet for ekstra maskiner.</p>
+<p>I node definisjonen i vagrant har vi lagt til 3 ceph noder; ceph01,
+ceph02 og ceph03. Innstillinger for de 3 maskinene har blitt satt i
+<a class="reference external" href="https://github.com/norcams/winch/blob/ceph/puppet/hieradata/common.yaml">common.yaml</a>
+filen slik at vi kan provisjonere med puppet. Innstillingene til ceph
+inneholder alt fra passord, medlemmer&nbsp; på klusteret, størrelsen til
+klusteret og hvor klusteret skal være på de medlemmene som er definert.
+Dette vil nå bli satt opp automatisk for oss når vi installerer ceph
+nodene.</p>
+<p>Etter dette kunne vi starte opp maskinene på samme måte som vi har gjort
+tidligere. Klusteret innstalleres når maskinen kommer opp for første
+gang. Mer om ceph neste gang.</p>
+
+            <div class="hr"></div>
+            <a href="#" class="go-top">Go Top</a>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "norcams"; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div><footer class="footer">
+    <p>&copy; norcams &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
