@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/ksk037.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2015-06-16T19:21:00+02:00</updated><entry><title>Video of bachelor thesis</title><link href="http://blog.norcams.org/video-of-bachelor-thesis.html" rel="alternate"></link><updated>2015-06-16T19:21:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-06-16:video-of-bachelor-thesis.html</id><summary type="html">&lt;p&gt;This is a video that presents the core components of the &lt;a class="reference external" href="http://openstack.b.uib.no/2015/04/20/day-14-summary-collecting-openstack-logs-with-logstash/"&gt;bachelor
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>norcams</title><link>http://blog.norcams.org/</link><description></description><atom:link href="http://blog.norcams.org/feeds/kristian-skurtveit.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 16 Jun 2015 19:21:00 +0200</lastBuildDate><item><title>Video of bachelor thesis</title><link>http://blog.norcams.org/video-of-bachelor-thesis.html</link><description>&lt;p&gt;This is a video that presents the core components of the &lt;a class="reference external" href="http://openstack.b.uib.no/2015/04/20/day-14-summary-collecting-openstack-logs-with-logstash/"&gt;bachelor
 thesis&lt;/a&gt;.
 Thanks to &lt;a class="reference external" href="http://remix.kwed.org/download.php/2492/Christian%20Schuler%20-%20Druid%20version%20%28grassroots%20mix%29.mp3"&gt;Christian
 Schüler&lt;/a&gt;
 for allowing me to borrow his Druid version (grassroots mix) for
 background music.&lt;/p&gt;
-&lt;p&gt;[video width=&amp;quot;1920&amp;quot; height=&amp;quot;1080&amp;quot;
-mp4=&amp;quot;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/06/Monitorering-av-OpenStack-Kristian"&gt;http://openstack.b.uib.no/files/2015/06/Monitorering-av-OpenStack-Kristian&lt;/a&gt;-Ådlandsvik-Skurtveit.mp4&amp;quot;][/video]&lt;/p&gt;
-</summary><category term="video"></category></entry><entry><title>Prosjektrapport bacheloroppgave</title><link href="http://blog.norcams.org/prosjektrapport-bacheloroppgave.html" rel="alternate"></link><updated>2015-06-08T10:11:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-06-08:prosjektrapport-bacheloroppgave.html</id><summary type="html">&lt;p&gt;Da har jeg fullført bacheloroppgaven min. Endelig prosjektrapport ligger
+&lt;p&gt;[video width=&amp;quot;1920&amp;quot; height=&amp;quot;1080&amp;quot; mp4=&amp;quot;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/06/Monitorering-av-OpenStack-Kristian"&gt;http://openstack.b.uib.no/files/2015/06/Monitorering-av-OpenStack-Kristian&lt;/a&gt;-Ådlandsvik-Skurtveit.mp4&amp;quot;][/video]&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Tue, 16 Jun 2015 19:21:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-06-16:video-of-bachelor-thesis.html</guid><category>video</category></item><item><title>Prosjektrapport bacheloroppgave</title><link>http://blog.norcams.org/prosjektrapport-bacheloroppgave.html</link><description>&lt;p&gt;Da har jeg fullført bacheloroppgaven min. Endelig prosjektrapport ligger
 nå ute for nedlastning her: &lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/06/Monitorering-av-OpenStack-ved-UiB.pdf"&gt;Monitorering av OpenStack ved
 UiB&lt;/a&gt;&lt;/p&gt;
-</summary><category term="prosjektrapport"></category></entry><entry><title>Dag 35-39: Skriveuke</title><link href="http://blog.norcams.org/dag-35-39-skriveuke.html" rel="alternate"></link><updated>2015-05-28T09:21:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-05-28:dag-35-39-skriveuke.html</id><summary type="html">&lt;p&gt;Gjennom hele uken har tiden gått med til å skrive ferdig utkast til
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Mon, 08 Jun 2015 10:11:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-06-08:prosjektrapport-bacheloroppgave.html</guid><category>prosjektrapport</category></item><item><title>Dag 35-39: Skriveuke</title><link>http://blog.norcams.org/dag-35-39-skriveuke.html</link><description>&lt;p&gt;Gjennom hele uken har tiden gått med til å skrive ferdig utkast til
 prosjektrapporen. Denne ble levert inn 26. mai og endelig
 innleveringsfrist er 9. juni. Arbeidet som gjenstår er å skrive
 dokumentasjon om det endelige monitoreringsoppsettet slik at dette
@@ -19,7 +18,7 @@ enkelt kan tas i bruk. Dette forventes å være ferdig i neste uke.&lt;/p&gt;
 8,943,279 millioner hendelser som har blitt lagret i Elasticsearch og
 visualisert gjennom Kibana og Graphite.&lt;/p&gt;
 &lt;p&gt;Endelig innleveringsdato for prosjektrapporten er 9. juni..&lt;/p&gt;
-</summary><category term="elasticsearch"></category><category term="kibana"></category><category term="logstash"></category></entry><entry><title>Dag 30-34: Grafing av API responskoder &amp; responstider</title><link href="http://blog.norcams.org/dag-30-34-grafing-av-api-responskoder-responstider.html" rel="alternate"></link><updated>2015-05-21T11:26:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-05-21:dag-30-34-grafing-av-api-responskoder-responstider.html</id><summary type="html">&lt;p&gt;Siden vi allerede ekstraherer alle loggmeldinger som genereres i
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Thu, 28 May 2015 09:21:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-05-28:dag-35-39-skriveuke.html</guid><category>elasticsearch</category><category>kibana</category><category>logstash</category></item><item><title>Dag 30-34: Grafing av API responskoder &amp; responstider</title><link>http://blog.norcams.org/dag-30-34-grafing-av-api-responskoder-responstider.html</link><description>&lt;p&gt;Siden vi allerede ekstraherer alle loggmeldinger som genereres i
 OpenStack kan vi også hente ut og visualisere API-responskoder og
 API-responstider.&amp;nbsp; Dette grafes på følgende måte: &lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/05/api-responses.png"&gt;&lt;img alt="api-responses" src="http://openstack.b.uib.no/files/2015/05/api-responses.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Med en API responstid følger også en responskode.&amp;nbsp; For å&amp;nbsp; se hvor mange
@@ -30,7 +29,7 @@ visualiseres på denne måten:&lt;/p&gt;
 utkast til prosjektrapporten som skal inn den 26. mai. Endelig
 innleveringsfrist er satt til 9 juni og prosjektrapporten vil
 selvfølgelig bli publisert på bloggen.&lt;/p&gt;
-</summary><category term="api responskoder"></category><category term="prosjektrapport"></category></entry><entry><title>Dag 25-29: Oppsett av dashing-ceph/openstack, rydding av config</title><link href="http://blog.norcams.org/dag-25-29-oppsett-av-dashing-cephopenstack-rydding-av-config.html" rel="alternate"></link><updated>2015-05-11T12:22:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-05-11:dag-25-29-oppsett-av-dashing-cephopenstack-rydding-av-config.html</id><summary type="html">&lt;p&gt;Den siste uken har gått med til å sette opp dashing-ceph,
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Thu, 21 May 2015 11:26:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-05-21:dag-30-34-grafing-av-api-responskoder-responstider.html</guid><category>api responskoder</category><category>prosjektrapport</category></item><item><title>Dag 25-29: Oppsett av dashing-ceph/openstack, rydding av config</title><link>http://blog.norcams.org/dag-25-29-oppsett-av-dashing-cephopenstack-rydding-av-config.html</link><description>&lt;p&gt;Den siste uken har gått med til å sette opp dashing-ceph,
 dashing-openstack, rydding av Logstash config og oppdatering av
 bacheloroppgaven. Dashing er kort fortalt et dashbord rammeverk for å
 visualisere informasjon i &amp;quot;fine bokser&amp;quot;, se bilde nedenfor. Det er mye
@@ -42,7 +41,7 @@ som er interessert må komme å høre på! Planen er å ha en enkel men
 oversiktlig presentasjon med live demo som viser hva jeg har jobbet med
 dette semesteret. I uken som kommer vil de siste tekniske bitene bli
 implementert før skriveperioden starter for fullt.&lt;/p&gt;
-</summary><category term="ceph"></category><category term="dashing"></category><category term="openstack"></category><category term="oppgave"></category></entry><entry><title>Dag 20-24: Grafing av instansdata</title><link href="http://blog.norcams.org/dag-20-24-grafing-av-instansdata.html" rel="alternate"></link><updated>2015-05-04T12:58:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-05-04:dag-20-24-grafing-av-instansdata.html</id><summary type="html">&lt;p&gt;Etter å ha eksperimentert med ulike metrics fra Logstash og statsd i
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Mon, 11 May 2015 12:22:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-05-11:dag-25-29-oppsett-av-dashing-cephopenstack-rydding-av-config.html</guid><category>ceph</category><category>dashing</category><category>openstack</category><category>oppgave</category></item><item><title>Dag 20-24: Grafing av instansdata</title><link>http://blog.norcams.org/dag-20-24-grafing-av-instansdata.html</link><description>&lt;p&gt;Etter å ha eksperimentert med ulike metrics fra Logstash og statsd i
 forrige uke har jeg laget noen enkle python scripts som spør keystone
 databasen ved jevne mellomrom for instansdata. Antallet kjørende
 instanser, slettede instanser, instanser som har feilet, samt type
@@ -55,7 +54,7 @@ ressursbehov ved å legge til mer ressurser&amp;nbsp;under drift istedenfor når
 systemet har nådd sin totale kapasitet.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/04/metrics-grafer.png"&gt;&lt;img alt="metrics-grafer" src="http://openstack.b.uib.no/files/2015/04/metrics-grafer.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/05/instans-graf.png"&gt;&lt;img alt="instans-graf" src="http://openstack.b.uib.no/files/2015/05/instans-graf.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="instanser"></category><category term="keystone"></category><category term="nova"></category></entry><entry><title>Dag 15-19: Metrics gjennom graphite og statsd</title><link href="http://blog.norcams.org/dag-15-19-metrics-gjennom-graphite-og-statsd.html" rel="alternate"></link><updated>2015-05-02T14:05:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-05-02:dag-15-19-metrics-gjennom-graphite-og-statsd.html</id><summary type="html">&lt;p&gt;Har gjennom hele uken eksperimentert med å lage metrics utav loggene som
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Mon, 04 May 2015 12:58:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-05-04:dag-20-24-grafing-av-instansdata.html</guid><category>instanser</category><category>keystone</category><category>nova</category></item><item><title>Dag 15-19: Metrics gjennom graphite og statsd</title><link>http://blog.norcams.org/dag-15-19-metrics-gjennom-graphite-og-statsd.html</link><description>&lt;p&gt;Har gjennom hele uken eksperimentert med å lage metrics utav loggene som
 kan sendes fra logstash til Graphite for grafing. Det som kan grafes så
 langt er tilgjengelige ressurser på alle compute nodene i OpenStack.
 Tanken er at disse grafene skal kunne eksponeres ut mot brukerne slik at
@@ -64,7 +63,7 @@ av nodene.&lt;/p&gt;
 &lt;p&gt;I tillegg har jeg laget noen python scripts som skal brukes til å hente
 ut spesifikke instansdata som også skal kunne grafes. Videre skal jeg
 også se på muligheten til å hente ut data fra Ceilometer.&lt;/p&gt;
-</summary><category term="grafer"></category><category term="graphite"></category></entry><entry><title>Day 14: Summary: Collecting OpenStack logs with Logstash</title><link href="http://blog.norcams.org/day-14-summary-collecting-openstack-logs-with-logstash.html" rel="alternate"></link><updated>2015-04-20T10:39:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-04-20:day-14-summary-collecting-openstack-logs-with-logstash.html</id><summary type="html">&lt;p&gt;This blog post is a summary of the first 14 days of work on my bachelor
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Sat, 02 May 2015 14:05:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-05-02:dag-15-19-metrics-gjennom-graphite-og-statsd.html</guid><category>grafer</category><category>graphite</category></item><item><title>Day 14: Summary: Collecting OpenStack logs with Logstash</title><link>http://blog.norcams.org/day-14-summary-collecting-openstack-logs-with-logstash.html</link><description>&lt;p&gt;This blog post is a summary of the first 14 days of work on my bachelor
 degree.&amp;nbsp; It is written in English to satisfy some of our Brazilian
 readers at the University in São Paulo.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://www.openstack.org/"&gt;Openstack&lt;/a&gt; consists of many different
@@ -113,7 +112,7 @@ which is very useful.&lt;/p&gt;
 &lt;p&gt;During the next couple of weeks I will continue to make filters, extract
 data from logs until all OpenStack services are covered, visualize data
 and put data in context by making graphs and much more. Stay tuned!&lt;/p&gt;
-</summary><category term="elasticsearch"></category><category term="logstash"></category><category term="monitoring"></category></entry><entry><title>Dag 13: Grafing av disk, cpu og minnebruk</title><link href="http://blog.norcams.org/dag-13-grafing-av-disk-cpu-og-minnebruk.html" rel="alternate"></link><updated>2015-04-17T12:04:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-04-17:dag-13-grafing-av-disk-cpu-og-minnebruk.html</id><summary type="html">&lt;p&gt;Metrics til graphite blir sendt på et spesifikt format. Dette er
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Mon, 20 Apr 2015 10:39:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-04-20:day-14-summary-collecting-openstack-logs-with-logstash.html</guid><category>elasticsearch</category><category>logstash</category><category>monitoring</category></item><item><title>Dag 13: Grafing av disk, cpu og minnebruk</title><link>http://blog.norcams.org/dag-13-grafing-av-disk-cpu-og-minnebruk.html</link><description>&lt;p&gt;Metrics til graphite blir sendt på et spesifikt format. Dette er
 standard uansett hva system man bruker for å lage metrics. &amp;nbsp;Her
 spesifiseres først navnet, deretter verdien og til slutt datoen.
 Eksempelvis:&lt;/p&gt;
@@ -132,7 +131,7 @@ Diskboksen er også konfigurert slik at den endrer farge basert på hvor
 mye diskplass som er tilgjengelig på disken.&amp;nbsp;Dette er en god begynnelse!
 I morgen og ut i neste uke kommer jeg til å fortsette med datainnsamling
 og filtere i Logstash. Følg med!&lt;/p&gt;
-</summary><category term="graphite"></category><category term="logstash"></category><category term="metrics"></category></entry><entry><title>Dag 12: Kartlegging og sending av metrics</title><link href="http://blog.norcams.org/dag-12-kartlegging-og-sending-av-metrics.html" rel="alternate"></link><updated>2015-04-17T08:42:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-04-17:dag-12-kartlegging-og-sending-av-metrics.html</id><summary type="html">&lt;p&gt;Metrics som vi kan sende til visualiseringssystemer er data. Informasjon
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 17 Apr 2015 12:04:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-04-17:dag-13-grafing-av-disk-cpu-og-minnebruk.html</guid><category>graphite</category><category>logstash</category><category>metrics</category></item><item><title>Dag 12: Kartlegging og sending av metrics</title><link>http://blog.norcams.org/dag-12-kartlegging-og-sending-av-metrics.html</link><description>&lt;p&gt;Metrics som vi kan sende til visualiseringssystemer er data. Informasjon
 som representerer en eller annen verdi kan grafes og visualiseres og på
 denne måten gi oss oversikt over hvordan systemet fungerer til enhver
 tid. Dagen i dag har for det meste blitt brukt til å lese dokumentasjon
@@ -144,7 +143,7 @@ tillegg er de aller fleste eksempler på metrics er basert på å hente ut
 informasjon fra apache-aksesslogger. Siden jeg skal hente ut mer data
 enn dette blir det mye prøving og feiling fremover på å få metrics til å
 fungere på den måten jeg vil. Mer om dette i morgen!&lt;/p&gt;
-</summary><category term="logstash"></category><category term="metrics"></category></entry><entry><title>Dag 11: Generering av testgrafer</title><link href="http://blog.norcams.org/dag-11-generering-av-testgrafer.html" rel="alternate"></link><updated>2015-04-14T12:56:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-04-14:dag-11-generering-av-testgrafer.html</id><summary type="html">&lt;p&gt;Noe mer konfigurasjon måtte til for at den nye grafnoden skulle fungere
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 17 Apr 2015 08:42:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-04-17:dag-12-kartlegging-og-sending-av-metrics.html</guid><category>logstash</category><category>metrics</category></item><item><title>Dag 11: Generering av testgrafer</title><link>http://blog.norcams.org/dag-11-generering-av-testgrafer.html</link><description>&lt;p&gt;Noe mer konfigurasjon måtte til for at den nye grafnoden skulle fungere
 som den skulle. Provisjonering av noden måtte kjøres to ganger, i
 tillegg til at en rekke småting måtte konfigureres manuelt. Med alle
 disse hindringene til side var det tid for å generere noen grafer.&lt;/p&gt;
@@ -162,7 +161,7 @@ maskin het metric'en i vårt tilfelle:
 carbon.agents.graphite_winch_local-a.cpuUsage. Denne visualiseres
 slik:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/04/cpu-bruk.png"&gt;&lt;img alt="cpu-bruk" src="http://openstack.b.uib.no/files/2015/04/cpu-bruk.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="grafana"></category><category term="graphite"></category><category term="winch"></category></entry><entry><title>Dag 10: Oppsett av Graphite og Grafana</title><link href="http://blog.norcams.org/dag-10-oppsett-av-graphite-og-grafana.html" rel="alternate"></link><updated>2015-04-14T12:47:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-04-14:dag-10-oppsett-av-graphite-og-grafana.html</id><summary type="html">&lt;p&gt;Logstash, Kibana og Elasticsearch kjører per i dag på en egen node i
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Tue, 14 Apr 2015 12:56:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-04-14:dag-11-generering-av-testgrafer.html</guid><category>grafana</category><category>graphite</category><category>winch</category></item><item><title>Dag 10: Oppsett av Graphite og Grafana</title><link>http://blog.norcams.org/dag-10-oppsett-av-graphite-og-grafana.html</link><description>&lt;p&gt;Logstash, Kibana og Elasticsearch kjører per i dag på en egen node i
 winch. For at lasten ikke skal bli for stor på denne virtuelle noden
 hadde jeg i første omgang tenkt å lage en ny node for
 grafvirtualisering. Grafnoden skal kjøre verktøyet Graphite, som støtter
@@ -179,7 +178,7 @@ vagrantboksen kan ta en kikk på
 &lt;a class="reference external" href="https://github.com/norcams/winch/blob/stable/icehouse-centos6-monitoring/puppet/manifests/graphite.pp"&gt;winch&lt;/a&gt;
 repoet.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/04/provision-graphite.png"&gt;&lt;img alt="provision-graphite" src="http://openstack.b.uib.no/files/2015/04/provision-graphite.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="grafana"></category><category term="logstash"></category><category term="puppet"></category><category term="winch"></category></entry><entry><title>Dag 9: Ferdig med eksamen</title><link href="http://blog.norcams.org/dag-9-ferdig-med-eksamen.html" rel="alternate"></link><updated>2015-04-14T11:51:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-04-14:dag-9-ferdig-med-eksamen.html</id><summary type="html">&lt;p&gt;I dag var siste eksamen på Høgskolen og resten av dagen jobbet jeg på
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Tue, 14 Apr 2015 12:47:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-04-14:dag-10-oppsett-av-graphite-og-grafana.html</guid><category>grafana</category><category>logstash</category><category>puppet</category><category>winch</category></item><item><title>Dag 9: Ferdig med eksamen</title><link>http://blog.norcams.org/dag-9-ferdig-med-eksamen.html</link><description>&lt;p&gt;I dag var siste eksamen på Høgskolen og resten av dagen jobbet jeg på
 UiB. Nå som det finnes en god del informasjon som sendes til Logstash er
 det på tide å se på hvordan denne informasjonen kan visualiseres. I
 Logstash kan man lage metrics av informasjon som er kommet inn, og dette
@@ -188,7 +187,7 @@ jeg ønsker for at vi skal kunne se data i sammenheng og kunne forutse
 problemer før de oppstår. Ettersom jeg allerede har funnet et
 eksempeloppsett på en vagrantboks som installerer to grafverktøy kommer
 jeg til å se videre på dette på mandag.&lt;/p&gt;
-</summary><category term="logstash"></category><category term="visualisering"></category></entry><entry><title>Dag 8: Filtrering av unyttig informasjon</title><link href="http://blog.norcams.org/dag-8-filtrering-av-unyttig-informasjon.html" rel="alternate"></link><updated>2015-03-31T20:08:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-31:dag-8-filtrering-av-unyttig-informasjon.html</id><summary type="html">&lt;p&gt;Ikke alle data som kommer inn gjennom Logstash er nyttige data. Data som
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Tue, 14 Apr 2015 11:51:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-04-14:dag-9-ferdig-med-eksamen.html</guid><category>logstash</category><category>visualisering</category></item><item><title>Dag 8: Filtrering av unyttig informasjon</title><link>http://blog.norcams.org/dag-8-filtrering-av-unyttig-informasjon.html</link><description>&lt;p&gt;Ikke alle data som kommer inn gjennom Logstash er nyttige data. Data som
 ikke gir noen nyttig informasjon eller rett og slett bare er støy er
 nødt til å skjules eller filtreres bort. I Logstash kan alle datafelter
 som blir opprettet når man lager filter søkes i. På bakgrunn av dette
@@ -212,7 +211,7 @@ filtreres bort på denne måten.&lt;/p&gt;
 &lt;p&gt;Videre vil jeg ta en fullstendig gjennomgang av hva informasjon som skal
 filtreres bort slik at dette ikke overskygger viktige data i henhold til
 problemstillingen.&lt;/p&gt;
-</summary><category term="grok"></category><category term="logstash"></category><category term="regulære uttrykk"></category></entry><entry><title>Dag 7: Filtrering av instanshendelser</title><link href="http://blog.norcams.org/dag-7-filtrering-av-instanshendelser.html" rel="alternate"></link><updated>2015-03-31T19:49:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-31:dag-7-filtrering-av-instanshendelser.html</id><summary type="html">&lt;p&gt;Dagen ble benyttet til å lage grok-filtre som henter ut informasjon fra
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Tue, 31 Mar 2015 20:08:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-03-31:dag-8-filtrering-av-unyttig-informasjon.html</guid><category>grok</category><category>logstash</category><category>regulære uttrykk</category></item><item><title>Dag 7: Filtrering av instanshendelser</title><link>http://blog.norcams.org/dag-7-filtrering-av-instanshendelser.html</link><description>&lt;p&gt;Dagen ble benyttet til å lage grok-filtre som henter ut informasjon fra
 OpenStack-instanser. Om en instans blir opprettet, slettet, rebootet,
 re-initialisert, utvidet eller skulle få en feil vil dette bli truffet
 av filteret og vi vil kunne se denne hendelsen og all informasjon i
@@ -223,7 +222,7 @@ kommet inn som egne felter. Disse kan nå søkes opp i og en kan
 visualisere dette på forskjellige måter. Neste steg blir å se på andre
 data i OpenStack og hvordan vi kan hente ut informasjon om opprettelser
 av eksempelvis nettverk og rutere.&lt;/p&gt;
-</summary><category term="elasticsearch"></category><category term="logstash"></category><category term="neutron"></category></entry><entry><title>Dag 6: Grok-filtre i Logstash</title><link href="http://blog.norcams.org/dag-6-grok-filtre-i-logstash.html" rel="alternate"></link><updated>2015-03-31T14:58:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-31:dag-6-grok-filtre-i-logstash.html</id><summary type="html">&lt;p&gt;For å kunne hente ut informasjon fra data som kommer inn i Logstash kan
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Tue, 31 Mar 2015 19:49:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-03-31:dag-7-filtrering-av-instanshendelser.html</guid><category>elasticsearch</category><category>logstash</category><category>neutron</category></item><item><title>Dag 6: Grok-filtre i Logstash</title><link>http://blog.norcams.org/dag-6-grok-filtre-i-logstash.html</link><description>&lt;p&gt;For å kunne hente ut informasjon fra data som kommer inn i Logstash kan
 man benytte seg av grok-filtre. Grok-filtre er bygget på toppen av
 regulære uttrykk og på bakgrunn av dette kan man hente ut den
 informasjonen man ønsker, eksempelvis fra loggdata. For å hente ut
@@ -273,7 +272,7 @@ at informasjonen er kommet gjennom filteret ser den slik ut:&lt;/p&gt;
 &lt;p&gt;Dette sendes så videre fra Logstash til Elasticsearch der man kan søke
 opp spesifikke data og visualisere dette på mange ulike måter.
 Visualisering vil bli et eget tema på bloggen senere.&lt;/p&gt;
-</summary><category term="elasticsearch"></category><category term="grok"></category><category term="informasjon"></category><category term="logstash"></category></entry><entry><title>Dag 5: Start av fysisk testmiljø</title><link href="http://blog.norcams.org/dag-5-start-av-fysisk-testmiljo.html" rel="alternate"></link><updated>2015-03-31T13:54:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-31:dag-5-start-av-fysisk-testmiljo.html</id><summary type="html">&lt;p&gt;Som tidligere publisert på bloggen har jeg fått tildelt en 32GB fysisk
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Tue, 31 Mar 2015 14:58:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-03-31:dag-6-grok-filtre-i-logstash.html</guid><category>elasticsearch</category><category>grok</category><category>informasjon</category><category>logstash</category></item><item><title>Dag 5: Start av fysisk testmiljø</title><link>http://blog.norcams.org/dag-5-start-av-fysisk-testmiljo.html</link><description>&lt;p&gt;Som tidligere publisert på bloggen har jeg fått tildelt en 32GB fysisk
 blade server der winch har blitt installert. Hensikten med dette er å
 kjøre et virtuelt OpenStack-testmiljø der jeg kan teste ulike
 monitoreringssystem. For øyeblikket er jeg i gang med å teste Logstash,
@@ -291,7 +290,7 @@ før feilen skjedde. Ved hjelp av dette sparer jeg mye tid og kan
 fokusere mer på testingen av de ulike verktøyene. Vagrantboksen er
 definert
 &lt;a class="reference external" href="https://github.com/norcams/winch/blob/stable/icehouse-centos6-monitoring/puppet/manifests/logstash.pp"&gt;slik&lt;/a&gt;.&lt;/p&gt;
-</summary><category term="logstash"></category><category term="monitorering"></category><category term="vagrant"></category><category term="winch"></category></entry><entry><title>Dag 4: Videre konfigurasjon av winch</title><link href="http://blog.norcams.org/dag-4-videre-konfigurasjon-av-winch.html" rel="alternate"></link><updated>2015-03-14T23:13:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-14:dag-4-videre-konfigurasjon-av-winch.html</id><summary type="html">&lt;p&gt;Dagen ble benyttet til å teste at provisjoneringen av controller og
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Tue, 31 Mar 2015 13:54:00 +0200</pubDate><guid>tag:blog.norcams.org,2015-03-31:dag-5-start-av-fysisk-testmiljo.html</guid><category>logstash</category><category>monitorering</category><category>vagrant</category><category>winch</category></item><item><title>Dag 4: Videre konfigurasjon av winch</title><link>http://blog.norcams.org/dag-4-videre-konfigurasjon-av-winch.html</link><description>&lt;p&gt;Dagen ble benyttet til å teste at provisjoneringen av controller og
 compute fungerer sammen med logstash. Det er mye av konfigurasjonen som
 utføres manuelt for øyeblikket. Blant annet må alle OpenStack tjenestene
 manuelt endres for at de skal logge til syslog og sende til logstash
@@ -303,7 +302,7 @@ nøkkelfunksjonalitet i systemet testes på en slik måte at loggdataene
 som blir generert kan si noe om hvilken tilstand systemet er i. Om
 tjenester er oppe og går, om det har forekommet feil den siste tiden
 osv.&lt;/p&gt;
-</summary><category term="blade server"></category><category term="winch"></category></entry><entry><title>Dag 3: Submoduler i git og installasjon på blade server</title><link href="http://blog.norcams.org/dag-3-submoduler-i-git-og-installasjon-pa-blade-server.html" rel="alternate"></link><updated>2015-03-14T21:45:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-14:dag-3-submoduler-i-git-og-installasjon-pa-blade-server.html</id><summary type="html">&lt;p&gt;I forrige uke fikk jeg problemer med å legge til enkelte puppetmoduler
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Sat, 14 Mar 2015 23:13:00 +0100</pubDate><guid>tag:blog.norcams.org,2015-03-14:dag-4-videre-konfigurasjon-av-winch.html</guid><category>blade server</category><category>winch</category></item><item><title>Dag 3: Submoduler i git og installasjon på blade server</title><link>http://blog.norcams.org/dag-3-submoduler-i-git-og-installasjon-pa-blade-server.html</link><description>&lt;p&gt;I forrige uke fikk jeg problemer med å legge til enkelte puppetmoduler
 til monitoreringsbranchen på github. Etter en del feilsøking endte jeg
 opp med å legge disse til som submoduler. Fordelen med submoduler er at
 man slipper å måtte oppdatere modulene i sitt eget repository. Ved å
@@ -319,7 +318,7 @@ det aller meste kan styres gjennom puppet. Jeg begynte også å installere
 winch på blade serveren jeg har fått tildelt. Denne serveren har 32GB
 med minne og jeg har derfor mulighet til å ha kjørende en god del
 instanser som jeg skal teste med. Mer om dette i morgen!&lt;/p&gt;
-</summary><category term="logstash"></category><category term="puppet"></category><category term="rsyslog"></category></entry><entry><title>Dag 2: Integrering av logstash i "winch"</title><link href="http://blog.norcams.org/dag-2-integrering-av-logstash-i-winch.html" rel="alternate"></link><updated>2015-03-07T16:56:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-07:dag-2-integrering-av-logstash-i-winch.html</id><summary type="html">&lt;p&gt;Under utplasseringen var jeg med på å lage et automatisk oppsett som
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Sat, 14 Mar 2015 21:45:00 +0100</pubDate><guid>tag:blog.norcams.org,2015-03-14:dag-3-submoduler-i-git-og-installasjon-pa-blade-server.html</guid><category>logstash</category><category>puppet</category><category>rsyslog</category></item><item><title>Dag 2: Integrering av logstash i "winch"</title><link>http://blog.norcams.org/dag-2-integrering-av-logstash-i-winch.html</link><description>&lt;p&gt;Under utplasseringen var jeg med på å lage et automatisk oppsett som
 installerte OpenStack og tilhørende komponenter. Dette ble gjort ufifra
 et prosjekt på github som het
 &lt;a class="reference external" href="https://github.com/norcams/winch"&gt;winch&lt;/a&gt;. Som jeg tok opp i min
@@ -339,7 +338,7 @@ installere verktøyene med konfigurasjonsfiler spesifisert i manifestet.
 Det som gjenstår for at integreringen skal være komplett er å legge til
 de puppetmodulene jeg trenger. Disse er submoduler og blir derfor lagt
 til annerledes. Mer om dette i neste bloggpost.&lt;/p&gt;
-</summary><category term="github"></category><category term="logstash"></category><category term="puppet"></category><category term="winch"></category></entry><entry><title>Dag 1: Installasjon og oppsett av logstash, elasticsearch &amp; kibana</title><link href="http://blog.norcams.org/dag-1-installasjon-og-oppsett-av-logstash-elasticsearch-kibana.html" rel="alternate"></link><updated>2015-03-07T16:34:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-07:dag-1-installasjon-og-oppsett-av-logstash-elasticsearch-kibana.html</id><summary type="html">&lt;p&gt;Etter tips fra prosjektleder i UH-sky prosjektet er et av
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Sat, 07 Mar 2015 16:56:00 +0100</pubDate><guid>tag:blog.norcams.org,2015-03-07:dag-2-integrering-av-logstash-i-winch.html</guid><category>github</category><category>logstash</category><category>puppet</category><category>winch</category></item><item><title>Dag 1: Installasjon og oppsett av logstash, elasticsearch &amp; kibana</title><link>http://blog.norcams.org/dag-1-installasjon-og-oppsett-av-logstash-elasticsearch-kibana.html</link><description>&lt;p&gt;Etter tips fra prosjektleder i UH-sky prosjektet er et av
 monitoreringsverktøyene jeg har valgt å se på
 &lt;a class="reference external" href="http://logstash.net/"&gt;logstash&lt;/a&gt;. Et&amp;nbsp; kraftig&amp;nbsp; verktøy som brukes til
 å håndtere hendelser og logger.&lt;/p&gt;
@@ -370,7 +369,7 @@ jeg tenkt å integrere denne mot winch slik at den passer øvrig
 prosjektstruktur. Under følger et bilde av hvordan visualiseringen av
 loggdataene ser ut.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/kibana4-visualisering.png"&gt;&lt;img alt="kibana4-visualisering" src="http://openstack.b.uib.no/files/2015/03/kibana4-visualisering-300x171.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="elasticsearch"></category><category term="github"></category><category term="kibana4"></category><category term="logstash"></category></entry><entry><title>Dag 0: Oppsummering</title><link href="http://blog.norcams.org/dag-0-oppsummering.html" rel="alternate"></link><updated>2015-03-06T07:41:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-06:dag-0-oppsummering.html</id><summary type="html">&lt;p&gt;Denne bloggposten er en oppsummering av arbeidet som har blitt gjort før
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Sat, 07 Mar 2015 16:34:00 +0100</pubDate><guid>tag:blog.norcams.org,2015-03-07:dag-1-installasjon-og-oppsett-av-logstash-elasticsearch-kibana.html</guid><category>elasticsearch</category><category>github</category><category>kibana4</category><category>logstash</category></item><item><title>Dag 0: Oppsummering</title><link>http://blog.norcams.org/dag-0-oppsummering.html</link><description>&lt;p&gt;Denne bloggposten er en oppsummering av arbeidet som har blitt gjort før
 forprosjektet i bacheloroppgaven har kommet i gang.&lt;/p&gt;
 &lt;p&gt;I henhold til problemstillingen skal jeg kartlegge forskjellige
 monitoreringsverktøy og teste bruken av disse. Dette er arbeid som jeg
@@ -401,11 +400,11 @@ for. Dette gjør testingen av potensielle verktøy enklere i tillegg til
 at dataene jeg kommer til å teste med blir mest mulig reelle.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.52.jpg"&gt;&lt;img alt="2015-02-24 13.13.52" src="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.52-300x169.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.37.jpg"&gt;&lt;img alt="2015-02-24 13.13.37" src="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.37-300x169.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="bachelor"></category><category term="blade server"></category><category term="prosjekt"></category><category term="testing"></category></entry><entry><title>Prosjektbeskrivelse bachelorprosjekt</title><link href="http://blog.norcams.org/prosjektbeskrivelse-bachelorprosjekt.html" rel="alternate"></link><updated>2015-03-03T10:11:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-03:prosjektbeskrivelse-bachelorprosjekt.html</id><summary type="html">&lt;p&gt;Denne siden lister ut prosjektbeskrivelsen av bachelorprosjektet slik at
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 06 Mar 2015 07:41:00 +0100</pubDate><guid>tag:blog.norcams.org,2015-03-06:dag-0-oppsummering.html</guid><category>bachelor</category><category>blade server</category><category>prosjekt</category><category>testing</category></item><item><title>Prosjektbeskrivelse bachelorprosjekt</title><link>http://blog.norcams.org/prosjektbeskrivelse-bachelorprosjekt.html</link><description>&lt;p&gt;Denne siden lister ut prosjektbeskrivelsen av bachelorprosjektet slik at
 denne skal være enkel å finne frem til uansett hvor man er på bloggen.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/02/Prosjektbeskrivelse-bachelor-Kristian-Å.-Skurtveit.pdf"&gt;Prosjektbeskrivelse
 bachelorprosjekt&lt;/a&gt;&lt;/p&gt;
-</summary></entry><entry><title>Prosjektbeskrivelse bacheloroppgave</title><link href="http://blog.norcams.org/prosjektbeskrivelse-bacheloroppgave.html" rel="alternate"></link><updated>2015-03-03T10:03:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2015-03-03:prosjektbeskrivelse-bacheloroppgave.html</id><summary type="html">&lt;p&gt;Etter høstens utplassering har jeg fått lov til å skrive
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Tue, 03 Mar 2015 10:11:00 +0100</pubDate><guid>tag:blog.norcams.org,2015-03-03:prosjektbeskrivelse-bachelorprosjekt.html</guid></item><item><title>Prosjektbeskrivelse bacheloroppgave</title><link>http://blog.norcams.org/prosjektbeskrivelse-bacheloroppgave.html</link><description>&lt;p&gt;Etter høstens utplassering har jeg fått lov til å skrive
 bacheloroppgaven min her på IT-avdelingen. I denne sammenhengen
 publiserer jeg prosjektbeskrivelsen i sin helhet som omhandler
 monitorering av OpenStack ved UiB. Jeg har også laget en ny side på
@@ -428,14 +427,14 @@ har hatt en bloggpost for hver dag. Bloggen vil nå bli brukt til
 bachelorprosjektet som varer frem til juni 2015. Og vil følge samme
 oppsett med en bloggpost for hver dag. Neste blogginnlegg vil begynne på
 dag 0 som oppsummerer arbeidet med oppgaven så langt.&lt;/p&gt;
-</summary><category term="bachelor"></category><category term="prosjekt"></category></entry><entry><title>Dag 33: "Skyen" ankommer UIB</title><link href="http://blog.norcams.org/dag-33-skyen-ankommer-uib.html" rel="alternate"></link><updated>2014-11-28T18:20:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-11-28:dag-33-skyen-ankommer-uib.html</id><summary type="html">&lt;p&gt;Siste dag på UiB i utplasseringsfaget hadde skyinfrastrukturen kommet på
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Tue, 03 Mar 2015 10:03:00 +0100</pubDate><guid>tag:blog.norcams.org,2015-03-03:prosjektbeskrivelse-bacheloroppgave.html</guid><category>bachelor</category><category>prosjekt</category></item><item><title>Dag 33: "Skyen" ankommer UIB</title><link>http://blog.norcams.org/dag-33-skyen-ankommer-uib.html</link><description>&lt;p&gt;Siste dag på UiB i utplasseringsfaget hadde skyinfrastrukturen kommet på
 plass i lageret. Dette er bare første del av to leveranser, men det er
 på dette utstyret at skyen skal installeres.&lt;/p&gt;
 &lt;p&gt;Det blir spennende tider fremover!&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://delldirekte.no/banebrytende-akademisk-skyprosjekt/"&gt;http://delldirekte.no/banebrytende-akademisk-skyprosjekt/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/11/2014-11-24-10.19.19.jpg"&gt;&lt;img alt="2014-11-24 10.19.19" src="http://openstack.b.uib.no/files/2014/11/2014-11-24-10.19.19-e1417086024925-576x1024.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/11/2014-11-24-10.19.36-e1417086051222.jpg"&gt;&lt;img alt="2014-11-24 10.19.36" src="http://openstack.b.uib.no/files/2014/11/2014-11-24-10.19.36-e1417086051222-576x1024.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="dell"></category><category term="infrastruktur"></category><category term="lager"></category><category term="openstack"></category><category term="sky"></category></entry><entry><title>Dag 32: Dokumentasjon og OpenStack Monasca</title><link href="http://blog.norcams.org/dag-32-dokumentasjon-og-openstack-monasca.html" rel="alternate"></link><updated>2014-11-28T18:19:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-11-28:dag-32-dokumentasjon-og-openstack-monasca.html</id><summary type="html">&lt;p&gt;Fortsatte på dokumentasjonen av winch og hvordan man kan installere
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 28 Nov 2014 18:20:00 +0100</pubDate><guid>tag:blog.norcams.org,2014-11-28:dag-33-skyen-ankommer-uib.html</guid><category>dell</category><category>infrastruktur</category><category>lager</category><category>openstack</category><category>sky</category></item><item><title>Dag 32: Dokumentasjon og OpenStack Monasca</title><link>http://blog.norcams.org/dag-32-dokumentasjon-og-openstack-monasca.html</link><description>&lt;p&gt;Fortsatte på dokumentasjonen av winch og hvordan man kan installere
 OpenStack ved hjelp av manager noden og Foreman. Forøvrig kan alt av
 dokumentasjonen rundt prosjektet leses på
 &lt;a class="reference external" href="http://winch.readthedocs.org/en/latest/"&gt;readthedocs&lt;/a&gt;.&lt;/p&gt;
@@ -447,7 +446,7 @@ et av monitoreringsverktøyene som jeg skal kikke på i forbindelse med
 bachelorprosjektet neste år. Her er en liten oversikt over hvordan
 Monasca integreres med OpenStack:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/11/Monasca-arch-component-diagram.png"&gt;&lt;img alt="Monasca-arch-component-diagram" src="http://openstack.b.uib.no/files/2014/11/Monasca-arch-component-diagram.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="readthedocs"></category><category term="retext"></category><category term="winch"></category></entry><entry><title>Dag 31: Logstash &amp; Kibana</title><link href="http://blog.norcams.org/dag-31-oppsett-av-logstash-kibana.html" rel="alternate"></link><updated>2014-11-26T07:04:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-11-26:dag-31-oppsett-av-logstash-kibana.html</id><summary type="html">&lt;p&gt;Benyttet mesteparten av dagen til å kikke på to verktøy som heter
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 28 Nov 2014 18:19:00 +0100</pubDate><guid>tag:blog.norcams.org,2014-11-28:dag-32-dokumentasjon-og-openstack-monasca.html</guid><category>readthedocs</category><category>retext</category><category>winch</category></item><item><title>Dag 31: Logstash &amp; Kibana</title><link>http://blog.norcams.org/dag-31-oppsett-av-logstash-kibana.html</link><description>&lt;p&gt;Benyttet mesteparten av dagen til å kikke på to verktøy som heter
 &lt;a class="reference external" href="gstash.net"&gt;Logstash&lt;/a&gt;og
 &lt;a class="reference external" href="http://www.elasticsearch.org/overview/kibana/"&gt;Kibana&lt;/a&gt;. Logstash er
 et verktøy for å samle og håndtere logg. Den samler inn, parser og
@@ -467,7 +466,7 @@ og kartlegge tjenester som skal overvåkes. I tillegg ønsker jeg også å
 kikke nærmere på verktøyet
 &lt;a class="reference external" href="http://graphite.wikidot.com/"&gt;Graphite&lt;/a&gt;&amp;nbsp;som kan spesifiseres som
 output.&lt;/p&gt;
-</summary><category term="elasticsearch"></category><category term="graphite"></category><category term="kibana"></category><category term="logging"></category></entry><entry><title>Dag 30: Monitorering av OpenStack ved hjelp av Icinga</title><link href="http://blog.norcams.org/dag-30-monitorering-av-openstack-ved-hjelp-av-icinga.html" rel="alternate"></link><updated>2014-11-21T11:13:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-11-21:dag-30-monitorering-av-openstack-ved-hjelp-av-icinga.html</id><summary type="html">&lt;p&gt;Monitorering er et stort og viktig tema innenfor OpenStack og det finnes
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Wed, 26 Nov 2014 07:04:00 +0100</pubDate><guid>tag:blog.norcams.org,2014-11-26:dag-31-oppsett-av-logstash-kibana.html</guid><category>elasticsearch</category><category>graphite</category><category>kibana</category><category>logging</category></item><item><title>Dag 30: Monitorering av OpenStack ved hjelp av Icinga</title><link>http://blog.norcams.org/dag-30-monitorering-av-openstack-ved-hjelp-av-icinga.html</link><description>&lt;p&gt;Monitorering er et stort og viktig tema innenfor OpenStack og det finnes
 mange forskjellige verktøy som kan benyttes. Jeg har så vidt begynt å
 kikke på &lt;a class="reference external" href="https://www.icinga.org/"&gt;Icinga&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Icinga kan vise seg å være et nyttig verktøy for monitorering av
@@ -480,7 +479,7 @@ en rekke scripts som kan brukes for å overvåke rene OpenStack tjenester.&lt;/p
 hjelp av puppet moduler, og tilbyr også vagrant bokser til testformål.
 Siden resten av IaaS plattformen gjør dette per dags dato er Icinga
 absolutt interessant å ha med videre som et aktuelt verktøy.&lt;/p&gt;
-</summary><category term="bachelor"></category><category term="icinga"></category><category term="monitorering"></category><category term="nagios"></category><category term="openstack"></category><category term="overvåkning"></category></entry><entry><title>Dag 29: En bloggpost om oppetid og maskinvare og sånn...</title><link href="http://blog.norcams.org/dag-29-en-bloggpost-om-oppetid-og-maskinvare-og-sann.html" rel="alternate"></link><updated>2014-11-21T07:48:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-11-21:dag-29-en-bloggpost-om-oppetid-og-maskinvare-og-sann.html</id><summary type="html">&lt;p&gt;Dagene til den forrige kontor PC'en min var talte. 8GB just won't cut it
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 21 Nov 2014 11:13:00 +0100</pubDate><guid>tag:blog.norcams.org,2014-11-21:dag-30-monitorering-av-openstack-ved-hjelp-av-icinga.html</guid><category>bachelor</category><category>icinga</category><category>monitorering</category><category>nagios</category><category>openstack</category><category>overvåkning</category></item><item><title>Dag 29: En bloggpost om oppetid og maskinvare og sånn...</title><link>http://blog.norcams.org/dag-29-en-bloggpost-om-oppetid-og-maskinvare-og-sann.html</link><description>&lt;p&gt;Dagene til den forrige kontor PC'en min var talte. 8GB just won't cut it
 når man skal kjøre sky.&amp;nbsp; Hver av maskinene i OpenStack rammeverket ble
 definert med 2GB RAM, og&amp;nbsp; ville en ha mer enn 4 maskiner ble det fort
 lite minne igjen. Fikk&amp;nbsp; dermed ny arbeidsstasjon som hadde 16GB med RAM,
@@ -492,7 +491,7 @@ den ble aldri startet om, og den fungerte utmerket i det aller fleste
 tilfeller. Nå skal maskinen få nytt liv hjemme, og forhåpentligvis får
 den et eget kabinett.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/11/uptime.png"&gt;&lt;img alt="uptime" src="http://openstack.b.uib.no/files/2014/11/uptime.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="oppetid"></category></entry><entry><title>Dag 28: Bacheloroppgave ved UIB</title><link href="http://blog.norcams.org/dag-28-bacheloroppgave-ved-uib.html" rel="alternate"></link><updated>2014-11-19T06:24:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-11-19:dag-28-bacheloroppgave-ved-uib.html</id><summary type="html">&lt;p&gt;Dette semesteret har gitt meg god innsikt i OpenStack og de forskjellige
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 21 Nov 2014 07:48:00 +0100</pubDate><guid>tag:blog.norcams.org,2014-11-21:dag-29-en-bloggpost-om-oppetid-og-maskinvare-og-sann.html</guid><category>oppetid</category></item><item><title>Dag 28: Bacheloroppgave ved UIB</title><link>http://blog.norcams.org/dag-28-bacheloroppgave-ved-uib.html</link><description>&lt;p&gt;Dette semesteret har gitt meg god innsikt i OpenStack og de forskjellige
 komponentene rammeverket består av. &amp;nbsp;Siden jeg skal skrive
 bacheloroppgaven min til neste år har jeg i denne sammenhengen fått lov
 til å skrive den&amp;nbsp;her ved UIB.&lt;/p&gt;
@@ -511,7 +510,7 @@ eventuelle etiske spørsmål og personvernspørsmål i forbindelse med
 overvåkning av OpenStack.&lt;/p&gt;
 &lt;p&gt;Fullført&amp;nbsp;prosjektbeskrivelse vil bli publisert her på bloggen når den er
 klar.&lt;/p&gt;
-</summary><category term="bachelor"></category><category term="monitorering"></category><category term="overvåkning"></category></entry><entry><title>Dag 27: Oppdatering av "winch" dokumentasjon</title><link href="http://blog.norcams.org/dag-27-oppdatering-av-winch-dokumentasjon.html" rel="alternate"></link><updated>2014-11-14T07:09:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-11-14:dag-27-oppdatering-av-winch-dokumentasjon.html</id><summary type="html">&lt;p&gt;Mesteparten av dagen ble benyttet til å lese over dokumentasjonen til
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Wed, 19 Nov 2014 06:24:00 +0100</pubDate><guid>tag:blog.norcams.org,2014-11-19:dag-28-bacheloroppgave-ved-uib.html</guid><category>bachelor</category><category>monitorering</category><category>overvåkning</category></item><item><title>Dag 27: Oppdatering av "winch" dokumentasjon</title><link>http://blog.norcams.org/dag-27-oppdatering-av-winch-dokumentasjon.html</link><description>&lt;p&gt;Mesteparten av dagen ble benyttet til å lese over dokumentasjonen til
 &amp;quot;winch&amp;quot;.&amp;nbsp; Jeg har fått i oppgave å oppdatere dokumentasjonen slik at den
 kan brukes til slik som &amp;quot;winch&amp;quot; er nå.&lt;/p&gt;
 &lt;p&gt;I dette arbeidet kommer jeg til å bruke et verktøy som heter ReText.
@@ -522,7 +521,7 @@ for å se hvordan den ser&amp;nbsp; ut.&lt;/p&gt;
 &lt;p&gt;Dokumentasjonen finnes
 på&lt;a class="reference external" href="//winch.readthedocs.org/"&gt;http://winch.readthedocs.org/&lt;/a&gt;, flere
 oppdateringer vil skje de påfølgende ukene.&lt;/p&gt;
-</summary><category term="dokumentasjon"></category><category term="readthedocs"></category><category term="winch"></category></entry><entry><title>Dag 25 &amp; 26: Samstemt provisjonering av ceph maskiner</title><link href="http://blog.norcams.org/dag-25-26.html" rel="alternate"></link><updated>2014-11-06T09:41:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-11-06:dag-25-26.html</id><summary type="html">&lt;p&gt;Fra forrige gang fant jeg ut at et Ceph kluster ikke kan provisjoneres
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 14 Nov 2014 07:09:00 +0100</pubDate><guid>tag:blog.norcams.org,2014-11-14:dag-27-oppdatering-av-winch-dokumentasjon.html</guid><category>dokumentasjon</category><category>readthedocs</category><category>winch</category></item><item><title>Dag 25 &amp; 26: Samstemt provisjonering av ceph maskiner</title><link>http://blog.norcams.org/dag-25-26.html</link><description>&lt;p&gt;Fra forrige gang fant jeg ut at et Ceph kluster ikke kan provisjoneres
 node for node. Dette ble også bekreftet av en av utviklerne fra
 Stackforge. På bakgrunn av dette laget jeg et script som tar opp alle
 nodene samtidig. I tillegg ble det lagt inn en 10 sekunders forsinkelse
@@ -539,7 +538,7 @@ instansene vi oppretter&amp;nbsp;bruker ceph som lagringsområde. I tillegg skal
 jeg skrive en del dokumentasjon om winch og hvordan man tar det bedre i
 bruk. Foreløpig dokumentasjon kan sees
 på&amp;nbsp;&lt;a class="reference external" href="http://winch.readthedocs.org/en/latest/"&gt;http://winch.readthedocs.org/en/latest/&lt;/a&gt;&lt;/p&gt;
-</summary><category term="ceph"></category><category term="openstack"></category><category term="storage"></category><category term="winch"></category></entry><entry><title>Dag 24: Feil med opprettelse av første monitoreringsnode</title><link href="http://blog.norcams.org/dag-24-feil-med-opprettelse-av-forste-monitoreringsnode.html" rel="alternate"></link><updated>2014-11-05T19:23:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-11-05:dag-24-feil-med-opprettelse-av-forste-monitoreringsnode.html</id><summary type="html">&lt;p&gt;Ved opprettelse av første monitoreringsnode, ceph01 feiler kjøringen av
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Thu, 06 Nov 2014 09:41:00 +0100</pubDate><guid>tag:blog.norcams.org,2014-11-06:dag-25-26.html</guid><category>ceph</category><category>openstack</category><category>storage</category><category>winch</category></item><item><title>Dag 24: Feil med opprettelse av første monitoreringsnode</title><link>http://blog.norcams.org/dag-24-feil-med-opprettelse-av-forste-monitoreringsnode.html</link><description>&lt;p&gt;Ved opprettelse av første monitoreringsnode, ceph01 feiler kjøringen av
 puppet modulene. Fra det manuelle oppsettet lærte vi at den første noden
 setter inn nøkler og passord på de andre nodene i klusteret.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Error:
@@ -560,7 +559,7 @@ osdmap e17: 6 osds: 6 up, 6 in
 pgmap v24: 192 pgs, 3 pools, 0 bytes data, 0 objects
 68720 MB used, 149 GB / 227 GB avail
 192 active+clean&lt;/blockquote&gt;
-</summary><category term="ceph"></category><category term="storage"></category><category term="winch"></category></entry><entry><title>Dag 23: Installering av Ceph kluster med hjelp av puppet-moduler</title><link href="http://blog.norcams.org/dag-23-installering-av-ceph-kluster-med-hjelp-av-puppet-moduler.html" rel="alternate"></link><updated>2014-10-30T13:15:00+01:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-10-30:dag-23-installering-av-ceph-kluster-med-hjelp-av-puppet-moduler.html</id><summary type="html">&lt;p&gt;Det manuelle oppsettet av ceph-klusteret som ble installert forrige gang
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Wed, 05 Nov 2014 19:23:00 +0100</pubDate><guid>tag:blog.norcams.org,2014-11-05:dag-24-feil-med-opprettelse-av-forste-monitoreringsnode.html</guid><category>ceph</category><category>storage</category><category>winch</category></item><item><title>Dag 23: Installering av Ceph kluster med hjelp av puppet-moduler</title><link>http://blog.norcams.org/dag-23-installering-av-ceph-kluster-med-hjelp-av-puppet-moduler.html</link><description>&lt;p&gt;Det manuelle oppsettet av ceph-klusteret som ble installert forrige gang
 fungerte bra. Planen for i dag var å lage et lignende kluster ved hjelp
 av puppet moduler.&lt;/p&gt;
 &lt;p&gt;Som vi husker fra tegningen jeg publiserte i forrige innlegg, fantes det
@@ -583,7 +582,7 @@ nodene.&lt;/p&gt;
 &lt;p&gt;Etter dette kunne vi starte opp maskinene på samme måte som vi har gjort
 tidligere. Klusteret innstalleres når maskinen kommer opp for første
 gang. Mer om ceph neste gang.&lt;/p&gt;
-</summary></entry><entry><title>Dag 22: Installering av Ceph kluster</title><link href="http://blog.norcams.org/dag-22-installering-av-ceph-kluster.html" rel="alternate"></link><updated>2014-10-24T06:58:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-10-24:dag-22-installering-av-ceph-kluster.html</id><summary type="html">&lt;p&gt;Agenda i dag var å få lest litt mer om filsystemet Ceph.
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Thu, 30 Oct 2014 13:15:00 +0100</pubDate><guid>tag:blog.norcams.org,2014-10-30:dag-23-installering-av-ceph-kluster-med-hjelp-av-puppet-moduler.html</guid></item><item><title>Dag 22: Installering av Ceph kluster</title><link>http://blog.norcams.org/dag-22-installering-av-ceph-kluster.html</link><description>&lt;p&gt;Agenda i dag var å få lest litt mer om filsystemet Ceph.
 &lt;a class="reference external" href="http://ceph.com/"&gt;Ceph&lt;/a&gt; er et objekt basert filsystem som replikerer
 sine data over et lagringskluster. Det tar vekk behovet for et
 tradisjonelt SAN. Filsystemet ble utviklet i 2007, og ble i Mai i år
@@ -605,7 +604,7 @@ Deretter ble klusteret installert ved å følge
 &lt;a class="reference external" href="http://docs.ceph.com/docs/master/start/quick-ceph-deploy/"&gt;&amp;quot;quick-start-deploy&amp;quot;.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Et kjørende kluster can for eksempel se slik ut:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/10/ceph-cluster.png"&gt;&lt;img alt="ceph-cluster" src="http://openstack.b.uib.no/files/2014/10/ceph-cluster.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="ceph"></category><category term="RedHat"></category><category term="Stackforge"></category><category term="storage"></category></entry><entry><title>Dag 20 &amp; 21: Testing av Openstack deployment fra "winch"</title><link href="http://blog.norcams.org/dag-20-21-testing-av-openstack-deployment-fra-winch.html" rel="alternate"></link><updated>2014-10-17T20:53:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-10-17:dag-20-21-testing-av-openstack-deployment-fra-winch.html</id><summary type="html">&lt;p&gt;I den siste tiden har det skjedd flere endringer på
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 24 Oct 2014 06:58:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-10-24:dag-22-installering-av-ceph-kluster.html</guid><category>ceph</category><category>RedHat</category><category>Stackforge</category><category>storage</category></item><item><title>Dag 20 &amp; 21: Testing av Openstack deployment fra "winch"</title><link>http://blog.norcams.org/dag-20-21-testing-av-openstack-deployment-fra-winch.html</link><description>&lt;p&gt;I den siste tiden har det skjedd flere endringer på
 &lt;a class="reference external" href="https://github.com/norcams/winch"&gt;&amp;quot;winch&amp;quot;&lt;/a&gt; prosjektet på Github. Vi
 har nå et automatisert testmiljø som kan installere OpenStack og alle
 dens komponenter uten å måtte sette mange innstillinger manuelt.&amp;nbsp; Dette
@@ -620,7 +619,7 @@ veldig overveldende og detaljert i starten.&lt;/p&gt;
 installasjonsfilene. Vi kan nå konkludere med at &amp;quot;winch&amp;quot; er brukbart i
 forhold til de tingene vi skal gjøre videre. Blant annet skal vi kikke
 nærmere på storage, rettere sagt &lt;a class="reference external" href="http://ceph.com/"&gt;Ceph&lt;/a&gt;.&lt;/p&gt;
-</summary><category term="ceph"></category><category term="openstack"></category><category term="storage"></category><category term="winch"></category></entry><entry><title>Dag 19: Persistent montering av /vagrant/ mappe og netforward</title><link href="http://blog.norcams.org/dag-19-persistent-montering-av-vagrant-mappe-og-netforward.html" rel="alternate"></link><updated>2014-10-13T06:41:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-10-13:dag-19-persistent-montering-av-vagrant-mappe-og-netforward.html</id><summary type="html">&lt;p&gt;Som tidligere nevnt har det vært problemer ved bruk av vagrant at vi
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 17 Oct 2014 20:53:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-10-17:dag-20-21-testing-av-openstack-deployment-fra-winch.html</guid><category>ceph</category><category>openstack</category><category>storage</category><category>winch</category></item><item><title>Dag 19: Persistent montering av /vagrant/ mappe og netforward</title><link>http://blog.norcams.org/dag-19-persistent-montering-av-vagrant-mappe-og-netforward.html</link><description>&lt;p&gt;Som tidligere nevnt har det vært problemer ved bruk av vagrant at vi
 mister /vagrant mappen på manager maskinen. I denne mappen ligger det en
 del script for å installere og konfigurere Foreman og puppet. Da er det
 veldig viktig at montering av denne mappen fungerer i alle tilfeller der
@@ -636,7 +635,7 @@ ut når manager har blitt startet om utenfor vagrant og er kritisk for at
 Foreman fungerer slik vi vil.&lt;/p&gt;
 &lt;p&gt;Scriptet kan sees i sin helhet på
 &lt;a class="reference external" href="https://github.com/norcams/winch/blob/master/vagrant/manager-persistent-config.sh"&gt;github&lt;/a&gt;.&lt;/p&gt;
-</summary><category term="github"></category><category term="openstack"></category><category term="vagrant"></category></entry><entry><title>Dag 18: Oppretting av virtualbox maskiner uten vagrant</title><link href="http://blog.norcams.org/dag-18-oppretting-av-virtualbox-maskiner-uten-vagrant.html" rel="alternate"></link><updated>2014-10-08T11:41:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-10-08:dag-18-oppretting-av-virtualbox-maskiner-uten-vagrant.html</id><summary type="html">&lt;p&gt;Onsdag 1. oktober var offisiel kickoff for UH-Sky prosjektet som jeg er
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Mon, 13 Oct 2014 06:41:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-10-13:dag-19-persistent-montering-av-vagrant-mappe-og-netforward.html</guid><category>github</category><category>openstack</category><category>vagrant</category></item><item><title>Dag 18: Oppretting av virtualbox maskiner uten vagrant</title><link>http://blog.norcams.org/dag-18-oppretting-av-virtualbox-maskiner-uten-vagrant.html</link><description>&lt;p&gt;Onsdag 1. oktober var offisiel kickoff for UH-Sky prosjektet som jeg er
 en del av. Fremover vil det være mye større aktivitet på github i form
 av endringer enn tidligere. Til nå har arbeidet med &amp;quot;winch&amp;quot; vært preget
 av mye feilsøking og manuell konfigurasjon. Det vi ønsker å oppnå er å
@@ -653,7 +652,7 @@ de to komponentene
 &lt;a class="reference external" href="https://github.com/norcams/winch/blob/master/vagrant/create-vbox-controller.sh"&gt;controller&lt;/a&gt;.
 Senere vil vi nok også utvide scriptet til å gjelde for storage og
 network også.&lt;/p&gt;
-</summary><category term="compute"></category><category term="controller"></category><category term="foreman"></category><category term="vagrant"></category><category term="winch"></category></entry><entry><title>Dag 17: Installasjon av compute og controller node ved hjelp av Foreman</title><link href="http://blog.norcams.org/dag-17-installasjon-av-compute-og-controller-node-ved-hjelp-av-foreman.html" rel="alternate"></link><updated>2014-10-02T10:43:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-10-02:dag-17-installasjon-av-compute-og-controller-node-ved-hjelp-av-foreman.html</id><summary type="html">&lt;p&gt;Vi fortsatte med feilsøkingen fra fredag om hvorfor puppet modulene fra
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Wed, 08 Oct 2014 11:41:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-10-08:dag-18-oppretting-av-virtualbox-maskiner-uten-vagrant.html</guid><category>compute</category><category>controller</category><category>foreman</category><category>vagrant</category><category>winch</category></item><item><title>Dag 17: Installasjon av compute og controller node ved hjelp av Foreman</title><link>http://blog.norcams.org/dag-17-installasjon-av-compute-og-controller-node-ved-hjelp-av-foreman.html</link><description>&lt;p&gt;Vi fortsatte med feilsøkingen fra fredag om hvorfor puppet modulene fra
 &amp;quot;winch&amp;quot; ikke ville fungere når vi provisjonerte med Foreman. De hadde
 virket før og det ga lite mening at de ikke skulle virke nå som Foreman
 var med i bildet.&lt;/p&gt;
@@ -669,7 +668,7 @@ dette kludrer mye til det nettverksoppsettet vi ønsker. Derfor er neste
 steg nå å lage install script som kan lage og sette opp virtualbox
 maskiner for å unngå at eth0 inferfacet blir bundet opp til denne NAT
 adressen. Mer om dette på fredag.&lt;/p&gt;
-</summary><category term="foreman"></category><category term="puppet"></category><category term="winch"></category></entry><entry><title>Dag 15 &amp; 16: Testing og oppsett av Dell s4810 switcher og feilsøking av puppet moduler</title><link href="http://blog.norcams.org/dag-15-16-testing-og-oppsett-av-dell-s4810-switcher.html" rel="alternate"></link><updated>2014-09-29T06:10:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-09-29:dag-15-16-testing-og-oppsett-av-dell-s4810-switcher.html</id><summary type="html">&lt;p&gt;Mandagen ble brukt til å konfigurere opp to nye &lt;a class="reference external" href="http://www.dell.com/learn/us/en/04/shared-content~data-sheets~en/documents~dell_force10_s4810_spec_sheet.pdf"&gt;Dell s4810
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Thu, 02 Oct 2014 10:43:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-10-02:dag-17-installasjon-av-compute-og-controller-node-ved-hjelp-av-foreman.html</guid><category>foreman</category><category>puppet</category><category>winch</category></item><item><title>Dag 15 &amp; 16: Testing og oppsett av Dell s4810 switcher og feilsøking av puppet moduler</title><link>http://blog.norcams.org/dag-15-16-testing-og-oppsett-av-dell-s4810-switcher.html</link><description>&lt;p&gt;Mandagen ble brukt til å konfigurere opp to nye &lt;a class="reference external" href="http://www.dell.com/learn/us/en/04/shared-content~data-sheets~en/documents~dell_force10_s4810_spec_sheet.pdf"&gt;Dell s4810
 switcher&lt;/a&gt;
 som skal brukes til testformål i prosjektet. I motsetning til andre
 switcher som typisk kjører sitt eget operativsystem kjører disse
@@ -685,7 +684,7 @@ puppet modulene til å virke på maskinen. Fra tidligere fungerte modulene
 etter vi hadde oppdatert dem i forbindelse med &amp;quot;winch&amp;quot; prosjektet.
 Eneste endringen nå er at vi bruker Foreman. Videre feilsøking på
 mandag...&lt;/p&gt;
-</summary><category term="cumulus linux"></category><category term="dell"></category><category term="gilgamesh"></category><category term="omo"></category><category term="openstack"></category><category term="switcher"></category><category term="winch"></category></entry><entry><title>Dag 14: Oppdatering av Foreman og installasjon av compute noder</title><link href="http://blog.norcams.org/dag-14-oppdatering-av-foreman-og-installasjon-av-compute-noder.html" rel="alternate"></link><updated>2014-09-17T15:33:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-09-17:dag-14-oppdatering-av-foreman-og-installasjon-av-compute-noder.html</id><summary type="html">&lt;p&gt;Vi startet dagen med å feilsøke på hvorfor
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Mon, 29 Sep 2014 06:10:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-09-29:dag-15-16-testing-og-oppsett-av-dell-s4810-switcher.html</guid><category>cumulus linux</category><category>dell</category><category>gilgamesh</category><category>omo</category><category>openstack</category><category>switcher</category><category>winch</category></item><item><title>Dag 14: Oppdatering av Foreman og installasjon av compute noder</title><link>http://blog.norcams.org/dag-14-oppdatering-av-foreman-og-installasjon-av-compute-noder.html</link><description>&lt;p&gt;Vi startet dagen med å feilsøke på hvorfor
 &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol"&gt;TFTP&lt;/a&gt;
 serveren til Foreman ikke ville fungere. Flere problemer oppstod med
 versjon 1.4.5 uten at vi fant noen gode forklaringer på hvorfor.
@@ -706,7 +705,7 @@ er dette noe vi skal holde på med en god stund fremover, og det alltid
 kjekt med bratte læringskurver.&lt;/p&gt;
 &lt;p&gt;Eksempelutdrag på et Foreman dashboard hentet fra google:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/09/foreman.png"&gt;&lt;img alt="foreman" src="http://openstack.b.uib.no/files/2014/09/foreman.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="1.6"></category><category term="foreman"></category><category term="openstack"></category><category term="TFTP"></category><category term="winch"></category></entry><entry><title>Dag 13: Installasjon av The Foreman</title><link href="http://blog.norcams.org/dag-13-installasjon-av-the-foreman.html" rel="alternate"></link><updated>2014-09-15T06:16:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-09-15:dag-13-installasjon-av-the-foreman.html</id><summary type="html">&lt;p&gt;Etter å ha fått &amp;quot;winch&amp;quot; oppgradert til siste OpenStack versjon; Icehouse
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Wed, 17 Sep 2014 15:33:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-09-17:dag-14-oppdatering-av-foreman-og-installasjon-av-compute-noder.html</guid><category>1.6</category><category>foreman</category><category>openstack</category><category>TFTP</category><category>winch</category></item><item><title>Dag 13: Installasjon av The Foreman</title><link>http://blog.norcams.org/dag-13-installasjon-av-the-foreman.html</link><description>&lt;p&gt;Etter å ha fått &amp;quot;winch&amp;quot; oppgradert til siste OpenStack versjon; Icehouse
 started vi med installasjonen av &lt;a class="reference external" href="http://theforeman.org/"&gt;The
 Foreman.&lt;/a&gt;Foreman ligger inne i &amp;quot;winch&amp;quot; med
 versjon 1.4.5 og formålet med å installere denne versjonen er å kunne
@@ -727,7 +726,7 @@ dette på en rask og effektiv måte. Alternativt måtte man gjort dette for
 hver og enkelt server noe som ikke skalerer i lengden. På mandag vil vi
 jobbe videre med The Foreman og sette igang med provisjonering av
 compute noder.&lt;/p&gt;
-</summary><category term="foreman"></category><category term="openstack"></category><category term="provisjonering"></category><category term="winch"></category></entry><entry><title>Dag 12: Feilsøking av "winch" installasjon</title><link href="http://blog.norcams.org/dag-12-feilsoking-av-winch-installasjon.html" rel="alternate"></link><updated>2014-09-12T06:27:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-09-12:dag-12-feilsoking-av-winch-installasjon.html</id><summary type="html">&lt;p&gt;Fra tidligere har vi ofte hatt problemer med å få instanser til å snakke
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Mon, 15 Sep 2014 06:16:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-09-15:dag-13-installasjon-av-the-foreman.html</guid><category>foreman</category><category>openstack</category><category>provisjonering</category><category>winch</category></item><item><title>Dag 12: Feilsøking av "winch" installasjon</title><link>http://blog.norcams.org/dag-12-feilsoking-av-winch-installasjon.html</link><description>&lt;p&gt;Fra tidligere har vi ofte hatt problemer med å få instanser til å snakke
 med verden på utsiden. Dette har ofte krevd mer konfigurasjon og
 feilsøking enn først antatt. Denne gangen var intet unntak. Det ble mye
 repetering av OpenStack network in too much detail og sjekking av
@@ -740,7 +739,7 @@ om på IP adressene til de forskjellige interfacene maskinene skulle ha.
 Derfor var det mye som ikke ble riktig og etterpå kunne maskinene komme
 på nett. Senere i uken ble også &amp;quot;winch&amp;quot; prosjektet oppdatert. Endringer
 kan sees &lt;a class="reference external" href="https://github.com/norcams/winch/tree/foreman"&gt;her&lt;/a&gt;.&lt;/p&gt;
-</summary><category term="feilsøking"></category><category term="nettverk"></category><category term="openstack"></category><category term="winch"></category></entry><entry><title>Dag 11: Videre oppdatering av "winch" repository</title><link href="http://blog.norcams.org/dag-11-videre-oppdatering-av-winch-repository.html" rel="alternate"></link><updated>2014-09-08T06:49:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-09-08:dag-11-videre-oppdatering-av-winch-repository.html</id><summary type="html">&lt;p&gt;Siden &amp;quot;winch&amp;quot; ble laget for å støtte en eldre versjon av OpenStack ble
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 12 Sep 2014 06:27:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-09-12:dag-12-feilsoking-av-winch-installasjon.html</guid><category>feilsøking</category><category>nettverk</category><category>openstack</category><category>winch</category></item><item><title>Dag 11: Videre oppdatering av "winch" repository</title><link>http://blog.norcams.org/dag-11-videre-oppdatering-av-winch-repository.html</link><description>&lt;p&gt;Siden &amp;quot;winch&amp;quot; ble laget for å støtte en eldre versjon av OpenStack ble
 det nødvendig å oppdatere flere av puppet modulene til å nyeste versjon.
 Uten dette feilet installasjonen momentant og det var ikke mulig å
 provisjonere opp maskiner med puppet når modulene var utdaterte. Etter
@@ -760,7 +759,7 @@ og setter samtidig opp nettverk, rutere, og instanser.&amp;nbsp; Nå har vi en
 kjørende instans og selve oppsettet ser ut til å fungere greit. Opplever
 nå at instansen ikke kan nås fra controller noden, så dette er noe vi må
 feilsøke videre på mandag.&lt;/p&gt;
-</summary><category term="openstack"></category><category term="puppet"></category><category term="winch"></category></entry><entry><title>Dag 10: Feilsøking av instansnettverk &amp; installasjon av "winch"</title><link href="http://blog.norcams.org/dag-10-feilsoking-av-instansnettverk-installasjon-av-winch.html" rel="alternate"></link><updated>2014-09-05T10:40:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-09-05:dag-10-feilsoking-av-instansnettverk-installasjon-av-winch.html</id><summary type="html">&lt;p&gt;Første del av dagen ble brukt til videre feilsøking av hvorfor
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Mon, 08 Sep 2014 06:49:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-09-08:dag-11-videre-oppdatering-av-winch-repository.html</guid><category>openstack</category><category>puppet</category><category>winch</category></item><item><title>Dag 10: Feilsøking av instansnettverk &amp; installasjon av "winch"</title><link>http://blog.norcams.org/dag-10-feilsoking-av-instansnettverk-installasjon-av-winch.html</link><description>&lt;p&gt;Første del av dagen ble brukt til videre feilsøking av hvorfor
 instansene våre ikke kunne snakke ut mot verden. Dette ble løst med å
 spesifisere hvilket interface vi skulle kjøre maskering ifra. Iptables
 regelen fra &lt;a class="reference external" href="https://openstack.redhat.com/Networking_in_too_much_detail"&gt;OpenStack networking in too
@@ -785,7 +784,7 @@ versjonen. I disse dager bruker vi icehouse, som er samme versjon som
 ble installert ved hjelp av packstack. For å kunne jobbe videre med
 &amp;quot;winch&amp;quot; er vi først nødt til å oppdatere denne til å støtte icehouse.
 Dette vil være klart til neste gang.&lt;/p&gt;
-</summary><category term="foreman"></category><category term="iptables"></category><category term="winch"></category></entry><entry><title>Dag 9:Tilbake til packstack --allinone og installasjon av fysisk controller</title><link href="http://blog.norcams.org/dag-9tilbake-til-packstack-allinone-og-installasjon-av-fysisk-controller.html" rel="alternate"></link><updated>2014-09-03T06:03:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-09-03:dag-9tilbake-til-packstack-allinone-og-installasjon-av-fysisk-controller.html</id><summary type="html">&lt;p&gt;Etter at minnetildelingen hadde blitt økt flere ganger på vår virtuelle
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 05 Sep 2014 10:40:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-09-05:dag-10-feilsoking-av-instansnettverk-installasjon-av-winch.html</guid><category>foreman</category><category>iptables</category><category>winch</category></item><item><title>Dag 9:Tilbake til packstack --allinone og installasjon av fysisk controller</title><link>http://blog.norcams.org/dag-9tilbake-til-packstack-allinone-og-installasjon-av-fysisk-controller.html</link><description>&lt;p&gt;Etter at minnetildelingen hadde blitt økt flere ganger på vår virtuelle
 controller node bestemte vi oss for å installere denne på en fysisk
 maskin. I tillegg hadde vi også hatt problemer med neutron-server, så i
 denne omgang gikk vi tilbake på å kjøre packstack --allinone. Dette
@@ -809,7 +808,7 @@ Vi fikk litt problemer etter at reglene var lagt inn i brannmuren.
 Instansene klarer ikke å pinge&amp;nbsp;ut i verden. Det eneste instansen klarer
 å pinge er controller noden og vice versa.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/08/Neutron_architecture.png"&gt;&lt;img alt="Neutron_architecture" src="http://openstack.b.uib.no/files/2014/08/Neutron_architecture-300x166.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="allinone"></category><category term="feilsøking"></category><category term="nettverk"></category><category term="openstack"></category><category term="packstack"></category></entry><entry><title>Dag 8: Videre feilsøking av neutron-server</title><link href="http://blog.norcams.org/dag-8-videre-feilsoking-av-neutron-server-og-installasjon-av-fysisk-controller-node.html" rel="alternate"></link><updated>2014-08-28T08:34:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-08-28:dag-8-videre-feilsoking-av-neutron-server-og-installasjon-av-fysisk-controller-node.html</id><summary type="html">&lt;p&gt;På denne dagen gikk mye av tiden med til å feilsøke hvorfor
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Wed, 03 Sep 2014 06:03:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-09-03:dag-9tilbake-til-packstack-allinone-og-installasjon-av-fysisk-controller.html</guid><category>allinone</category><category>feilsøking</category><category>nettverk</category><category>openstack</category><category>packstack</category></item><item><title>Dag 8: Videre feilsøking av neutron-server</title><link>http://blog.norcams.org/dag-8-videre-feilsoking-av-neutron-server-og-installasjon-av-fysisk-controller-node.html</link><description>&lt;p&gt;På denne dagen gikk mye av tiden med til å feilsøke hvorfor
 neutron-server ikke ville starte på compute noden. Feilsøking uten å ha
 noe logg å lese kan ofte være vanskelig, og da kommer det helt&amp;nbsp;an på
 hvilke svar man kan finne på nettet i lignende installasjoner. Til slutt
@@ -835,7 +834,28 @@ med maskinen.&amp;nbsp;På grunn av dette er planen til neste gang å få lagt
 controller noden over på en fysisk maskin. Samtidig skal vi også
 installere ML2 tillegget før vi kjører packstack, slik at vi ikke får de
 samme problemene med neutron-server som tidligere.&lt;/p&gt;
-</summary><category term="compute"></category><category term="controller"></category><category term="feilsøking"></category><category term="openstack"></category><category term="plugin"></category></entry><entry><title>Dag 6: Installering av fysisk compute node</title><link href="http://blog.norcams.org/dag-6-installering-av-fysisk-compute-node.html" rel="alternate"></link><updated>2014-08-22T18:24:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-08-22:dag-6-installering-av-fysisk-compute-node.html</id><summary type="html">&lt;p&gt;18. august hadde vi fått installert compute noden på en fysisk maskin.
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Thu, 28 Aug 2014 08:34:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-08-28:dag-8-videre-feilsoking-av-neutron-server-og-installasjon-av-fysisk-controller-node.html</guid><category>compute</category><category>controller</category><category>feilsøking</category><category>openstack</category><category>plugin</category></item><item><title>Dag 7: OpenStack networking in too much detail &amp; feilsøking av neutron-server</title><link>http://blog.norcams.org/dag-7-openstack-network-in-too-much-detail-feilsoking-av-neutron-server.html</link><description>&lt;p&gt;Etter at en virtuell maskin har blitt startet i en instans er vi
+interessert i å kunne snakke med denne maskinen utenfra OpenStack
+nettverket. Det er her OpenStack in to much detail kommer inn i bildet.
+&amp;nbsp;Se bildet nedenfor for mer detaljer.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/08/Neutron_architecture.png"&gt;&lt;img alt="Neutron_architecture" src="http://openstack.b.uib.no/files/2014/08/Neutron_architecture-300x166.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Jeg vil ikke prøve å forklare dette i detalj da nettverket er veldig
+komplekst.
+&lt;a class="reference external" href="http://openstack.redhat.com/Networking_in_too_much_detail"&gt;Artikkelen&lt;/a&gt;&amp;nbsp;tar
+utgangspunkt i å forklare arkitekturen, og hvordan nettverk, bruer og
+tunneler henger sammen i en OpenStack installasjon. Bildet er forøvrig
+skrevet ut og ligger ved arbeidsstasjonen min, regner med at det skal
+repeteres en god del ganger før nettverket sitter 100%.&lt;/p&gt;
+&lt;p&gt;Etter at vi hadde fått laget instanser ville ikke nettverket i en
+instans starte slik vi ville. Etter litt feilsøking fant vi ut at
+neutron-server tjenesten på compute noden ikke starter. Tjenesten dør
+momentant når den blir startet og det skjer såpass fort at det ikke er
+noe innslag i loggen som kan si hva som er galt. Resten av dagen gikk
+med til å feilsøke hvorfor neutron-server ikke ville starte.
+Initscriptet er likt som på controller noden, og
+/etc/neutron/neutron.conf er identisk på de to maskinene.&amp;nbsp;Dette må
+feilsøkes ytterligere, fortsettelse følger på mandag.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Wed, 27 Aug 2014 06:22:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-08-27:dag-7-openstack-network-in-too-much-detail-feilsoking-av-neutron-server.html</guid><category>compute</category><category>neutron</category><category>openstack</category></item><item><title>Dag 6: Installering av fysisk compute node</title><link>http://blog.norcams.org/dag-6-installering-av-fysisk-compute-node.html</link><description>&lt;p&gt;18. august hadde vi fått installert compute noden på en fysisk maskin.
 Til nå hadde vi hatt problemer med å lage og starte instanser når alt
 kjørte på en node, på grunn av lite tilgjengelige ressurser. Som
 tidligere forklart kunne vi nå bruke packstack svarfilen som ville gjøre
@@ -857,7 +877,7 @@ nettverk maskinen skal ha, hva post-scripts som skal kjøres og om man
 vil kjøre automatisk eller manuelt diskoppsett. Alt i alt er det et
 veldig oversiktlig og funksjonelt verktøy som det skal bli veldig kjekt
 å lære mer om!&lt;/p&gt;
-</summary><category term="compute"></category><category term="horizon"></category><category term="openstack"></category></entry><entry><title>Dag 5: Prøving og feiling med packstack --allinone</title><link href="http://blog.norcams.org/dag-5-proving-og-feiling-med-packstack-allinone.html" rel="alternate"></link><updated>2014-08-21T18:11:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-08-21:dag-5-proving-og-feiling-med-packstack-allinone.html</id><summary type="html">&lt;p&gt;15 august. De tre hovedkomponentene til OpenStack hadde nå blitt
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Fri, 22 Aug 2014 18:24:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-08-22:dag-6-installering-av-fysisk-compute-node.html</guid><category>compute</category><category>horizon</category><category>openstack</category></item><item><title>Dag 5: Prøving og feiling med packstack --allinone</title><link>http://blog.norcams.org/dag-5-proving-og-feiling-med-packstack-allinone.html</link><description>&lt;p&gt;15 august. De tre hovedkomponentene til OpenStack hadde nå blitt
 installert med packstack til å kjøre på en og samme node. &amp;nbsp;Dette burde
 ikke by på store problemer da RDO pakken fra Red Hat er godt testet og
 fungerer i mange installasjoner av OpenStack der ute i dag.&lt;/p&gt;
@@ -894,7 +914,7 @@ packstack --allinone
 packstack --answer-file=$youranswerfile
 &lt;/pre&gt;
 &lt;/blockquote&gt;
-</summary><category term="centos"></category><category term="openstack"></category><category term="packstack"></category><category term="rdo"></category></entry><entry><title>Dag 4: Installasjon av OpenStack packstack</title><link href="http://blog.norcams.org/dag-4-installasjon-av-openstack-packstack.html" rel="alternate"></link><updated>2014-08-21T10:58:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-08-21:dag-4-installasjon-av-openstack-packstack.html</id><summary type="html">&lt;p&gt;11. august var satt av til å installere OpenStack fra RDO.&amp;nbsp;RDO er under
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Thu, 21 Aug 2014 18:11:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-08-21:dag-5-proving-og-feiling-med-packstack-allinone.html</guid><category>centos</category><category>openstack</category><category>packstack</category><category>rdo</category></item><item><title>Dag 4: Installasjon av OpenStack packstack</title><link>http://blog.norcams.org/dag-4-installasjon-av-openstack-packstack.html</link><description>&lt;p&gt;11. august var satt av til å installere OpenStack fra RDO.&amp;nbsp;RDO er under
 utvikling av Red Hat og er en egen utgivelse av OpenStack laget
 spesifikt for å kjøre
 på&amp;nbsp;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Red_Hat_Enterprise_Linux"&gt;RHEL&lt;/a&gt;,
@@ -950,7 +970,7 @@ bli bedt om root passordet til maskinen før installasjonen starter.&lt;/p&gt;
 &lt;p&gt;Etter installasjon vil man kunne logge inn på panelet
 &lt;a class="reference external" href="https://wiki.openstack.org/wiki/Horizon"&gt;Horizon&lt;/a&gt;for å starte og
 administrere de instanser man måtte ønske. Mer om dette videre.&lt;/p&gt;
-</summary><category term="centos"></category><category term="fedora"></category><category term="openstack"></category><category term="packstack"></category><category term="rdo"></category><category term="rhel"></category></entry><entry><title>Dag 3: Videre feilsøking av OpenStack from scratch</title><link href="http://blog.norcams.org/dag-3-videre-feilsoking-av-openstack-from-scratch.html" rel="alternate"></link><updated>2014-08-20T11:59:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-08-20:dag-3-videre-feilsoking-av-openstack-from-scratch.html</id><summary type="html">&lt;p&gt;8. august gikk mye av tiden til å feilsøke på hvorfor installasjonen fra
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Thu, 21 Aug 2014 10:58:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-08-21:dag-4-installasjon-av-openstack-packstack.html</guid><category>centos</category><category>fedora</category><category>openstack</category><category>packstack</category><category>rdo</category><category>rhel</category></item><item><title>Dag 3: Videre feilsøking av OpenStack from scratch</title><link>http://blog.norcams.org/dag-3-videre-feilsoking-av-openstack-from-scratch.html</link><description>&lt;p&gt;8. august gikk mye av tiden til å feilsøke på hvorfor installasjonen fra
 gårsdagen ikke ville lage instanser. &amp;nbsp;OpenStack from scratch har en
 rekke tester en kan kjøre når&amp;nbsp;installasjonen er ferdig. Testene ligger
 her:&amp;nbsp;&lt;a class="reference external" href="https://github.com/norcams/ofs/tree/master/tests"&gt;https://github.com/norcams/ofs/tree/master/tests&lt;/a&gt;&lt;/p&gt;
@@ -973,7 +993,7 @@ verktøyene som er i bruk samtidig som jeg har fått et greit overblikk på
 hvordan komponentene fungerer sammen.&amp;nbsp;I neste uke har vi tenkt å gå
 videre med en annen installasjon av OpenStack
 nemlig&amp;nbsp;&lt;a class="reference external" href="http://openstack.redhat.com/Frequently_Asked_Questions#What_is_RDO.3F"&gt;RDO&lt;/a&gt;.&lt;/p&gt;
-</summary><category term="feilsøking"></category><category term="glance"></category><category term="nova"></category><category term="ofs"></category></entry><entry><title>Dag 2: OpenStack from scratch</title><link href="http://blog.norcams.org/dag-2-openstack-from-scratch.html" rel="alternate"></link><updated>2014-08-19T08:57:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-08-19:dag-2-openstack-from-scratch.html</id><summary type="html">&lt;p&gt;7. august gikk med til å utføre en OpenStack installasjon fra scratch.
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Wed, 20 Aug 2014 11:59:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-08-20:dag-3-videre-feilsoking-av-openstack-from-scratch.html</guid><category>feilsøking</category><category>glance</category><category>nova</category><category>ofs</category></item><item><title>Dag 2: OpenStack from scratch</title><link>http://blog.norcams.org/dag-2-openstack-from-scratch.html</link><description>&lt;p&gt;7. august gikk med til å utføre en OpenStack installasjon fra scratch.
 Denne installasjonen gir et godt inntrykk av hva komponenter OpenStack
 består av og hvordan disse skal fungere sammen i en komplett
 installasjon.&lt;/p&gt;
@@ -992,7 +1012,7 @@ til. Velger i denne sammenhengen å vise til
 jeg syns har oppsummert dette ganske bra, samt at den forklarer bruken
 til hver av komponentene.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="OpenStack" src="http://openstack.b.uib.no/files/2014/08/OpenStack.png" /&gt;&lt;/p&gt;
-</summary><category term="github"></category><category term="ofs"></category></entry><entry><title>Dag 1: Installasjon av arbeidsplass ved UIB</title><link href="http://blog.norcams.org/dag-1-installasjon-av-arbeidsplass-ved-uib.html" rel="alternate"></link><updated>2014-08-18T12:28:00+02:00</updated><author><name>ksk037</name></author><id>tag:blog.norcams.org,2014-08-18:dag-1-installasjon-av-arbeidsplass-ved-uib.html</id><summary type="html">&lt;p&gt;Fredag 4. august var første arbeidsdag på IT-avdelingen ved UIB. Jeg har
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Tue, 19 Aug 2014 08:57:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-08-19:dag-2-openstack-from-scratch.html</guid><category>github</category><category>ofs</category></item><item><title>Dag 1: Installasjon av arbeidsplass ved UIB</title><link>http://blog.norcams.org/dag-1-installasjon-av-arbeidsplass-ved-uib.html</link><description>&lt;p&gt;Fredag 4. august var første arbeidsdag på IT-avdelingen ved UIB. Jeg har
 tidligere jobbet her som lærling og ble godt tatt imot av både gamle og
 nye kolleger. Jeg skal jobbe med Iaas (Infrastructure as a service) og
 mine arbeidsoppgaver vil omfatte nettverk, lagring, compute og
@@ -1002,4 +1022,4 @@ arbeidsstasjonen samt å finne to skjermer som ville passe til.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/08/2014-08-01-14.43.38.jpg"&gt;&lt;img alt="2014-08-01 14.43.38" src="http://openstack.b.uib.no/files/2014/08/2014-08-01-14.43.38-300x168.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I mangel på kabinett ble arbeidsstasjonen min seende slik ut:&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2014/08/2014-08-18-14.09.08.jpg"&gt;&lt;img alt="2014-08-18 14.09.08" src="http://openstack.b.uib.no/files/2014/08/2014-08-18-14.09.08-300x168.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="openstack"></category><category term="pc"></category><category term="uib"></category></entry></feed>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Kristian Skurtveit</dc:creator><pubDate>Mon, 18 Aug 2014 12:28:00 +0200</pubDate><guid>tag:blog.norcams.org,2014-08-18:dag-1-installasjon-av-arbeidsplass-ved-uib.html</guid><category>openstack</category><category>pc</category><category>uib</category></item></channel></rss>

@@ -7,7 +7,7 @@
 
         <link rel="alternate"  href="http://blog.norcams.org/feeds/all.atom.xml" type="application/atom+xml" title="norcams Full Atom Feed"/>
 
-        <title>Dag 25 & 26: Samstemt provisjonering av ceph maskiner // norcams // culture automation measurement sharing</title>
+        <title>Dag 7: OpenStack networking in too much detail & feilsøking av neutron-server // norcams // culture automation measurement sharing</title>
 
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
@@ -34,7 +34,7 @@
                 <h2 class="article-info">Kristian Skurtveit</h2>
                 <small class="about-author"></small>
                 <h5>Published</h5>
-                <p>Thu 06 November 2014</p>
+                <p>Wed 27 August 2014</p>
                 <a href="/">&larr;Home</a>
             </hgroup>
         </header>
@@ -43,32 +43,35 @@
         <div class="content">
             <section class="post">
                 <header class="post-header">
-                    <h1>Dag 25 &amp; 26: Samstemt provisjonering av ceph maskiner</h1>
+                    <h1>Dag 7: OpenStack networking in too much detail &amp; feilsøking av neutron-server</h1>
                         <p class="post-meta">
-                            // under                                 <a class="post-category" href="http://blog.norcams.org/tag/ceph.html">ceph</a>
+                            // under                                 <a class="post-category" href="http://blog.norcams.org/tag/compute.html">compute</a>
+                                <a class="post-category" href="http://blog.norcams.org/tag/neutron.html">neutron</a>
                                 <a class="post-category" href="http://blog.norcams.org/tag/openstack.html">openstack</a>
-                                <a class="post-category" href="http://blog.norcams.org/tag/storage.html">storage</a>
-                                <a class="post-category" href="http://blog.norcams.org/tag/winch.html">winch</a>
                         </p>
                 </header>
             </section>
-            <p>Fra forrige gang fant jeg ut at et Ceph kluster ikke kan provisjoneres
-node for node. Dette ble også bekreftet av en av utviklerne fra
-Stackforge. På bakgrunn av dette laget jeg et script som tar opp alle
-nodene samtidig. I tillegg ble det lagt inn en 10 sekunders forsinkelse
-mellom hver av maskinene slik at vi får korrekt IP adresse på dem.
-Scriptet er et veldig enkelt script som kan sees i sin helhet på
-<a class="reference external" href="https://github.com/norcams/winch/blob/ceph/spawn-cephnodes.sh">Github</a>.</p>
-<p>Nå vil ikke timeout feilen fra forrige innlegg skje. Når den kommer til
-punktet der nøklene skal sendes over til de andre maskinene i ceph
-klusteret vil de andre nodene også ha kommet til dette steget. På denne
-måten klarer nøklene å spres over til de andre maskinene og
-provisjoneringen med puppet går gjennom uten feil.</p>
-<p>Videre arbeid blir nå å integrere ceph med resten av OpenStack slik at
-instansene vi oppretter&nbsp;bruker ceph som lagringsområde. I tillegg skal
-jeg skrive en del dokumentasjon om winch og hvordan man tar det bedre i
-bruk. Foreløpig dokumentasjon kan sees
-på&nbsp;<a class="reference external" href="http://winch.readthedocs.org/en/latest/">http://winch.readthedocs.org/en/latest/</a></p>
+            <p>Etter at en virtuell maskin har blitt startet i en instans er vi
+interessert i å kunne snakke med denne maskinen utenfra OpenStack
+nettverket. Det er her OpenStack in to much detail kommer inn i bildet.
+&nbsp;Se bildet nedenfor for mer detaljer.</p>
+<p><a class="reference external" href="http://openstack.b.uib.no/files/2014/08/Neutron_architecture.png"><img alt="Neutron_architecture" src="http://openstack.b.uib.no/files/2014/08/Neutron_architecture-300x166.png" /></a></p>
+<p>Jeg vil ikke prøve å forklare dette i detalj da nettverket er veldig
+komplekst.
+<a class="reference external" href="http://openstack.redhat.com/Networking_in_too_much_detail">Artikkelen</a>&nbsp;tar
+utgangspunkt i å forklare arkitekturen, og hvordan nettverk, bruer og
+tunneler henger sammen i en OpenStack installasjon. Bildet er forøvrig
+skrevet ut og ligger ved arbeidsstasjonen min, regner med at det skal
+repeteres en god del ganger før nettverket sitter 100%.</p>
+<p>Etter at vi hadde fått laget instanser ville ikke nettverket i en
+instans starte slik vi ville. Etter litt feilsøking fant vi ut at
+neutron-server tjenesten på compute noden ikke starter. Tjenesten dør
+momentant når den blir startet og det skjer såpass fort at det ikke er
+noe innslag i loggen som kan si hva som er galt. Resten av dagen gikk
+med til å feilsøke hvorfor neutron-server ikke ville starte.
+Initscriptet er likt som på controller noden, og
+/etc/neutron/neutron.conf er identisk på de to maskinene.&nbsp;Dette må
+feilsøkes ytterligere, fortsettelse følger på mandag.</p>
 
             <div class="hr"></div>
             <a href="#" class="go-top">Go Top</a>
