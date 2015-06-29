@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/bachelor-blade-server-monitorering-openstack-overvakning-prosjekt.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2015-03-06T07:41:00+01:00</updated><entry><title>Dag 0: Oppsummering</title><link href="http://blog.norcams.org/dag-0-oppsummering.html" rel="alternate"></link><updated>2015-03-06T07:41:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-06:dag-0-oppsummering.html</id><summary type="html">&lt;p&gt;Denne bloggposten er en oppsummering av arbeidet som har blitt gjort før
+<feed xmlns="http://www.w3.org/2005/Atom"><title>norcams</title><link href="http://blog.norcams.org/" rel="alternate"></link><link href="http://blog.norcams.org/feeds/bachelorprosjekt.atom.xml" rel="self"></link><id>http://blog.norcams.org/</id><updated>2015-06-16T19:21:00+02:00</updated><entry><title>Video of bachelor thesis</title><link href="http://blog.norcams.org/video-of-bachelor-thesis.html" rel="alternate"></link><updated>2015-06-16T19:21:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-06-16:video-of-bachelor-thesis.html</id><summary type="html">&lt;p&gt;This is a video that presents the core components of the &lt;a class="reference external" href="http://openstack.b.uib.no/2015/04/20/day-14-summary-collecting-openstack-logs-with-logstash/"&gt;bachelor
+thesis&lt;/a&gt;.
+Thanks to &lt;a class="reference external" href="http://remix.kwed.org/download.php/2492/Christian%20Schuler%20-%20Druid%20version%20%28grassroots%20mix%29.mp3"&gt;Christian
+Schüler&lt;/a&gt;
+for allowing me to borrow his Druid version (grassroots mix) for
+background music.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/06/Monitorering-av-OpenStack-Kristian-Adlandsvik-Skurtveit.mp4"&gt;See the video here&lt;/a&gt;&lt;/p&gt;
+</summary><category term="video"></category></entry><entry><title>Dag 0: Oppsummering</title><link href="http://blog.norcams.org/dag-0-oppsummering.html" rel="alternate"></link><updated>2015-03-06T07:41:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-06:dag-0-oppsummering.html</id><summary type="html">&lt;p&gt;Denne bloggposten er en oppsummering av arbeidet som har blitt gjort før
 forprosjektet i bacheloroppgaven har kommet i gang.&lt;/p&gt;
 &lt;p&gt;I henhold til problemstillingen skal jeg kartlegge forskjellige
 monitoreringsverktøy og teste bruken av disse. Dette er arbeid som jeg
@@ -30,4 +37,4 @@ for. Dette gjør testingen av potensielle verktøy enklere i tillegg til
 at dataene jeg kommer til å teste med blir mest mulig reelle.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.52.jpg"&gt;&lt;img alt="2015-02-24 13.13.52" src="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.52-300x169.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.37.jpg"&gt;&lt;img alt="2015-02-24 13.13.37" src="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.37-300x169.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary><category term="bachelor"></category><category term="blade server"></category><category term="prosjekt"></category><category term="testing"></category></entry></feed>
+</summary></entry></feed>
