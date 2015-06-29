@@ -6,7 +6,10 @@ Schüler&lt;/a&gt;
 for allowing me to borrow his Druid version (grassroots mix) for
 background music.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/06/Monitorering-av-OpenStack-Kristian-Adlandsvik-Skurtveit.mp4"&gt;See the video here&lt;/a&gt;&lt;/p&gt;
-</summary><category term="video"></category></entry><entry><title>Dag 35-39: Skriveuke</title><link href="http://blog.norcams.org/dag-35-39-skriveuke.html" rel="alternate"></link><updated>2015-05-28T09:21:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-05-28:dag-35-39-skriveuke.html</id><summary type="html">&lt;p&gt;Gjennom hele uken har tiden gått med til å skrive ferdig utkast til
+</summary><category term="video"></category></entry><entry><title>Prosjektrapport bacheloroppgave</title><link href="http://blog.norcams.org/prosjektrapport-bacheloroppgave.html" rel="alternate"></link><updated>2015-06-08T10:11:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-06-08:prosjektrapport-bacheloroppgave.html</id><summary type="html">&lt;p&gt;Da har jeg fullført bacheloroppgaven min. Endelig prosjektrapport ligger
+nå ute for nedlastning her: &lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/06/Monitorering-av-OpenStack-ved-UiB.pdf"&gt;Monitorering av OpenStack ved
+UiB&lt;/a&gt;&lt;/p&gt;
+</summary><category term="prosjektrapport"></category></entry><entry><title>Dag 35-39: Skriveuke</title><link href="http://blog.norcams.org/dag-35-39-skriveuke.html" rel="alternate"></link><updated>2015-05-28T09:21:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-05-28:dag-35-39-skriveuke.html</id><summary type="html">&lt;p&gt;Gjennom hele uken har tiden gått med til å skrive ferdig utkast til
 prosjektrapporen. Denne ble levert inn 26. mai og endelig
 innleveringsfrist er 9. juni. Arbeidet som gjenstår er å skrive
 dokumentasjon om det endelige monitoreringsoppsettet slik at dette
@@ -15,7 +18,358 @@ enkelt kan tas i bruk. Dette forventes å være ferdig i neste uke.&lt;/p&gt;
 8,943,279 millioner hendelser som har blitt lagret i Elasticsearch og
 visualisert gjennom Kibana og Graphite.&lt;/p&gt;
 &lt;p&gt;Endelig innleveringsdato for prosjektrapporten er 9. juni..&lt;/p&gt;
-</summary><category term="elasticsearch"></category><category term="kibana"></category><category term="logstash"></category></entry><entry><title>Dag 0: Oppsummering</title><link href="http://blog.norcams.org/dag-0-oppsummering.html" rel="alternate"></link><updated>2015-03-06T07:41:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-06:dag-0-oppsummering.html</id><summary type="html">&lt;p&gt;Denne bloggposten er en oppsummering av arbeidet som har blitt gjort før
+</summary><category term="elasticsearch"></category><category term="kibana"></category><category term="logstash"></category></entry><entry><title>Dag 30-34: Grafing av API responskoder &amp; responstider</title><link href="http://blog.norcams.org/dag-30-34-grafing-av-api-responskoder-responstider.html" rel="alternate"></link><updated>2015-05-21T11:26:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-05-21:dag-30-34-grafing-av-api-responskoder-responstider.html</id><summary type="html">&lt;p&gt;Siden vi allerede ekstraherer alle loggmeldinger som genereres i
+OpenStack kan vi også hente ut og visualisere API-responskoder og
+API-responstider.&amp;nbsp; Dette grafes på følgende måte: &lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/05/api-responses.png"&gt;&lt;img alt="api-responses" src="http://openstack.b.uib.no/files/2015/05/api-responses.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Med en API responstid følger også en responskode.&amp;nbsp; For å&amp;nbsp; se hvor mange
+ganger responskodene forekommer i forhold til hverandre kan dette
+visualiseres på denne måten:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/05/total-api-response-codes.png"&gt;&lt;img alt="total api-response-codes" src="http://openstack.b.uib.no/files/2015/05/total-api-response-codes.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Etter helgen 17. mai vil jeg hovedsaklig fokusere på å fullføre et
+utkast til prosjektrapporten som skal inn den 26. mai. Endelig
+innleveringsfrist er satt til 9 juni og prosjektrapporten vil
+selvfølgelig bli publisert på bloggen.&lt;/p&gt;
+</summary><category term="api responskoder"></category><category term="prosjektrapport"></category></entry><entry><title>Dag 25-29: Oppsett av dashing-ceph/openstack, rydding av config</title><link href="http://blog.norcams.org/dag-25-29-oppsett-av-dashing-cephopenstack-rydding-av-config.html" rel="alternate"></link><updated>2015-05-11T12:22:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-05-11:dag-25-29-oppsett-av-dashing-cephopenstack-rydding-av-config.html</id><summary type="html">&lt;p&gt;Den siste uken har gått med til å sette opp dashing-ceph,
+dashing-openstack, rydding av Logstash config og oppdatering av
+bacheloroppgaven. Dashing er kort fortalt et dashbord rammeverk for å
+visualisere informasjon i &amp;quot;fine bokser&amp;quot;, se bilde nedenfor. Det er mye
+ting i luften akkurat nå og det kommer til å bli en hektisk tid fremover
+mot innleveringen andre uken i juni.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/05/dashing-ceph.png"&gt;&lt;img alt="dashing-ceph" src="http://openstack.b.uib.no/files/2015/05/dashing-ceph.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bachelorprosjektet skal framføres enten den 10, 11 eller 15 juni og alle
+som er interessert må komme å høre på! Planen er å ha en enkel men
+oversiktlig presentasjon med live demo som viser hva jeg har jobbet med
+dette semesteret. I uken som kommer vil de siste tekniske bitene bli
+implementert før skriveperioden starter for fullt.&lt;/p&gt;
+</summary><category term="ceph"></category><category term="dashing"></category><category term="openstack"></category></entry><entry><title>Dag 20-24: Grafing av instansdata</title><link href="http://blog.norcams.org/dag-20-24-grafing-av-instansdata.html" rel="alternate"></link><updated>2015-05-04T12:58:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-05-04:dag-20-24-grafing-av-instansdata.html</id><summary type="html">&lt;p&gt;Etter å ha eksperimentert med ulike metrics fra Logstash og statsd i
+forrige uke har jeg laget noen enkle python scripts som spør keystone
+databasen ved jevne mellomrom for instansdata. Antallet kjørende
+instanser, slettede instanser, instanser som har feilet, samt type
+instans blir nå grafet i Grafana.&lt;/p&gt;
+&lt;p&gt;Grunnen for dette er at vi skal kunne holde en enkel oversikt over&amp;nbsp;alle
+instansene og deres status. I tillegg skal vi kunne kartlegge fremtidige
+ressursbehov dersom totalkapasiteten i systemet er i ferd med å bli
+nådd. Dette går under kategorien proaktiv overvåking, og vi kan løse
+ressursbehov ved å legge til mer ressurser&amp;nbsp;under drift istedenfor når
+systemet har nådd sin totale kapasitet.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/04/metrics-grafer.png"&gt;&lt;img alt="metrics-grafer" src="http://openstack.b.uib.no/files/2015/04/metrics-grafer.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/05/instans-graf.png"&gt;&lt;img alt="instans-graf" src="http://openstack.b.uib.no/files/2015/05/instans-graf.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+</summary><category term="instanser"></category><category term="keystone"></category><category term="nova"></category></entry><entry><title>Dag 15-19: Metrics gjennom graphite og statsd</title><link href="http://blog.norcams.org/dag-15-19-metrics-gjennom-graphite-og-statsd.html" rel="alternate"></link><updated>2015-05-02T14:05:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-05-02:dag-15-19-metrics-gjennom-graphite-og-statsd.html</id><summary type="html">&lt;p&gt;Har gjennom hele uken eksperimentert med å lage metrics utav loggene som
+kan sendes fra logstash til Graphite for grafing. Det som kan grafes så
+langt er tilgjengelige ressurser på alle compute nodene i OpenStack.
+Tanken er at disse grafene skal kunne eksponeres ut mot brukerne slik at
+en kan se hvor mye ressurser det er tilgjengelig til enhver tid på hver
+av nodene.&lt;/p&gt;
+&lt;p&gt;I tillegg har jeg laget noen python scripts som skal brukes til å hente
+ut spesifikke instansdata som også skal kunne grafes. Videre skal jeg
+også se på muligheten til å hente ut data fra Ceilometer.&lt;/p&gt;
+</summary><category term="grafer"></category><category term="graphite"></category></entry><entry><title>Day 14: Summary: Collecting OpenStack logs with Logstash</title><link href="http://blog.norcams.org/day-14-summary-collecting-openstack-logs-with-logstash.html" rel="alternate"></link><updated>2015-04-20T10:39:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-04-20:day-14-summary-collecting-openstack-logs-with-logstash.html</id><summary type="html">&lt;p&gt;This blog post is a summary of the first 14 days of work on my bachelor
+degree.&amp;nbsp; It is written in English to satisfy some of our Brazilian
+readers at the University in São Paulo.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.openstack.org/"&gt;Openstack&lt;/a&gt; consists of many different
+services and components, and&amp;nbsp; all of these services are logging
+information to their own log files respectively.&amp;nbsp; However, it would be
+an impossible job for a system administrator to monitor all of these log
+files by simply tailing them through the terminal. This is where
+Logstash is useful. Logstash is an open-source tool for managing events
+and logs. It is primarily used for collecting logs, parsing them and
+save them for later use. The tool also comes with an interface for
+searching in the logs you've collected.&lt;/p&gt;
+&lt;p&gt;Based on the &lt;a class="reference external" href="https://github.com/norcams/winch"&gt;winch&lt;/a&gt; project on
+GitHub I have created a Logstash node where all logs coming from
+OpenStack have been centralized. On this node all logs are parsed,
+information extracted and saved in Elasticsearch. Seconds after, the
+extracted information is visible on the Kibana dashboard (a front-end to
+Elasticsearch) ready for searching, filtering and visualization.
+Extracting the information from the log files is a bit more complex than
+it sounds. However, Logstash is very easy to get started with and once
+the basics are covered you're ready to write complex filters yourself.
+Having the &lt;a class="reference external" href="http://grokdebug.herokuapp.com/"&gt;grok debugger&lt;/a&gt; in hand
+and a quick
+&lt;a class="reference external" href="http://www.google.no/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0CB4QtwIwAA&amp;amp;url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DYIKm6WUgFTY&amp;amp;ei=coQyVeHILYOtsAGbnoGADQ&amp;amp;usg=AFQjCNHNCs05hUDcTnuyPAcKuiPltMC--A&amp;amp;sig2=62L8IW-f5ply9FM_TA7eUg&amp;amp;bvm=bv.91071109,d.bGg"&gt;tutorial&lt;/a&gt;
+in the other also helps :)&lt;/p&gt;
+&lt;p&gt;In my configuration I'm pretty much finished with the filters that
+covers all the lines of log that the nova services in OpenStack are
+generating. Launching, rebooting, deleting instances and error messages
+related to instances is now hit by a filter in Logstash and saved for
+later searches. Additionally I've made a filter that caches everything
+that is not matched by any previous filter in the configuration. This is
+in case some special event should occur or if the system goes haywire
+(not that I expect that to happen). The 'all-matching' filter is tagged
+with &amp;quot;unmatched_event&amp;quot; , and from here we can go back and change the
+original filter to take &amp;quot;these&amp;quot; special events into account. By doing
+this we will at all times have an overview if something should go wrong.
+Also we won't miss any data that somewhat could be important for us to
+know. The Logstash configuration can be found
+&lt;a class="reference external" href="https://github.com/norcams/winch/blob/stable/icehouse-centos6-monitoring/conf/logstash.conf"&gt;here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Further on I've also created some metrics which can been seen in the
+configuration file. Winch monitoring also consist of a Graphite node
+where these metrics are sent and visualized. I believe that some data
+are best when they are graphed in some way or the other providing an
+overview on a day-to-day basis (or even minute-to-minute basis)&amp;nbsp; on how
+the system is performing. Graphs also helps seeing systems in context
+which is very useful.&lt;/p&gt;
+&lt;p&gt;During the next couple of weeks I will continue to make filters, extract
+data from logs until all OpenStack services are covered, visualize data
+and put data in context by making graphs and much more. Stay tuned!&lt;/p&gt;
+</summary><category term="elasticsearch"></category><category term="logstash"></category><category term="monitoring"></category></entry><entry><title>Dag 13: Grafing av disk, cpu og minnebruk</title><link href="http://blog.norcams.org/dag-13-grafing-av-disk-cpu-og-minnebruk.html" rel="alternate"></link><updated>2015-04-17T12:04:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-04-17:dag-13-grafing-av-disk-cpu-og-minnebruk.html</id><summary type="html">&lt;p&gt;Metrics til graphite blir sendt på et spesifikt format. Dette er
+standard uansett hva system man bruker for å lage metrics. &amp;nbsp;Her
+spesifiseres først navnet, deretter verdien og til slutt datoen.
+Eksempelvis:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+echo &amp;quot;test.bash.stats 42 `date +%s`&amp;quot; | nc graphite.example.com 2003
+&lt;/pre&gt;
+&lt;p&gt;Dette vil ikke gi et stort utslag på en graf, men når man sender data
+over tid vil man på sikt kunne se at det gir utslag. Siden logstash
+konfigurasjonen henter informasjon om disk, cpu- og minnebruk fra
+loggfilene kan dette sendes videre for visualisering.&amp;nbsp;Bildet under er
+visualiserte data basert på denne
+&lt;a class="reference external" href="http://paste.debian.net/167281/"&gt;konfigurasjonen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/04/metrics-grafer.png"&gt;&lt;img alt="metrics-grafer" src="http://openstack.b.uib.no/files/2015/04/metrics-grafer.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bildet viser tre bokser som visualiserer tilgjengelige ressurser.
+Diskboksen er også konfigurert slik at den endrer farge basert på hvor
+mye diskplass som er tilgjengelig på disken.&amp;nbsp;Dette er en god begynnelse!
+I morgen og ut i neste uke kommer jeg til å fortsette med datainnsamling
+og filtere i Logstash. Følg med!&lt;/p&gt;
+</summary><category term="graphite"></category><category term="logstash"></category><category term="metrics"></category></entry><entry><title>Dag 12: Kartlegging og sending av metrics</title><link href="http://blog.norcams.org/dag-12-kartlegging-og-sending-av-metrics.html" rel="alternate"></link><updated>2015-04-17T08:42:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-04-17:dag-12-kartlegging-og-sending-av-metrics.html</id><summary type="html">&lt;p&gt;Metrics som vi kan sende til visualiseringssystemer er data. Informasjon
+som representerer en eller annen verdi kan grafes og visualiseres og på
+denne måten gi oss oversikt over hvordan systemet fungerer til enhver
+tid. Dagen i dag har for det meste blitt brukt til å lese dokumentasjon
+og teste ulike fremgangsmåter på hva metrics jeg ønsker å ha med og
+hvordan disse dataene skal sendes og visualiseres.&lt;/p&gt;
+&lt;p&gt;Metrics er ikke så veldig bra dokumentert på Logstash sine
+&lt;a class="reference external" href="http://logstash.net/docs/1.4.2/filters/metrics"&gt;nettsider&lt;/a&gt;. I
+tillegg er de aller fleste eksempler på metrics er basert på å hente ut
+informasjon fra apache-aksesslogger. Siden jeg skal hente ut mer data
+enn dette blir det mye prøving og feiling fremover på å få metrics til å
+fungere på den måten jeg vil. Mer om dette i morgen!&lt;/p&gt;
+</summary><category term="logstash"></category><category term="metrics"></category></entry><entry><title>Dag 11: Generering av testgrafer</title><link href="http://blog.norcams.org/dag-11-generering-av-testgrafer.html" rel="alternate"></link><updated>2015-04-14T12:56:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-04-14:dag-11-generering-av-testgrafer.html</id><summary type="html">&lt;p&gt;Noe mer konfigurasjon måtte til for at den nye grafnoden skulle fungere
+som den skulle. Provisjonering av noden måtte kjøres to ganger, i
+tillegg til at en rekke småting måtte konfigureres manuelt. Med alle
+disse hindringene til side var det tid for å generere noen grafer.&lt;/p&gt;
+&lt;p&gt;Ved hjelp av et script som heter ceilometer publisher har jeg hatt
+mulighet til å pushe enkelte data direkte fra ceilometer og inn til
+Graphite. Data som cpu- og minnebruk har vært de to mest aktuelle, og
+ved å opprette instanser i OpenStack har jeg kunne sett at grafene
+utvikler seg over tid. Dette gir et interessant overblikk over
+tilgjengelige ressurser på systemet og hjelper oss å se data i
+sammenheng. Samtidig som det også tilbyr systemadministratorer proaktiv
+overvåkning ved å kunne forutse og hindre problemer før de oppstår.&lt;/p&gt;
+&lt;p&gt;Når man skal sette opp grafer i Graphite/Grafana baserer man seg på
+såkalte metrics. Hvis man for eksempel ønsker å se på CPU bruk på en
+maskin het metric'en i vårt tilfelle:
+carbon.agents.graphite_winch_local-a.cpuUsage. Denne visualiseres
+slik:&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/04/cpu-bruk.png"&gt;&lt;img alt="cpu-bruk" src="http://openstack.b.uib.no/files/2015/04/cpu-bruk.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+</summary><category term="grafana"></category><category term="graphite"></category><category term="winch"></category></entry><entry><title>Dag 10: Oppsett av Graphite og Grafana</title><link href="http://blog.norcams.org/dag-10-oppsett-av-graphite-og-grafana.html" rel="alternate"></link><updated>2015-04-14T12:47:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-04-14:dag-10-oppsett-av-graphite-og-grafana.html</id><summary type="html">&lt;p&gt;Logstash, Kibana og Elasticsearch kjører per i dag på en egen node i
+winch. For at lasten ikke skal bli for stor på denne virtuelle noden
+hadde jeg i første omgang tenkt å lage en ny node for
+grafvirtualisering. Grafnoden skal kjøre verktøyet Graphite, som støtter
+metrics som kommer fra Logstash. I tillegg skal vi benytte oss av en
+annen frontend enn det Graphite tilbyr og derfor skal også verktøyet
+Grafana installeres.&lt;/p&gt;
+&lt;p&gt;Jeg benytter meg av puppetmodulene til
+&lt;a class="reference external" href="https://github.com/echocat?utf8=%E2%9C%93&amp;amp;query=puppet-"&gt;echocat&lt;/a&gt;
+siden disse er godt vedlikeholdte og konfigurasjonen av puppetkoden var
+rett fram. Det meste gikk greit for seg og vagrantboksen har en
+oppstart- og installasjonstid på mellom 3 og 4 minutter.&amp;nbsp; For de som er
+interessert i å se litt på koden og øvrige detaljer rundt oppsettet av
+vagrantboksen kan ta en kikk på
+&lt;a class="reference external" href="https://github.com/norcams/winch/blob/stable/icehouse-centos6-monitoring/puppet/manifests/graphite.pp"&gt;winch&lt;/a&gt;
+repoet.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/04/provision-graphite.png"&gt;&lt;img alt="provision-graphite" src="http://openstack.b.uib.no/files/2015/04/provision-graphite.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+</summary><category term="grafana"></category><category term="logstash"></category><category term="puppet"></category><category term="winch"></category></entry><entry><title>Dag 9: Ferdig med eksamen</title><link href="http://blog.norcams.org/dag-9-ferdig-med-eksamen.html" rel="alternate"></link><updated>2015-04-14T11:51:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-04-14:dag-9-ferdig-med-eksamen.html</id><summary type="html">&lt;p&gt;I dag var siste eksamen på Høgskolen og resten av dagen jobbet jeg på
+UiB. Nå som det finnes en god del informasjon som sendes til Logstash er
+det på tide å se på hvordan denne informasjonen kan visualiseres. I
+Logstash kan man lage metrics av informasjon som er kommet inn, og dette
+kan sendes videre til ulike grafverktøy for visualisering. Dette er noe
+jeg ønsker for at vi skal kunne se data i sammenheng og kunne forutse
+problemer før de oppstår. Ettersom jeg allerede har funnet et
+eksempeloppsett på en vagrantboks som installerer to grafverktøy kommer
+jeg til å se videre på dette på mandag.&lt;/p&gt;
+</summary><category term="logstash"></category><category term="visualisering"></category></entry><entry><title>Dag 8: Filtrering av unyttig informasjon</title><link href="http://blog.norcams.org/dag-8-filtrering-av-unyttig-informasjon.html" rel="alternate"></link><updated>2015-03-31T20:08:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-31:dag-8-filtrering-av-unyttig-informasjon.html</id><summary type="html">&lt;p&gt;Ikke alle data som kommer inn gjennom Logstash er nyttige data. Data som
+ikke gir noen nyttig informasjon eller rett og slett bare er støy er
+nødt til å skjules eller filtreres bort. I Logstash kan alle datafelter
+som blir opprettet når man lager filter søkes i. På bakgrunn av dette
+kan man ved hjelp av regulære uttrykk søke etter informasjon man vil
+filtrere bort slik at dette ikke kommer med. Hvis man for eksempel ikke
+skulle ønske å se alle infomeldinger som et system genererer kan dette
+filtreres bort på denne måten.&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="100%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p class="first"&gt;if &amp;quot;INFO&amp;quot; in [openstack_loglevel] {drop {}&lt;/p&gt;
+&lt;/p&gt;&lt;p&gt;&lt;p class="last"&gt;}&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Videre vil jeg ta en fullstendig gjennomgang av hva informasjon som skal
+filtreres bort slik at dette ikke overskygger viktige data i henhold til
+problemstillingen.&lt;/p&gt;
+</summary><category term="grok"></category><category term="logstash"></category><category term="regulære uttrykk"></category></entry><entry><title>Dag 7: Filtrering av instanshendelser</title><link href="http://blog.norcams.org/dag-7-filtrering-av-instanshendelser.html" rel="alternate"></link><updated>2015-03-31T19:49:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-31:dag-7-filtrering-av-instanshendelser.html</id><summary type="html">&lt;p&gt;Dagen ble benyttet til å lage grok-filtre som henter ut informasjon fra
+OpenStack-instanser. Om en instans blir opprettet, slettet, rebootet,
+re-initialisert, utvidet eller skulle få en feil vil dette bli truffet
+av filteret og vi vil kunne se denne hendelsen og all informasjon i
+webpanelet Kibana.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/logstash-output.png"&gt;&lt;img alt="logstash-output" src="http://openstack.b.uib.no/files/2015/03/logstash-output-300x129.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Her ser vi at all informasjon som jeg publisert i forrige bloggpost har
+kommet inn som egne felter. Disse kan nå søkes opp i og en kan
+visualisere dette på forskjellige måter. Neste steg blir å se på andre
+data i OpenStack og hvordan vi kan hente ut informasjon om opprettelser
+av eksempelvis nettverk og rutere.&lt;/p&gt;
+</summary><category term="elasticsearch"></category><category term="logstash"></category><category term="neutron"></category></entry><entry><title>Dag 6: Grok-filtre i Logstash</title><link href="http://blog.norcams.org/dag-6-grok-filtre-i-logstash.html" rel="alternate"></link><updated>2015-03-31T14:58:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-31:dag-6-grok-filtre-i-logstash.html</id><summary type="html">&lt;p&gt;For å kunne hente ut informasjon fra data som kommer inn i Logstash kan
+man benytte seg av grok-filtre. Grok-filtre er bygget på toppen av
+regulære uttrykk og på bakgrunn av dette kan man hente ut den
+informasjonen man ønsker, eksempelvis fra loggdata. For å hente ut
+relevante data er man avhengig av å vite noe om dataene på forhånd. For
+eksempel sier følgende logglinje hvilken dato hendelsen skjer på,
+hvilket loglevel informasjonen er i, hvilken tjeneste som genererer
+meldingen og hvilken instans i OpenStack meldingen omhandler. At en
+instans starter kan være nyttig informasjon dersom den ikke skulle komme
+opp som forventet.&lt;/p&gt;
+&lt;p&gt;2015-03-20T08:38:51+00:00 compute 2015-03-20 08:38:51.292 11139 AUDIT
+nova.compute.manager [req-414b1736-9bf6-4457-a848-1295ebb12d7c
+b251c86204eb44b6822a998da0d28ad4 1a49bb7c49914d96b95ade9b1345eac2]
+[instance: 4e86c611-0914-4da2-9ed4-4c2ca5529ffb] Rebooting instance&lt;/p&gt;
+&lt;p&gt;Ved hjelp av &lt;a class="reference external" href="http://grokdebug.herokuapp.com/"&gt;grok debugger&lt;/a&gt;har
+jeg laget et &lt;a class="reference external" href="http://paste.debian.net/164129/"&gt;filter&lt;/a&gt; som henter ut
+informasjonen og gjør den svært oversiktlig og enkel å organisere. Etter
+at informasjonen er kommet gjennom filteret ser den slik ut:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+{
+  &amp;quot;openstack_hostname&amp;quot;: [
+    &amp;quot;compute&amp;quot;
+  ],
+  &amp;quot;timestamp&amp;quot;: [
+    &amp;quot;2015-03-20 08:38:51.292&amp;quot;
+  ],
+  &amp;quot;openstack_pid&amp;quot;: [
+    &amp;quot; 11139&amp;quot;
+  ],
+  &amp;quot;openstack_loglevel&amp;quot;: [
+    &amp;quot;AUDIT&amp;quot;
+  ],
+  &amp;quot;openstack_program&amp;quot;: [
+    &amp;quot;nova.compute.manager &amp;quot;
+  ],
+  &amp;quot;request_id_list&amp;quot;: [
+    &amp;quot;414b1736-9bf6-4457-a848-1295ebb12d7c&amp;quot;,
+    &amp;quot;1a49bb7c49914d96b95ade9b1345eac2&amp;quot;
+  ],
+  &amp;quot;openstack_instance_id&amp;quot;: [
+    &amp;quot;4e86c611-0914-4da2-9ed4-4c2ca5529ffb&amp;quot;
+  ],
+  &amp;quot;openstack_instance_action&amp;quot;: [
+    &amp;quot;Rebooting instance&amp;quot;
+  ]
+}
+&lt;/pre&gt;
+&lt;p&gt;Dette sendes så videre fra Logstash til Elasticsearch der man kan søke
+opp spesifikke data og visualisere dette på mange ulike måter.
+Visualisering vil bli et eget tema på bloggen senere.&lt;/p&gt;
+</summary><category term="elasticsearch"></category><category term="grok"></category><category term="informasjon"></category><category term="logstash"></category></entry><entry><title>Dag 5: Start av fysisk testmiljø</title><link href="http://blog.norcams.org/dag-5-start-av-fysisk-testmiljo.html" rel="alternate"></link><updated>2015-03-31T13:54:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-31:dag-5-start-av-fysisk-testmiljo.html</id><summary type="html">&lt;p&gt;Som tidligere publisert på bloggen har jeg fått tildelt en 32GB fysisk
+blade server der winch har blitt installert. Hensikten med dette er å
+kjøre et virtuelt OpenStack-testmiljø der jeg kan teste ulike
+monitoreringssystem. For øyeblikket er jeg i gang med å teste Logstash,
+Elasticsearch og Kibana og har satt opp dette i winch under en egen
+monitoreringsbranch. I denne branchen har jeg laget en logstash node som
+er konfigurert til å ta imot alle loggdata som kommer fra OpenStack.&lt;/p&gt;
+&lt;p&gt;Her vil jeg ha muligheten til å se hvilke data som kommer inn slik at
+jeg kan hente ut den informasjonen som er relevant. Samtidig ønsker jeg
+å kunne filtrere vekk all unyttig informasjon slik at dette ikke
+overskygger viktige data. Jeg har laget en vagrantboks som installerer
+Logstash automatisk ved hjelp av puppet. Dersom noe feil skulle skje
+eller testoppsettet ikke skulle fungere som det skal, kan jeg enkelt
+slette og starte maskinen på nytt for å komme tilbake til der jeg var
+før feilen skjedde. Ved hjelp av dette sparer jeg mye tid og kan
+fokusere mer på testingen av de ulike verktøyene. Vagrantboksen er
+definert
+&lt;a class="reference external" href="https://github.com/norcams/winch/blob/stable/icehouse-centos6-monitoring/puppet/manifests/logstash.pp"&gt;slik&lt;/a&gt;.&lt;/p&gt;
+</summary><category term="logstash"></category><category term="monitorering"></category><category term="vagrant"></category><category term="winch"></category></entry><entry><title>Dag 4: Videre konfigurasjon av winch</title><link href="http://blog.norcams.org/dag-4-videre-konfigurasjon-av-winch.html" rel="alternate"></link><updated>2015-03-14T23:13:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-14:dag-4-videre-konfigurasjon-av-winch.html</id><summary type="html">&lt;p&gt;Dagen ble benyttet til å teste at provisjoneringen av controller og
+compute fungerer sammen med logstash. Det er mye av konfigurasjonen som
+utføres manuelt for øyeblikket. Blant annet må alle OpenStack tjenestene
+manuelt endres for at de skal logge til syslog og sende til logstash
+noden som tar imot og parser loggende.&lt;/p&gt;
+&lt;p&gt;Førsteprioritet er uansett å få opp et fysisk testmiljø der jeg har
+muligheten til å starte flere instanser og sjekke at all informasjon som
+blir generert i loggfilene blir samlet og håndtert. Videre må
+nøkkelfunksjonalitet i systemet testes på en slik måte at loggdataene
+som blir generert kan si noe om hvilken tilstand systemet er i. Om
+tjenester er oppe og går, om det har forekommet feil den siste tiden
+osv.&lt;/p&gt;
+</summary><category term="blade server"></category><category term="winch"></category></entry><entry><title>Dag 3: Submoduler i git og installasjon på blade server</title><link href="http://blog.norcams.org/dag-3-submoduler-i-git-og-installasjon-pa-blade-server.html" rel="alternate"></link><updated>2015-03-14T21:45:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-14:dag-3-submoduler-i-git-og-installasjon-pa-blade-server.html</id><summary type="html">&lt;p&gt;I forrige uke fikk jeg problemer med å legge til enkelte puppetmoduler
+til monitoreringsbranchen på github. Etter en del feilsøking endte jeg
+opp med å legge disse til som submoduler. Fordelen med submoduler er at
+man slipper å måtte oppdatere modulene i sitt eget repository. Ved å
+kjøre kommandoen nedenfor vil modulen lastes ned, og det vil ligge en
+sti til det remote repositoriet i .gitmodules.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+git submodule add https://github.com/elastic/puppet-logstash
+&lt;/pre&gt;
+&lt;p&gt;I tillegg til submodulene er det også blitt lagt til en egen mappe for
+alle konfigurasjonsfiler og patterns til logstash. Rsyslog.conf ligger
+også her, men planen videre er å legge til rsyslog puppetmodulen slik at
+det aller meste kan styres gjennom puppet. Jeg begynte også å installere
+winch på blade serveren jeg har fått tildelt. Denne serveren har 32GB
+med minne og jeg har derfor mulighet til å ha kjørende en god del
+instanser som jeg skal teste med. Mer om dette i morgen!&lt;/p&gt;
+</summary><category term="logstash"></category><category term="puppet"></category><category term="rsyslog"></category></entry><entry><title>Dag 2: Integrering av logstash i "winch"</title><link href="http://blog.norcams.org/dag-2-integrering-av-logstash-i-winch.html" rel="alternate"></link><updated>2015-03-07T16:56:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-07:dag-2-integrering-av-logstash-i-winch.html</id><summary type="html">&lt;p&gt;Under utplasseringen var jeg med på å lage et automatisk oppsett som
+installerte OpenStack og tilhørende komponenter. Dette ble gjort ufifra
+et prosjekt på github som het
+&lt;a class="reference external" href="https://github.com/norcams/winch"&gt;winch&lt;/a&gt;. Som jeg tok opp i min
+forrige bloggpost ønsker jeg å samle alle OpenStack loggene på en og
+samme maskin. Derfor her jeg laget en ny branch i winch som inkluderer
+en monitoreringsnode. Denne noden vil være ansvarlig for alt som skjer
+med tanke på logginnsamling, parsing og visualisering av informasjon. Da
+er det viktig at verktøyene som skal gjøre dette blir installert på
+samme måte som tidligere, ved hjelp av puppetmoduler.&amp;nbsp; Da kan vi sette
+en ønsket tilstand og si at den nye noden skal være en
+monitoreringsnode.&lt;/p&gt;
+&lt;p&gt;Arbeidet med å puppetifisere alle verktøyene er kommet godt i gang. Har
+laget en manifest fil for logstash som kan sees
+&lt;a class="reference external" href="https://github.com/norcams/winch/blob/stable/icehouse-centos6-monitoring/puppet/manifests/logstash.pp"&gt;her&lt;/a&gt;.
+Denne vil benytte seg av puppet modulene lokalisert i puppet/modules og
+installere verktøyene med konfigurasjonsfiler spesifisert i manifestet.
+Det som gjenstår for at integreringen skal være komplett er å legge til
+de puppetmodulene jeg trenger. Disse er submoduler og blir derfor lagt
+til annerledes. Mer om dette i neste bloggpost.&lt;/p&gt;
+</summary><category term="github"></category><category term="logstash"></category><category term="puppet"></category><category term="winch"></category></entry><entry><title>Dag 1: Installasjon og oppsett av logstash, elasticsearch &amp; kibana</title><link href="http://blog.norcams.org/dag-1-installasjon-og-oppsett-av-logstash-elasticsearch-kibana.html" rel="alternate"></link><updated>2015-03-07T16:34:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-07:dag-1-installasjon-og-oppsett-av-logstash-elasticsearch-kibana.html</id><summary type="html">&lt;p&gt;Etter tips fra prosjektleder i UH-sky prosjektet er et av
+monitoreringsverktøyene jeg har valgt å se på
+&lt;a class="reference external" href="http://logstash.net/"&gt;logstash&lt;/a&gt;. Et&amp;nbsp; kraftig&amp;nbsp; verktøy som brukes til
+å håndtere hendelser og logger.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="logstash" src="http://logstash.net/images/logstash.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Logstash samler inn logger fra ulike kilder, parser loggene og lagrer de
+til senere bruk.&amp;nbsp; Når man installerer logstash kommer det også med et
+webinterface der man kan søke etter hendelsene i loggfilene og
+visualisere dette slik man ønsker. Dette for å kunne kartlegge feil, se
+endringer i systemer over tid, sette sammen data som har påvirkning på
+herandre osv. Logstash er et åpent kildekodeverktøy og er lisensiert
+under Apache 2.0.&lt;/p&gt;
+&lt;p&gt;OpenStack er et komplekst rammeverk som består av mange tjenester. Hver
+tjeneste har sitt eget bruksområde og sitt eget API. Det er mye
+informasjon som til daglig vil være spredt rundt om i&amp;nbsp; systemet. Dette
+gjør det viktig å samle all loggdata på et samlet sted slik at det blir
+enklere å hente ut den informasjonen vi trenger for å sørge for at
+rammeverket til enhver tid fungerer som det skal. Logstash er veldig
+egnet til dette formålet. I logstash.conf kan vi tagge innkommende
+logger og videre kan det så kjøres filter basert på disse taggene for å
+hente ut den spesifikke informasjonen vi vil ha tak i. For eksempel
+tjenestenavn, diskbruk, antall påloggingsforsøk, brukere, IP adresser,
+nettleser osv. Alt av informasjon som finnes i en loggfil kan
+ekstraheres, lagres og videresendes til en eller annen form for
+visualisering.&lt;/p&gt;
+&lt;p&gt;Jeg har til nå arbeidet med en kodebase som jeg forket på github som
+installerer disse tre verktøyene som nevnt i overskriften. Videre har
+jeg tenkt å integrere denne mot winch slik at den passer øvrig
+prosjektstruktur. Under følger et bilde av hvordan visualiseringen av
+loggdataene ser ut.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/kibana4-visualisering.png"&gt;&lt;img alt="kibana4-visualisering" src="http://openstack.b.uib.no/files/2015/03/kibana4-visualisering-300x171.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+</summary><category term="elasticsearch"></category><category term="github"></category><category term="kibana4"></category><category term="logstash"></category></entry><entry><title>Dag 0: Oppsummering</title><link href="http://blog.norcams.org/dag-0-oppsummering.html" rel="alternate"></link><updated>2015-03-06T07:41:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-06:dag-0-oppsummering.html</id><summary type="html">&lt;p&gt;Denne bloggposten er en oppsummering av arbeidet som har blitt gjort før
 forprosjektet i bacheloroppgaven har kommet i gang.&lt;/p&gt;
 &lt;p&gt;I henhold til problemstillingen skal jeg kartlegge forskjellige
 monitoreringsverktøy og teste bruken av disse. Dette er arbeid som jeg
@@ -46,4 +400,27 @@ for. Dette gjør testingen av potensielle verktøy enklere i tillegg til
 at dataene jeg kommer til å teste med blir mest mulig reelle.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.52.jpg"&gt;&lt;img alt="2015-02-24 13.13.52" src="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.52-300x169.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.37.jpg"&gt;&lt;img alt="2015-02-24 13.13.37" src="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.37-300x169.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary></entry></feed>
+</summary></entry><entry><title>Prosjektbeskrivelse bacheloroppgave</title><link href="http://blog.norcams.org/prosjektbeskrivelse-bacheloroppgave.html" rel="alternate"></link><updated>2015-03-03T10:03:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-03:prosjektbeskrivelse-bacheloroppgave.html</id><summary type="html">&lt;p&gt;Etter høstens utplassering har jeg fått lov til å skrive
+bacheloroppgaven min her på IT-avdelingen. I denne sammenhengen
+publiserer jeg prosjektbeskrivelsen i sin helhet som omhandler
+monitorering av OpenStack ved UiB. Jeg har også laget en ny side på
+bloggen øverst til høyre som alltid linker til prosjektbeskrivelsen.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/02/Prosjektbeskrivelse-bachelor-Kristian-Å.-Skurtveit.pdf"&gt;Prosjektbeskrivelse
+bachelorprosjekt&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Til nå har prosjektet kommet i gang og jeg har såvidt begynt å se på
+forskjellige løsninger i henhold til problemstillingen som kan brukes
+til å monitorere OpenStack. Videre vil jeg følge fremdriftsplanen i
+prosjektbeskrivelsen. Noen verktøy jeg så langt har fått kikket på:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Icinga (basert på Nagios)&lt;/li&gt;
+&lt;li&gt;Logstash&lt;/li&gt;
+&lt;li&gt;Elasticsearch / Kibana&lt;/li&gt;
+&lt;li&gt;Monasca&lt;/li&gt;
+&lt;li&gt;Ceilometer / graphite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Denne bloggen har tidligere vært brukt i utplasseringsfaget DAT156 og
+har hatt en bloggpost for hver dag. Bloggen vil nå bli brukt til
+bachelorprosjektet som varer frem til juni 2015. Og vil følge samme
+oppsett med en bloggpost for hver dag. Neste blogginnlegg vil begynne på
+dag 0 som oppsummerer arbeidet med oppgaven så langt.&lt;/p&gt;
+</summary><category term="bachelor"></category><category term="prosjekt"></category></entry></feed>

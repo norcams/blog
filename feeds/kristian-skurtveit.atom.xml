@@ -41,7 +41,7 @@ som er interessert må komme å høre på! Planen er å ha en enkel men
 oversiktlig presentasjon med live demo som viser hva jeg har jobbet med
 dette semesteret. I uken som kommer vil de siste tekniske bitene bli
 implementert før skriveperioden starter for fullt.&lt;/p&gt;
-</summary><category term="ceph"></category><category term="dashing"></category><category term="openstack"></category><category term="oppgave"></category></entry><entry><title>Dag 20-24: Grafing av instansdata</title><link href="http://blog.norcams.org/dag-20-24-grafing-av-instansdata.html" rel="alternate"></link><updated>2015-05-04T12:58:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-05-04:dag-20-24-grafing-av-instansdata.html</id><summary type="html">&lt;p&gt;Etter å ha eksperimentert med ulike metrics fra Logstash og statsd i
+</summary><category term="ceph"></category><category term="dashing"></category><category term="openstack"></category></entry><entry><title>Dag 20-24: Grafing av instansdata</title><link href="http://blog.norcams.org/dag-20-24-grafing-av-instansdata.html" rel="alternate"></link><updated>2015-05-04T12:58:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-05-04:dag-20-24-grafing-av-instansdata.html</id><summary type="html">&lt;p&gt;Etter å ha eksperimentert med ulike metrics fra Logstash og statsd i
 forrige uke har jeg laget noen enkle python scripts som spør keystone
 databasen ved jevne mellomrom for instansdata. Antallet kjørende
 instanser, slettede instanser, instanser som har feilet, samt type
@@ -400,10 +400,6 @@ for. Dette gjør testingen av potensielle verktøy enklere i tillegg til
 at dataene jeg kommer til å teste med blir mest mulig reelle.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.52.jpg"&gt;&lt;img alt="2015-02-24 13.13.52" src="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.52-300x169.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.37.jpg"&gt;&lt;img alt="2015-02-24 13.13.37" src="http://openstack.b.uib.no/files/2015/03/2015-02-24-13.13.37-300x169.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
-</summary></entry><entry><title>Prosjektbeskrivelse bachelorprosjekt</title><link href="http://blog.norcams.org/prosjektbeskrivelse-bachelorprosjekt.html" rel="alternate"></link><updated>2015-03-03T10:11:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-03:prosjektbeskrivelse-bachelorprosjekt.html</id><summary type="html">&lt;p&gt;Denne siden lister ut prosjektbeskrivelsen av bachelorprosjektet slik at
-denne skal være enkel å finne frem til uansett hvor man er på bloggen.&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/02/Prosjektbeskrivelse-bachelor-Kristian-Å.-Skurtveit.pdf"&gt;Prosjektbeskrivelse
-bachelorprosjekt&lt;/a&gt;&lt;/p&gt;
 </summary></entry><entry><title>Prosjektbeskrivelse bacheloroppgave</title><link href="http://blog.norcams.org/prosjektbeskrivelse-bacheloroppgave.html" rel="alternate"></link><updated>2015-03-03T10:03:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-03:prosjektbeskrivelse-bacheloroppgave.html</id><summary type="html">&lt;p&gt;Etter høstens utplassering har jeg fått lov til å skrive
 bacheloroppgaven min her på IT-avdelingen. I denne sammenhengen
 publiserer jeg prosjektbeskrivelsen i sin helhet som omhandler
