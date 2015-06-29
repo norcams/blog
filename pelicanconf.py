@@ -34,7 +34,11 @@ SOCIAL = (
 DEFAULT_PAGINATION = False
 
 PLUGIN_PATHS = [ 'pelican-plugins' ]
-PLUGINS = [ 'gravatar' ]
+PLUGINS = [
+    'gravatar',
+    'pelican_vimeo',
+    'pelican_youtube'
+]
 
 STATIC_PATHS = ['images', 'extra/CNAME', 'extra/hand.png']
 EXTRA_PATH_METADATA = { 
