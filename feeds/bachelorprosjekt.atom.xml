@@ -6,7 +6,16 @@ Schüler&lt;/a&gt;
 for allowing me to borrow his Druid version (grassroots mix) for
 background music.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://openstack.b.uib.no/files/2015/06/Monitorering-av-OpenStack-Kristian-Adlandsvik-Skurtveit.mp4"&gt;See the video here&lt;/a&gt;&lt;/p&gt;
-</summary><category term="video"></category></entry><entry><title>Dag 0: Oppsummering</title><link href="http://blog.norcams.org/dag-0-oppsummering.html" rel="alternate"></link><updated>2015-03-06T07:41:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-06:dag-0-oppsummering.html</id><summary type="html">&lt;p&gt;Denne bloggposten er en oppsummering av arbeidet som har blitt gjort før
+</summary><category term="video"></category></entry><entry><title>Dag 35-39: Skriveuke</title><link href="http://blog.norcams.org/dag-35-39-skriveuke.html" rel="alternate"></link><updated>2015-05-28T09:21:00+02:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-05-28:dag-35-39-skriveuke.html</id><summary type="html">&lt;p&gt;Gjennom hele uken har tiden gått med til å skrive ferdig utkast til
+prosjektrapporen. Denne ble levert inn 26. mai og endelig
+innleveringsfrist er 9. juni. Arbeidet som gjenstår er å skrive
+dokumentasjon om det endelige monitoreringsoppsettet slik at dette
+enkelt kan tas i bruk. Dette forventes å være ferdig i neste uke.&lt;/p&gt;
+&lt;p&gt;Oppsummert har det i under uttestingen av Logstash blitt prosessert
+8,943,279 millioner hendelser som har blitt lagret i Elasticsearch og
+visualisert gjennom Kibana og Graphite.&lt;/p&gt;
+&lt;p&gt;Endelig innleveringsdato for prosjektrapporten er 9. juni..&lt;/p&gt;
+</summary><category term="elasticsearch"></category><category term="kibana"></category><category term="logstash"></category></entry><entry><title>Dag 0: Oppsummering</title><link href="http://blog.norcams.org/dag-0-oppsummering.html" rel="alternate"></link><updated>2015-03-06T07:41:00+01:00</updated><author><name>Kristian Skurtveit</name></author><id>tag:blog.norcams.org,2015-03-06:dag-0-oppsummering.html</id><summary type="html">&lt;p&gt;Denne bloggposten er en oppsummering av arbeidet som har blitt gjort før
 forprosjektet i bacheloroppgaven har kommet i gang.&lt;/p&gt;
 &lt;p&gt;I henhold til problemstillingen skal jeg kartlegge forskjellige
 monitoreringsverktøy og teste bruken av disse. Dette er arbeid som jeg
